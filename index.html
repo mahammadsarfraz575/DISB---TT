@@ -6,121 +6,57 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <style>
 :root{
-  --ink:#eef2f0;
-  --board:#16302f;
-  --board-dark:#0f2322;
-  --card:#1e3d3b;
-  --card-line:#2c524f;
-  --amber:#e0a458;
-  --amber-dim:#a97a3d;
-  --chalk:#cfe0da;
-  --muted:#8fada6;
-  --good:#7fb88a;
-  --bad:#d97a6c;
+  --ink:#eef2f0; --board:#16302f; --board-dark:#0f2322; --card:#1e3d3b; --card-line:#2c524f;
+  --amber:#e0a458; --amber-dim:#a97a3d; --chalk:#cfe0da; --muted:#8fada6; --good:#7fb88a; --bad:#d97a6c;
   --font-display: Georgia, 'Times New Roman', serif;
   --font-body: 'Segoe UI', Arial, sans-serif;
   --font-mono: 'Consolas', 'Courier New', monospace;
 }
 *{box-sizing:border-box;}
-body{
-  margin:0;
-  background:var(--board);
-  color:var(--ink);
-  font-family:var(--font-body);
-  min-height:100vh;
-}
+body{margin:0;background:var(--board);color:var(--ink);font-family:var(--font-body);min-height:100vh;}
 .wrap{max-width:1280px;margin:0 auto;padding:28px 20px 60px;}
-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-end;
-  border-bottom:2px solid var(--amber-dim);
-  padding-bottom:16px;
-  margin-bottom:22px;
-  flex-wrap:wrap;
-  gap:12px;
-}
-h1{
-  font-family:var(--font-display);
-  font-size:30px;
-  margin:0;
-  letter-spacing:0.3px;
-  color:var(--chalk);
-}
+header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid var(--amber-dim);padding-bottom:16px;margin-bottom:22px;flex-wrap:wrap;gap:12px;}
+h1{font-family:var(--font-display);font-size:30px;margin:0;letter-spacing:0.3px;color:var(--chalk);}
 h1 span{color:var(--amber);}
 .subtitle{color:var(--muted);font-size:13px;margin-top:4px;}
 .stats{display:flex;gap:22px;font-family:var(--font-mono);font-size:13px;color:var(--muted);}
 .stats b{color:var(--amber);font-size:16px;display:block;font-family:var(--font-body);}
 
-.databar{
-  background:var(--card); border:1px solid var(--card-line); border-radius:8px;
-  padding:12px 16px; margin-bottom:18px; display:flex; align-items:center; gap:14px;
-  flex-wrap:wrap; font-size:13px; color:var(--muted);
-}
-.databar b{color:var(--chalk);}
+.upload-panel{background:var(--card);border:1px solid var(--card-line);border-radius:8px;padding:16px;margin-bottom:18px;}
+.upload-row{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;}
+.upload-row .filter-group{display:flex;flex-direction:column;gap:5px;}
+.upload-row label{font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:var(--muted);}
+select, input[type=text]{background:var(--board-dark);border:1px solid var(--card-line);color:var(--ink);padding:7px 10px;border-radius:5px;font-size:13.5px;font-family:var(--font-body);min-width:150px;}
+select:focus, input:focus{outline:2px solid var(--amber-dim);outline-offset:1px;}
 #fileInput{display:none;}
-.upload-btn{
-  background:var(--amber); color:var(--board-dark); border:none; padding:7px 14px;
-  border-radius:5px; cursor:pointer; font-size:12.5px; font-weight:600;
-}
-.status-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px;}
+.upload-btn{background:var(--amber);color:var(--board-dark);border:none;padding:8px 16px;border-radius:5px;cursor:pointer;font-size:12.5px;font-weight:600;}
+.ghost-btn{background:transparent;border:1px solid var(--card-line);color:var(--muted);padding:8px 14px;border-radius:5px;cursor:pointer;font-size:12.5px;}
+.ghost-btn:hover{border-color:var(--bad);color:var(--bad);}
+.status-line{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:12.5px;color:var(--muted);flex-wrap:wrap;}
+.status-dot{width:8px;height:8px;border-radius:50%;display:inline-block;}
 .status-dot.ok{background:var(--good);}
 .status-dot.err{background:var(--bad);}
+.status-dot.upl{background:var(--amber);}
+.status-line b{color:var(--chalk);}
 
 .tabs{display:flex;gap:6px;margin-bottom:18px;}
-.tab-btn{
-  background:transparent;border:1px solid var(--card-line);color:var(--muted);
-  padding:9px 18px;border-radius:6px 6px 0 0;cursor:pointer;font-size:13.5px;
-  font-family:var(--font-body); transition:all .15s;
-}
+.tab-btn{background:transparent;border:1px solid var(--card-line);color:var(--muted);padding:9px 18px;border-radius:6px 6px 0 0;cursor:pointer;font-size:13.5px;font-family:var(--font-body);transition:all .15s;}
 .tab-btn.active{background:var(--card);color:var(--amber);border-color:var(--amber-dim);border-bottom-color:var(--card);}
 .tab-panel{display:none;}
 .tab-panel.active{display:block;}
 
-.filter-bar{
-  background:var(--card);
-  border:1px solid var(--card-line);
-  border-radius:8px;
-  padding:16px;
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
-  margin-bottom:18px;
-}
+.filter-bar{background:var(--card);border:1px solid var(--card-line);border-radius:8px;padding:16px;display:flex;flex-wrap:wrap;gap:14px;margin-bottom:18px;}
 .filter-group{display:flex;flex-direction:column;gap:5px;}
 .filter-group label{font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:var(--muted);}
-select, input[type=text]{
-  background:var(--board-dark);
-  border:1px solid var(--card-line);
-  color:var(--ink);
-  padding:7px 10px;
-  border-radius:5px;
-  font-size:13.5px;
-  font-family:var(--font-body);
-  min-width:150px;
-}
-select:focus, input:focus{outline:2px solid var(--amber-dim);outline-offset:1px;}
 .chip-row{display:flex;gap:6px;flex-wrap:wrap;}
-.chip{
-  border:1px solid var(--card-line);background:var(--board-dark);color:var(--muted);
-  padding:6px 12px;border-radius:20px;font-size:12.5px;cursor:pointer;user-select:none;
-}
+.chip{border:1px solid var(--card-line);background:var(--board-dark);color:var(--muted);padding:6px 12px;border-radius:20px;font-size:12.5px;cursor:pointer;user-select:none;}
 .chip.on{background:var(--amber);color:var(--board-dark);border-color:var(--amber);font-weight:600;}
-.reset-btn{
-  align-self:flex-end;
-  background:transparent;border:1px solid var(--bad);color:var(--bad);
-  padding:7px 14px;border-radius:5px;cursor:pointer;font-size:12.5px;
-}
+.reset-btn{align-self:flex-end;background:transparent;border:1px solid var(--bad);color:var(--bad);padding:7px 14px;border-radius:5px;cursor:pointer;font-size:12.5px;}
 .reset-btn:hover{background:var(--bad);color:var(--board-dark);}
 
 .result-count{color:var(--muted);font-size:12.5px;margin-bottom:8px;}
-
 table{width:100%;border-collapse:collapse;font-size:13.5px;}
-thead th{
-  text-align:left;padding:9px 10px;color:var(--amber);
-  border-bottom:2px solid var(--amber-dim);font-size:11.5px;text-transform:uppercase;
-  letter-spacing:0.5px;position:sticky;top:0;background:var(--board);cursor:pointer;
-}
+thead th{text-align:left;padding:9px 10px;color:var(--amber);border-bottom:2px solid var(--amber-dim);font-size:11.5px;text-transform:uppercase;letter-spacing:0.5px;position:sticky;top:0;background:var(--board);cursor:pointer;}
 thead th:hover{color:var(--chalk);}
 tbody td{padding:8px 10px;border-bottom:1px solid var(--card-line);}
 tbody tr:hover{background:var(--card);}
@@ -132,22 +68,25 @@ tbody tr:hover{background:var(--card);}
 .tgrid{display:grid;grid-template-columns:70px repeat(5,1fr);gap:6px;min-width:760px;}
 .tgrid .head{font-family:var(--font-mono);font-size:11px;color:var(--muted);text-transform:uppercase;padding:6px 4px;text-align:center;}
 .tgrid .session-label{font-family:var(--font-mono);font-size:12px;color:var(--amber);display:flex;align-items:center;justify-content:center;}
-.cell{
-  background:var(--card);border:1px solid var(--card-line);border-radius:6px;
-  padding:8px;min-height:64px;font-size:12px;
-}
+.cell{background:var(--card);border:1px solid var(--card-line);border-radius:6px;padding:8px;min-height:64px;font-size:12px;}
 .cell.filled{border-color:var(--amber-dim);}
 .cell .subj{color:var(--chalk);font-weight:600;margin-bottom:3px;}
 .cell .meta{color:var(--muted);font-size:11px;}
 .cell.empty{opacity:0.25;}
 
-.clash-item{
-  background:var(--card);border:1px solid var(--bad);border-radius:8px;
-  padding:12px 16px;margin-bottom:10px;font-size:13px;
-}
+.clash-item{background:var(--card);border:1px solid var(--bad);border-radius:8px;padding:12px 16px;margin-bottom:10px;font-size:13px;}
 .clash-item b{color:var(--bad);}
 .clash-item .detail{color:var(--muted);margin-top:6px;font-size:12.5px;}
 .no-clash{color:var(--good);padding:30px;text-align:center;font-family:var(--font-display);font-size:17px;}
+
+.yeargrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:20px;}
+.yearcard{background:var(--card);border:1px solid var(--card-line);border-radius:10px;padding:18px;text-align:center;}
+.yearcard .yname{color:var(--amber);font-family:var(--font-display);font-size:17px;margin-bottom:10px;}
+.yearcard .big{font-size:30px;color:var(--chalk);font-weight:700;}
+.yearcard .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-top:2px;}
+.yearcard .sub{font-size:12px;color:var(--muted);margin-top:8px;}
+.yeartotal{text-align:center;padding:16px;color:var(--muted);font-size:13px;border-top:1px solid var(--card-line);margin-top:6px;}
+.yeartotal b{color:var(--amber);font-size:20px;display:block;font-family:var(--font-body);}
 
 .empty-state{padding:40px;text-align:center;color:var(--muted);}
 footer{margin-top:30px;color:var(--muted);font-size:11.5px;text-align:center;}
@@ -158,7 +97,7 @@ footer{margin-top:30px;color:var(--muted);font-size:11.5px;text-align:center;}
   <header>
     <div>
       <h1>DSIB <span>Timetable</span> Explorer</h1>
-      <div class="subtitle">Reads lessons straight from data.csv &mdash; replace that file to update everything</div>
+      <div class="subtitle">Reads data.csv &amp; reg-groups.csv &mdash; or upload your own, it stays until you upload again</div>
     </div>
     <div class="stats">
       <div><b id="statLessons">-</b>lessons/week</div>
@@ -167,62 +106,49 @@ footer{margin-top:30px;color:var(--muted);font-size:11.5px;text-align:center;}
     </div>
   </header>
 
-  <div class="databar">
-    <span id="dataStatus"><span class="status-dot ok"></span>Loading data.csv...</span>
-    <span>or</span>
-    <button class="upload-btn" onclick="document.getElementById('fileInput').click()">Upload a CSV instead</button>
-    <input type="file" id="fileInput" accept=".csv">
+  <div class="upload-panel">
+    <div class="upload-row">
+      <div class="filter-group">
+        <label>What are you uploading?</label>
+        <select id="uploadType">
+          <option value="timetable">Lesson timetable data</option>
+          <option value="reggroups">Year group totals (reg groups)</option>
+        </select>
+      </div>
+      <button class="upload-btn" onclick="document.getElementById('fileInput').click()">Choose CSV file</button>
+      <input type="file" id="fileInput" accept=".csv">
+      <button class="ghost-btn" id="resetTimetableBtn">Reset timetable to default</button>
+      <button class="ghost-btn" id="resetRegBtn">Reset year totals to default</button>
+    </div>
+    <div class="status-line" id="timetableStatus"><span class="status-dot ok"></span>Loading timetable data...</div>
+    <div class="status-line" id="regStatus"><span class="status-dot ok"></span>Loading year group totals...</div>
   </div>
 
   <div class="tabs">
     <button class="tab-btn active" data-tab="browse">Browse</button>
     <button class="tab-btn" data-tab="teacher">Teacher schedule</button>
+    <button class="tab-btn" data-tab="yeartotals">Year totals</button>
     <button class="tab-btn" data-tab="clash">Clash check</button>
   </div>
 
   <div class="tab-panel active" id="panel-browse">
     <div class="filter-bar">
-      <div class="filter-group">
-        <label>Day</label>
-        <div class="chip-row" id="dayChips"></div>
-      </div>
-      <div class="filter-group">
-        <label>Session</label>
-        <select id="sessionSel"><option value="">All</option></select>
-      </div>
-      <div class="filter-group">
-        <label>Year</label>
-        <select id="yearSel"><option value="">All</option></select>
-      </div>
-      <div class="filter-group">
-        <label>Teacher</label>
-        <input type="text" id="teacherInput" placeholder="Search teacher...">
-      </div>
-      <div class="filter-group">
-        <label>Room</label>
-        <input type="text" id="roomInput" placeholder="Search room...">
-      </div>
-      <div class="filter-group">
-        <label>Subject</label>
-        <select id="subjectSel"><option value="">All</option></select>
-      </div>
+      <div class="filter-group"><label>Day</label><div class="chip-row" id="dayChips"></div></div>
+      <div class="filter-group"><label>Session</label><select id="sessionSel"><option value="">All</option></select></div>
+      <div class="filter-group"><label>Year</label><select id="yearSel"><option value="">All</option></select></div>
+      <div class="filter-group"><label>Teacher</label><input type="text" id="teacherInput" placeholder="Search teacher..."></div>
+      <div class="filter-group"><label>Room</label><input type="text" id="roomInput" placeholder="Search room..."></div>
+      <div class="filter-group"><label>Subject</label><select id="subjectSel"><option value="">All</option></select></div>
       <button class="reset-btn" id="resetBtn">Clear filters</button>
     </div>
     <div class="result-count" id="resultCount"></div>
     <div class="table-scroll">
       <table>
-        <thead>
-          <tr>
-            <th data-key="day">Day</th>
-            <th data-key="session">Session</th>
-            <th data-key="time">Time</th>
-            <th data-key="year">Year</th>
-            <th data-key="teacher">Teacher</th>
-            <th data-key="subject">Subject</th>
-            <th data-key="room">Room</th>
-            <th data-key="students">Students</th>
-          </tr>
-        </thead>
+        <thead><tr>
+          <th data-key="day">Day</th><th data-key="session">Session</th><th data-key="time">Time</th>
+          <th data-key="year">Year</th><th data-key="teacher">Teacher</th><th data-key="subject">Subject</th>
+          <th data-key="room">Room</th><th data-key="students">Students</th>
+        </tr></thead>
         <tbody id="tableBody"></tbody>
       </table>
     </div>
@@ -230,12 +156,15 @@ footer{margin-top:30px;color:var(--muted);font-size:11.5px;text-align:center;}
 
   <div class="tab-panel" id="panel-teacher">
     <div class="filter-bar teacher-picker">
-      <div class="filter-group" style="min-width:280px;">
-        <label>Select teacher</label>
-        <select id="teacherSel"><option value="">Choose a teacher...</option></select>
-      </div>
+      <div class="filter-group" style="min-width:280px;"><label>Select teacher</label><select id="teacherSel"><option value="">Choose a teacher...</option></select></div>
     </div>
     <div id="teacherGridWrap"></div>
+  </div>
+
+  <div class="tab-panel" id="panel-yeartotals">
+    <div class="subtitle" style="margin-bottom:14px;">Total registered students per year group, from reg-groups.csv</div>
+    <div class="yeargrid" id="yearGrid"></div>
+    <div class="yeartotal" id="yearTotalLine"></div>
   </div>
 
   <div class="tab-panel" id="panel-clash">
@@ -243,57 +172,119 @@ footer{margin-top:30px;color:var(--muted);font-size:11.5px;text-align:center;}
     <div id="clashResults"></div>
   </div>
 
-  <footer>Data source: data.csv &middot; edit that file (export from your Da sheet) and refresh the page to update everything</footer>
+  <footer>Upload replaces the data shown here until you upload again, or click "Reset to default" to go back to data.csv / reg-groups.csv</footer>
 </div>
 
 <script>
 let DATA = [];
+let REG = [];
 const DAYS = ['Mon','Tue','Wed','Thu','Fri'];
 const DAY_NAMES = {Mon:'Monday',Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday'};
+const LS_TIMETABLE = 'dsib_timetable_csv_v1';
+const LS_TIMETABLE_META = 'dsib_timetable_meta_v1';
+const LS_REG = 'dsib_reggroups_csv_v1';
+const LS_REG_META = 'dsib_reggroups_meta_v1';
 
 function uniq(arr){ return [...new Set(arr)].filter(Boolean).sort(); }
 
-function setStatus(ok, msg){
-  const el = document.getElementById('dataStatus');
-  el.innerHTML = `<span class="status-dot ${ok?'ok':'err'}"></span>${msg}`;
+function setStatus(elId, ok, msg, uploaded){
+  const el = document.getElementById(elId);
+  const dotClass = uploaded ? 'upl' : (ok ? 'ok' : 'err');
+  el.innerHTML = `<span class="status-dot ${dotClass}"></span>${msg}`;
 }
 
-function loadFromCSVText(text, sourceLabel){
+function parseTimetableCSV(text){
   const parsed = Papa.parse(text, {header:true, skipEmptyLines:true});
-  DATA = parsed.data.map(r=>({
-    day: (r.day||'').trim(),
-    session: (r.session||'').trim(),
-    time: (r.time||'').trim(),
-    year: (r.year||'').trim(),
-    teacher: (r.teacher||'').trim(),
-    subject: (r.subject||'').trim(),
-    room: (r.room||'').trim(),
-    students: (r.students||'').trim()
+  return parsed.data.map(r=>({
+    day:(r.day||'').trim(), session:(r.session||'').trim(), time:(r.time||'').trim(),
+    year:(r.year||'').trim(), teacher:(r.teacher||'').trim(), subject:(r.subject||'').trim(),
+    room:(r.room||'').trim(), students:(r.students||'').trim()
   })).filter(r=>r.day && r.teacher);
-  setStatus(true, `Loaded ${DATA.length} lessons from ${sourceLabel}`);
-  initUI();
+}
+function parseRegCSV(text){
+  const parsed = Papa.parse(text, {header:true, skipEmptyLines:true});
+  return parsed.data.map(r=>({
+    year:(r.year||'').trim(), reg_groups:(r.reg_groups||'').trim(), total_students:(r.total_students||'').trim()
+  })).filter(r=>r.year);
+}
+
+function loadTimetable(text, source, isUpload){
+  DATA = parseTimetableCSV(text);
+  const when = isUpload ? ' &mdash; uploaded ' + new Date().toLocaleString() : '';
+  setStatus('timetableStatus', true, `<b>${DATA.length} lessons</b> loaded from ${source}${when}`, isUpload);
+  initTimetableUI();
+}
+function loadReg(text, source, isUpload){
+  REG = parseRegCSV(text);
+  const when = isUpload ? ' &mdash; uploaded ' + new Date().toLocaleString() : '';
+  setStatus('regStatus', true, `<b>${REG.length} year groups</b> loaded from ${source}${when}`, isUpload);
+  renderYearTotals();
 }
 
 document.getElementById('fileInput').addEventListener('change', function(e){
   const file = e.target.files[0];
   if(!file) return;
+  const type = document.getElementById('uploadType').value;
   const reader = new FileReader();
-  reader.onload = ev => loadFromCSVText(ev.target.result, file.name);
+  reader.onload = ev => {
+    const text = ev.target.result;
+    if(type==='timetable'){
+      localStorage.setItem(LS_TIMETABLE, text);
+      localStorage.setItem(LS_TIMETABLE_META, new Date().toISOString());
+      loadTimetable(text, file.name, true);
+    } else {
+      localStorage.setItem(LS_REG, text);
+      localStorage.setItem(LS_REG_META, new Date().toISOString());
+      loadReg(text, file.name, true);
+    }
+  };
   reader.readAsText(file);
+  e.target.value = '';
 });
 
-fetch('data.csv')
-  .then(r=>{ if(!r.ok) throw new Error('not found'); return r.text(); })
-  .then(text=>loadFromCSVText(text, 'data.csv'))
-  .catch(()=>{
-    setStatus(false, 'Could not load data.csv automatically (open this file through a local server, or use "Upload a CSV instead" below)');
-  });
+document.getElementById('resetTimetableBtn').onclick = ()=>{
+  localStorage.removeItem(LS_TIMETABLE);
+  localStorage.removeItem(LS_TIMETABLE_META);
+  fetchDefaultTimetable();
+};
+document.getElementById('resetRegBtn').onclick = ()=>{
+  localStorage.removeItem(LS_REG);
+  localStorage.removeItem(LS_REG_META);
+  fetchDefaultReg();
+};
+
+function fetchDefaultTimetable(){
+  fetch('data.csv').then(r=>{ if(!r.ok) throw 0; return r.text(); })
+    .then(text=>loadTimetable(text, 'data.csv', false))
+    .catch(()=>setStatus('timetableStatus', false, 'Could not load data.csv (use Choose CSV file below, or serve this via a local/web server)'));
+}
+function fetchDefaultReg(){
+  fetch('reg-groups.csv').then(r=>{ if(!r.ok) throw 0; return r.text(); })
+    .then(text=>loadReg(text, 'reg-groups.csv', false))
+    .catch(()=>setStatus('regStatus', false, 'Could not load reg-groups.csv (use Choose CSV file below, or serve this via a local/web server)'));
+}
+
+// initial load: prefer localStorage (last uploaded) over default files
+const savedTimetable = localStorage.getItem(LS_TIMETABLE);
+if(savedTimetable){
+  const meta = localStorage.getItem(LS_TIMETABLE_META);
+  loadTimetable(savedTimetable, 'your last upload' + (meta ? ' ('+new Date(meta).toLocaleString()+')' : ''), false);
+} else {
+  fetchDefaultTimetable();
+}
+const savedReg = localStorage.getItem(LS_REG);
+if(savedReg){
+  const meta = localStorage.getItem(LS_REG_META);
+  loadReg(savedReg, 'your last upload' + (meta ? ' ('+new Date(meta).toLocaleString()+')' : ''), false);
+} else {
+  fetchDefaultReg();
+}
 
 let teachers=[], years=[], subjects=[], sessions=[], rooms=[];
 const state = { session:'', year:'', teacher:'', room:'', subject:'', sortKey:'day', sortDir:1 };
 let activeDays = new Set(DAYS);
 
-function initUI(){
+function initTimetableUI(){
   teachers = uniq(DATA.map(d=>d.teacher));
   years = uniq(DATA.map(d=>d.year));
   subjects = uniq(DATA.map(d=>d.subject));
@@ -326,14 +317,11 @@ function initUI(){
     };
     dayChipsEl.appendChild(c);
   });
-
   render();
 }
 
 function fillSelect(sel, list){
-  list.forEach(v=>{
-    const o=document.createElement('option'); o.value=v; o.textContent=v; sel.appendChild(o);
-  });
+  list.forEach(v=>{ const o=document.createElement('option'); o.value=v; o.textContent=v; sel.appendChild(o); });
 }
 
 document.getElementById('sessionSel').onchange = e=>{state.session=e.target.value; render();};
@@ -399,8 +387,7 @@ function render(){
       <td>${d.year}</td><td>${d.teacher}</td><td>${d.subject}</td><td class="mono">${d.room||'-'}</td><td>${d.students||''}</td>`;
     frag.appendChild(tr);
   });
-  tbody.innerHTML='';
-  tbody.appendChild(frag);
+  tbody.innerHTML=''; tbody.appendChild(frag);
   if(rows.length>maxRows){
     const tr=document.createElement('tr');
     tr.innerHTML = `<td colspan="8" style="text-align:center;color:var(--muted);">showing first ${maxRows} of ${rows.length} — narrow your filters to see more</td>`;
@@ -408,18 +395,14 @@ function render(){
   }
 }
 
-document.getElementById('teacherSel').onchange = e=>{
-  renderTeacherGrid(e.target.value);
-};
+document.getElementById('teacherSel').onchange = e=>{ renderTeacherGrid(e.target.value); };
 function renderTeacherGrid(teacher){
   const wrap = document.getElementById('teacherGridWrap');
   if(!teacher){ wrap.innerHTML=''; return; }
   const mine = DATA.filter(d=>d.teacher===teacher);
-  const allSessions = sessions;
-  let html = '<div class="grid-wrap"><div class="tgrid">';
-  html += '<div class="head"></div>';
+  let html = '<div class="grid-wrap"><div class="tgrid"><div class="head"></div>';
   DAYS.forEach(d=> html += `<div class="head">${DAY_NAMES[d]}</div>`);
-  allSessions.forEach(s=>{
+  sessions.forEach(s=>{
     html += `<div class="session-label">${s}</div>`;
     DAYS.forEach(d=>{
       const lesson = mine.find(x=>x.day===d && x.session===s);
@@ -427,39 +410,40 @@ function renderTeacherGrid(teacher){
         html += `<div class="cell filled"><div class="subj">${lesson.subject}</div>
           <div class="meta">${lesson.year} &middot; ${lesson.room||'no room'}</div>
           <div class="meta mono">${lesson.time||''}</div></div>`;
-      } else {
-        html += `<div class="cell empty">&mdash;</div>`;
-      }
+      } else { html += `<div class="cell empty">&mdash;</div>`; }
     });
   });
   html += '</div></div>';
   wrap.innerHTML = html;
 }
 
+function renderYearTotals(){
+  const grid = document.getElementById('yearGrid');
+  if(!REG.length){ grid.innerHTML = '<div class="empty-state">No year group totals loaded yet</div>'; return; }
+  grid.innerHTML = REG.map(r=>`
+    <div class="yearcard">
+      <div class="yname">${r.year}</div>
+      <div class="big">${r.total_students||'-'}</div>
+      <div class="lbl">Total students</div>
+      <div class="sub">${r.reg_groups||'-'} reg groups</div>
+    </div>`).join('');
+  const total = REG.reduce((s,r)=>s+(parseInt(r.total_students)||0),0);
+  document.getElementById('yearTotalLine').innerHTML = `<b>${total}</b> total students across Year 07 &ndash; Year 13`;
+}
+
 function renderClashes(){
-  const teacherMap = {};
-  const roomMap = {};
+  const teacherMap = {}, roomMap = {};
   DATA.forEach(d=>{
     const key = d.day+'|'+d.session;
     const tk = key+'|'+d.teacher;
     (teacherMap[tk] = teacherMap[tk]||[]).push(d);
-    if(d.room){
-      const rk = key+'|'+d.room;
-      (roomMap[rk] = roomMap[rk]||[]).push(d);
-    }
+    if(d.room){ const rk = key+'|'+d.room; (roomMap[rk] = roomMap[rk]||[]).push(d); }
   });
   const clashes = [];
-  Object.entries(teacherMap).forEach(([k,list])=>{
-    if(list.length>1) clashes.push({type:'Teacher double-booked', who:list[0].teacher, items:list});
-  });
-  Object.entries(roomMap).forEach(([k,list])=>{
-    if(list.length>1) clashes.push({type:'Room double-booked', who:list[0].room, items:list});
-  });
+  Object.values(teacherMap).forEach(list=>{ if(list.length>1) clashes.push({type:'Teacher double-booked', who:list[0].teacher, items:list}); });
+  Object.values(roomMap).forEach(list=>{ if(list.length>1) clashes.push({type:'Room double-booked', who:list[0].room, items:list}); });
   const el = document.getElementById('clashResults');
-  if(clashes.length===0){
-    el.innerHTML = '<div class="no-clash">No clashes found — every teacher and room has at most one class per session.</div>';
-    return;
-  }
+  if(clashes.length===0){ el.innerHTML = '<div class="no-clash">No clashes found — every teacher and room has at most one class per session.</div>'; return; }
   el.innerHTML = clashes.map(c=>{
     const first = c.items[0];
     const details = c.items.map(i=>`${i.year} / ${i.subject} / ${i.teacher} / room ${i.room||'-'}`).join('<br>');
@@ -475,6 +459,7 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     btn.classList.add('active');
     document.getElementById('panel-'+btn.dataset.tab).classList.add('active');
     if(btn.dataset.tab==='clash') renderClashes();
+    if(btn.dataset.tab==='yeartotals') renderYearTotals();
   };
 });
 </script>
