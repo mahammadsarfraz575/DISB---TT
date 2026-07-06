@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DSIB Timetable Explorer</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<style>
+:root{
+  --ink:#eef2f0;
+  --board:#16302f;
+  --board-dark:#0f2322;
+  --card:#1e3d3b;
+  --card-line:#2c524f;
+  --amber:#e0a458;
+  --amber-dim:#a97a3d;
+  --chalk:#cfe0da;
+  --muted:#8fada6;
+  --good:#7fb88a;
+  --bad:#d97a6c;
+  --font-display: Georgia, 'Times New Roman', serif;
+  --font-body: 'Segoe UI', Arial, sans-serif;
+  --font-mono: 'Consolas', 'Courier New', monospace;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:var(--board);
+  color:var(--ink);
+  font-family:var(--font-body);
+  min-height:100vh;
+}
+.wrap{max-width:1280px;margin:0 auto;padding:28px 20px 60px;}
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  border-bottom:2px solid var(--amber-dim);
+  padding-bottom:16px;
+  margin-bottom:22px;
+  flex-wrap:wrap;
+  gap:12px;
+}
+h1{
+  font-family:var(--font-display);
+  font-size:30px;
+  margin:0;
+  letter-spacing:0.3px;
+  color:var(--chalk);
+}
+h1 span{color:var(--amber);}
+.subtitle{color:var(--muted);font-size:13px;margin-top:4px;}
+.stats{display:flex;gap:22px;font-family:var(--font-mono);font-size:13px;color:var(--muted);}
+.stats b{color:var(--amber);font-size:16px;display:block;font-family:var(--font-body);}
+
+.databar{
+  background:var(--card); border:1px solid var(--card-line); border-radius:8px;
+  padding:12px 16px; margin-bottom:18px; display:flex; align-items:center; gap:14px;
+  flex-wrap:wrap; font-size:13px; color:var(--muted);
+}
+.databar b{color:var(--chalk);}
+#fileInput{display:none;}
+.upload-btn{
+  background:var(--amber); color:var(--board-dark); border:none; padding:7px 14px;
+  border-radius:5px; cursor:pointer; font-size:12.5px; font-weight:600;
+}
+.status-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px;}
+.status-dot.ok{background:var(--good);}
+.status-dot.err{background:var(--bad);}
+
+.tabs{display:flex;gap:6px;margin-bottom:18px;}
+.tab-btn{
+  background:transparent;border:1px solid var(--card-line);color:var(--muted);
+  padding:9px 18px;border-radius:6px 6px 0 0;cursor:pointer;font-size:13.5px;
+  font-family:var(--font-body); transition:all .15s;
+}
+.tab-btn.active{background:var(--card);color:var(--amber);border-color:var(--amber-dim);border-bottom-color:var(--card);}
+.tab-panel{display:none;}
+.tab-panel.active{display:block;}
+
+.filter-bar{
+  background:var(--card);
+  border:1px solid var(--card-line);
+  border-radius:8px;
+  padding:16px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-bottom:18px;
+}
+.filter-group{display:flex;flex-direction:column;gap:5px;}
+.filter-group label{font-size:11px;text-transform:uppercase;letter-spacing:0.6px;color:var(--muted);}
+select, input[type=text]{
+  background:var(--board-dark);
+  border:1px solid var(--card-line);
+  color:var(--ink);
+  padding:7px 10px;
+  border-radius:5px;
+  font-size:13.5px;
+  font-family:var(--font-body);
+  min-width:150px;
+}
+select:focus, input:focus{outline:2px solid var(--amber-dim);outline-offset:1px;}
+.chip-row{display:flex;gap:6px;flex-wrap:wrap;}
+.chip{
+  border:1px solid var(--card-line);background:var(--board-dark);color:var(--muted);
+  padding:6px 12px;border-radius:20px;font-size:12.5px;cursor:pointer;user-select:none;
+}
+.chip.on{background:var(--amber);color:var(--board-dark);border-color:var(--amber);font-weight:600;}
+.reset-btn{
+  align-self:flex-end;
+  background:transparent;border:1px solid var(--bad);color:var(--bad);
+  padding:7px 14px;border-radius:5px;cursor:pointer;font-size:12.5px;
+}
+.reset-btn:hover{background:var(--bad);color:var(--board-dark);}
+
+.result-count{color:var(--muted);font-size:12.5px;margin-bottom:8px;}
+
+table{width:100%;border-collapse:collapse;font-size:13.5px;}
+thead th{
+  text-align:left;padding:9px 10px;color:var(--amber);
+  border-bottom:2px solid var(--amber-dim);font-size:11.5px;text-transform:uppercase;
+  letter-spacing:0.5px;position:sticky;top:0;background:var(--board);cursor:pointer;
+}
+thead th:hover{color:var(--chalk);}
+tbody td{padding:8px 10px;border-bottom:1px solid var(--card-line);}
+tbody tr:hover{background:var(--card);}
+.mono{font-family:var(--font-mono);color:var(--chalk);}
+.table-scroll{max-height:560px;overflow:auto;border:1px solid var(--card-line);border-radius:8px;}
+
+.teacher-picker{margin-bottom:18px;}
+.grid-wrap{overflow-x:auto;}
+.tgrid{display:grid;grid-template-columns:70px repeat(5,1fr);gap:6px;min-width:760px;}
+.tgrid .head{font-family:var(--font-mono);font-size:11px;color:var(--muted);text-transform:uppercase;padding:6px 4px;text-align:center;}
+.tgrid .session-label{font-family:var(--font-mono);font-size:12px;color:var(--amber);display:flex;align-items:center;justify-content:center;}
+.cell{
+  background:var(--card);border:1px solid var(--card-line);border-radius:6px;
+  padding:8px;min-height:64px;font-size:12px;
+}
+.cell.filled{border-color:var(--amber-dim);}
+.cell .subj{color:var(--chalk);font-weight:600;margin-bottom:3px;}
+.cell .meta{color:var(--muted);font-size:11px;}
+.cell.empty{opacity:0.25;}
+
+.clash-item{
+  background:var(--card);border:1px solid var(--bad);border-radius:8px;
+  padding:12px 16px;margin-bottom:10px;font-size:13px;
+}
+.clash-item b{color:var(--bad);}
+.clash-item .detail{color:var(--muted);margin-top:6px;font-size:12.5px;}
+.no-clash{color:var(--good);padding:30px;text-align:center;font-family:var(--font-display);font-size:17px;}
+
+.empty-state{padding:40px;text-align:center;color:var(--muted);}
+footer{margin-top:30px;color:var(--muted);font-size:11.5px;text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>DSIB <span>Timetable</span> Explorer</h1>
+      <div class="subtitle">Reads lessons straight from data.csv &mdash; replace that file to update everything</div>
+    </div>
+    <div class="stats">
+      <div><b id="statLessons">-</b>lessons/week</div>
+      <div><b id="statTeachers">-</b>teachers</div>
+      <div><b id="statRooms">-</b>rooms</div>
+    </div>
+  </header>
+
+  <div class="databar">
+    <span id="dataStatus"><span class="status-dot ok"></span>Loading data.csv...</span>
+    <span>or</span>
+    <button class="upload-btn" onclick="document.getElementById('fileInput').click()">Upload a CSV instead</button>
+    <input type="file" id="fileInput" accept=".csv">
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="browse">Browse</button>
+    <button class="tab-btn" data-tab="teacher">Teacher schedule</button>
+    <button class="tab-btn" data-tab="clash">Clash check</button>
+  </div>
+
+  <div class="tab-panel active" id="panel-browse">
+    <div class="filter-bar">
+      <div class="filter-group">
+        <label>Day</label>
+        <div class="chip-row" id="dayChips"></div>
+      </div>
+      <div class="filter-group">
+        <label>Session</label>
+        <select id="sessionSel"><option value="">All</option></select>
+      </div>
+      <div class="filter-group">
+        <label>Year</label>
+        <select id="yearSel"><option value="">All</option></select>
+      </div>
+      <div class="filter-group">
+        <label>Teacher</label>
+        <input type="text" id="teacherInput" placeholder="Search teacher...">
+      </div>
+      <div class="filter-group">
+        <label>Room</label>
+        <input type="text" id="roomInput" placeholder="Search room...">
+      </div>
+      <div class="filter-group">
+        <label>Subject</label>
+        <select id="subjectSel"><option value="">All</option></select>
+      </div>
+      <button class="reset-btn" id="resetBtn">Clear filters</button>
+    </div>
+    <div class="result-count" id="resultCount"></div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th data-key="day">Day</th>
+            <th data-key="session">Session</th>
+            <th data-key="time">Time</th>
+            <th data-key="year">Year</th>
+            <th data-key="teacher">Teacher</th>
+            <th data-key="subject">Subject</th>
+            <th data-key="room">Room</th>
+            <th data-key="students">Students</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tab-panel" id="panel-teacher">
+    <div class="filter-bar teacher-picker">
+      <div class="filter-group" style="min-width:280px;">
+        <label>Select teacher</label>
+        <select id="teacherSel"><option value="">Choose a teacher...</option></select>
+      </div>
+    </div>
+    <div id="teacherGridWrap"></div>
+  </div>
+
+  <div class="tab-panel" id="panel-clash">
+    <div class="subtitle" style="margin-bottom:14px;">Same teacher or same room booked twice in the same day + session slot.</div>
+    <div id="clashResults"></div>
+  </div>
+
+  <footer>Data source: data.csv &middot; edit that file (export from your Da sheet) and refresh the page to update everything</footer>
+</div>
+
+<script>
+let DATA = [];
+const DAYS = ['Mon','Tue','Wed','Thu','Fri'];
+const DAY_NAMES = {Mon:'Monday',Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday'};
+
+function uniq(arr){ return [...new Set(arr)].filter(Boolean).sort(); }
+
+function setStatus(ok, msg){
+  const el = document.getElementById('dataStatus');
+  el.innerHTML = `<span class="status-dot ${ok?'ok':'err'}"></span>${msg}`;
+}
+
+function loadFromCSVText(text, sourceLabel){
+  const parsed = Papa.parse(text, {header:true, skipEmptyLines:true});
+  DATA = parsed.data.map(r=>({
+    day: (r.day||'').trim(),
+    session: (r.session||'').trim(),
+    time: (r.time||'').trim(),
+    year: (r.year||'').trim(),
+    teacher: (r.teacher||'').trim(),
+    subject: (r.subject||'').trim(),
+    room: (r.room||'').trim(),
+    students: (r.students||'').trim()
+  })).filter(r=>r.day && r.teacher);
+  setStatus(true, `Loaded ${DATA.length} lessons from ${sourceLabel}`);
+  initUI();
+}
+
+document.getElementById('fileInput').addEventListener('change', function(e){
+  const file = e.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => loadFromCSVText(ev.target.result, file.name);
+  reader.readAsText(file);
+});
+
+fetch('data.csv')
+  .then(r=>{ if(!r.ok) throw new Error('not found'); return r.text(); })
+  .then(text=>loadFromCSVText(text, 'data.csv'))
+  .catch(()=>{
+    setStatus(false, 'Could not load data.csv automatically (open this file through a local server, or use "Upload a CSV instead" below)');
+  });
+
+let teachers=[], years=[], subjects=[], sessions=[], rooms=[];
+const state = { session:'', year:'', teacher:'', room:'', subject:'', sortKey:'day', sortDir:1 };
+let activeDays = new Set(DAYS);
+
+function initUI(){
+  teachers = uniq(DATA.map(d=>d.teacher));
+  years = uniq(DATA.map(d=>d.year));
+  subjects = uniq(DATA.map(d=>d.subject));
+  sessions = uniq(DATA.map(d=>d.session)).sort((a,b)=>parseInt(a.replace(/\D/g,''))-parseInt(b.replace(/\D/g,'')));
+  rooms = uniq(DATA.map(d=>d.room));
+
+  document.getElementById('statLessons').textContent = DATA.length;
+  document.getElementById('statTeachers').textContent = teachers.length;
+  document.getElementById('statRooms').textContent = rooms.length;
+
+  ['sessionSel','yearSel','subjectSel','teacherSel'].forEach(id=>{
+    const sel = document.getElementById(id);
+    sel.innerHTML = id==='teacherSel' ? '<option value="">Choose a teacher...</option>' : '<option value="">All</option>';
+  });
+  fillSelect(document.getElementById('sessionSel'), sessions);
+  fillSelect(document.getElementById('yearSel'), years);
+  fillSelect(document.getElementById('subjectSel'), subjects);
+  fillSelect(document.getElementById('teacherSel'), teachers);
+
+  const dayChipsEl = document.getElementById('dayChips');
+  dayChipsEl.innerHTML='';
+  activeDays = new Set(DAYS);
+  DAYS.forEach(d=>{
+    const c = document.createElement('div');
+    c.className='chip on'; c.textContent=d; c.dataset.day=d;
+    c.onclick=()=>{
+      if(activeDays.has(d)){ activeDays.delete(d); c.classList.remove('on'); }
+      else { activeDays.add(d); c.classList.add('on'); }
+      render();
+    };
+    dayChipsEl.appendChild(c);
+  });
+
+  render();
+}
+
+function fillSelect(sel, list){
+  list.forEach(v=>{
+    const o=document.createElement('option'); o.value=v; o.textContent=v; sel.appendChild(o);
+  });
+}
+
+document.getElementById('sessionSel').onchange = e=>{state.session=e.target.value; render();};
+document.getElementById('yearSel').onchange = e=>{state.year=e.target.value; render();};
+document.getElementById('subjectSel').onchange = e=>{state.subject=e.target.value; render();};
+document.getElementById('teacherInput').oninput = e=>{state.teacher=e.target.value.toLowerCase(); render();};
+document.getElementById('roomInput').oninput = e=>{state.room=e.target.value.toLowerCase(); render();};
+document.getElementById('resetBtn').onclick = ()=>{
+  state.session=''; state.year=''; state.teacher=''; state.room=''; state.subject='';
+  document.getElementById('sessionSel').value='';
+  document.getElementById('yearSel').value='';
+  document.getElementById('subjectSel').value='';
+  document.getElementById('teacherInput').value='';
+  document.getElementById('roomInput').value='';
+  activeDays = new Set(DAYS);
+  [...document.getElementById('dayChips').children].forEach(c=>c.classList.add('on'));
+  render();
+};
+
+document.querySelectorAll('thead th').forEach(th=>{
+  th.onclick=()=>{
+    const key = th.dataset.key;
+    if(state.sortKey===key) state.sortDir*=-1; else {state.sortKey=key; state.sortDir=1;}
+    render();
+  };
+});
+
+const dayOrder = {Mon:0,Tue:1,Wed:2,Thu:3,Fri:4};
+
+function filtered(){
+  return DATA.filter(d=>{
+    if(!activeDays.has(d.day)) return false;
+    if(state.session && d.session!==state.session) return false;
+    if(state.year && d.year!==state.year) return false;
+    if(state.subject && d.subject!==state.subject) return false;
+    if(state.teacher && !d.teacher.toLowerCase().includes(state.teacher)) return false;
+    if(state.room && !String(d.room).toLowerCase().includes(state.room)) return false;
+    return true;
+  });
+}
+
+function render(){
+  let rows = filtered();
+  rows.sort((a,b)=>{
+    let av=a[state.sortKey], bv=b[state.sortKey];
+    if(state.sortKey==='day'){ av=dayOrder[a.day]; bv=dayOrder[b.day]; }
+    if(state.sortKey==='session'){ av=parseInt((a.session||'S0').replace(/\D/g,'')); bv=parseInt((b.session||'S0').replace(/\D/g,'')); }
+    if(av<bv) return -1*state.sortDir;
+    if(av>bv) return 1*state.sortDir;
+    return 0;
+  });
+  document.getElementById('resultCount').textContent = rows.length + ' of ' + DATA.length + ' lessons';
+  const tbody = document.getElementById('tableBody');
+  if(rows.length===0){
+    tbody.innerHTML = '<tr><td colspan="8"><div class="empty-state">No lessons match these filters</div></td></tr>';
+    return;
+  }
+  const frag = document.createDocumentFragment();
+  const maxRows = 500;
+  rows.slice(0,maxRows).forEach(d=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${DAY_NAMES[d.day]||d.day}</td><td class="mono">${d.session}</td><td class="mono">${d.time||''}</td>
+      <td>${d.year}</td><td>${d.teacher}</td><td>${d.subject}</td><td class="mono">${d.room||'-'}</td><td>${d.students||''}</td>`;
+    frag.appendChild(tr);
+  });
+  tbody.innerHTML='';
+  tbody.appendChild(frag);
+  if(rows.length>maxRows){
+    const tr=document.createElement('tr');
+    tr.innerHTML = `<td colspan="8" style="text-align:center;color:var(--muted);">showing first ${maxRows} of ${rows.length} — narrow your filters to see more</td>`;
+    tbody.appendChild(tr);
+  }
+}
+
+document.getElementById('teacherSel').onchange = e=>{
+  renderTeacherGrid(e.target.value);
+};
+function renderTeacherGrid(teacher){
+  const wrap = document.getElementById('teacherGridWrap');
+  if(!teacher){ wrap.innerHTML=''; return; }
+  const mine = DATA.filter(d=>d.teacher===teacher);
+  const allSessions = sessions;
+  let html = '<div class="grid-wrap"><div class="tgrid">';
+  html += '<div class="head"></div>';
+  DAYS.forEach(d=> html += `<div class="head">${DAY_NAMES[d]}</div>`);
+  allSessions.forEach(s=>{
+    html += `<div class="session-label">${s}</div>`;
+    DAYS.forEach(d=>{
+      const lesson = mine.find(x=>x.day===d && x.session===s);
+      if(lesson){
+        html += `<div class="cell filled"><div class="subj">${lesson.subject}</div>
+          <div class="meta">${lesson.year} &middot; ${lesson.room||'no room'}</div>
+          <div class="meta mono">${lesson.time||''}</div></div>`;
+      } else {
+        html += `<div class="cell empty">&mdash;</div>`;
+      }
+    });
+  });
+  html += '</div></div>';
+  wrap.innerHTML = html;
+}
+
+function renderClashes(){
+  const teacherMap = {};
+  const roomMap = {};
+  DATA.forEach(d=>{
+    const key = d.day+'|'+d.session;
+    const tk = key+'|'+d.teacher;
+    (teacherMap[tk] = teacherMap[tk]||[]).push(d);
+    if(d.room){
+      const rk = key+'|'+d.room;
+      (roomMap[rk] = roomMap[rk]||[]).push(d);
+    }
+  });
+  const clashes = [];
+  Object.entries(teacherMap).forEach(([k,list])=>{
+    if(list.length>1) clashes.push({type:'Teacher double-booked', who:list[0].teacher, items:list});
+  });
+  Object.entries(roomMap).forEach(([k,list])=>{
+    if(list.length>1) clashes.push({type:'Room double-booked', who:list[0].room, items:list});
+  });
+  const el = document.getElementById('clashResults');
+  if(clashes.length===0){
+    el.innerHTML = '<div class="no-clash">No clashes found — every teacher and room has at most one class per session.</div>';
+    return;
+  }
+  el.innerHTML = clashes.map(c=>{
+    const first = c.items[0];
+    const details = c.items.map(i=>`${i.year} / ${i.subject} / ${i.teacher} / room ${i.room||'-'}`).join('<br>');
+    return `<div class="clash-item"><b>${c.type}:</b> ${c.who} &mdash; ${DAY_NAMES[first.day]||first.day} ${first.session} (${first.time||''})
+      <div class="detail">${details}</div></div>`;
+  }).join('');
+}
+
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.onclick = ()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-'+btn.dataset.tab).classList.add('active');
+    if(btn.dataset.tab==='clash') renderClashes();
+  };
+});
+</script>
+</body>
+</html>

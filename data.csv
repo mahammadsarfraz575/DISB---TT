@@ -1,0 +1,2121 @@
+day,session,time,year,teacher,subject,room,students
+Fri,S6,12:20,Year 07,Fatima Roumia,Arabic,SPIG,9
+Mon,S4,10:30,Year 07,Fatima Roumia,Arabic,SPIG,9
+Thu,S6,12:20,Year 07,Fatima Roumia,Arabic,SPIG,9
+Tue,S5,11:25,Year 07,Fatima Roumia,Arabic,SPIG,9
+Wed,S6,12:20,Year 07,Fatima Roumia,Arabic,SPIG,9
+Fri,S5,11:25,Year 07,Elham Hassan,Islamic studies,G109,9
+Mon,S1,07:25,Year 07,Elham Hassan,Islamic studies,G111,9
+Tue,S3,09:35,Year 07,Elham Hassan,Islamic studies,G109,9
+Wed,S3,09:35,Year 07,Elham Hassan,Islamic studies,G109,9
+Thu,S7,14:15,Year 07,Hadeel Alzebdeh,Social Studies,G005,9
+Wed,S1,07:25,Year 07,Hadeel Alzebdeh,Social Studies,G004,9
+Fri,S5,11:25,Year 12,Adebimpe Sogbesan,Biology,B114,12
+Mon,S4,10:30,Year 12,Adebimpe Sogbesan,Biology,B118,12
+Thu,S2,08:20,Year 12,Adebimpe Sogbesan,Biology,B114,12
+Thu,S3,09:35,Year 12,Adebimpe Sogbesan,Biology,B116,12
+Tue,S3,09:35,Year 12,Adebimpe Sogbesan,Biology,TR2,12
+Wed,S5,11:25,Year 12,Adebimpe Sogbesan,Biology,B119,12
+Fri,S5,11:25,Year 10,Oke Stephanie Enaohwo,Biology,G118,8
+Thu,S4,10:30,Year 10,Oke Stephanie Enaohwo,Biology,G118,8
+Wed,S2,08:20,Year 10,Oke Stephanie Enaohwo,Biology,G118,8
+Mon,S2,08:20,Year 10,Jafrina Jahan,History,G002,8
+Tue,S6,12:20,Year 10,Jafrina Jahan,History,G002,8
+Wed,S4,10:30,Year 10,Jafrina Jahan,History,G103,8
+Mon,S7,14:15,Year 10,Antonia Dixon,Sport,G008,8
+Thu,S3,09:35,Year 10,Antonia Dixon,Sport,,8
+Tue,S5,11:25,Year 10,Antonia Dixon,Sport,G107,8
+Fri,S1,07:25,Year 12,Naomi Watt,Maths - Statistics,TR1,13
+Mon,S3,09:35,Year 12,Naomi Watt,Maths - Statistics,TR1,13
+Mon,S7,14:15,Year 12,Naomi Watt,Maths - Statistics,TR1,13
+Thu,S6,12:20,Year 12,Naomi Watt,Maths - Statistics,TR1,13
+Tue,S5,11:25,Year 12,Naomi Watt,Maths - Statistics,TR1,13
+Wed,S3,09:35,Year 12,Naomi Watt,Maths - Statistics,TR1,13
+Thu,S7,14:15,Year 11,Ali Al-Kheffaji,Physics,G119,7
+Tue,S5,11:25,Year 11,Ali Al-Kheffaji,Physics,G114,7
+Wed,S1,07:25,Year 11,Ali Al-Kheffaji,Physics,G114,7
+Fri,S4,10:30,Year 12,Ahmed Elgazzar,Arabic,G009,7
+Mon,S2,08:20,Year 12,Ahmed Elgazzar,Arabic,G001,7
+Tue,S7,14:15,Year 12,Ahmed Elgazzar,Arabic,G009,7
+Wed,S1,07:25,Year 12,Ahmed Elgazzar,Arabic,G001,7
+Fri,S3,09:35,Year 12,Abdelmonem Aljabari,Islamic studies,G113,7
+Mon,S5,11:25,Year 12,Abdelmonem Aljabari,Islamic studies,G113,7
+Thu,S4,10:30,Year 12,Abdelmonem Aljabari,Islamic studies,G113,7
+Wed,S2,08:20,Year 12,Abdelmonem Aljabari,Islamic studies,G113,7
+Fri,S4,10:30,Year 09,Fatima Roumia,Arabic,SPIG,6
+Mon,S7,14:15,Year 09,Fatima Roumia,Arabic,G108,6
+Thu,S5,11:25,Year 09,Fatima Roumia,Arabic,G108,6
+Tue,S1,07:25,Year 09,Fatima Roumia,Arabic,G108,6
+Wed,S2,08:20,Year 09,Fatima Roumia,Arabic,SPIG,6
+Fri,S3,09:35,Year 09,Elham Hassan,Islamic studies,S_LI,6
+Mon,S3,09:35,Year 09,Elham Hassan,Islamic studies,G101,6
+Tue,S2,08:20,Year 09,Elham Hassan,Islamic studies,G101,6
+Wed,S5,11:25,Year 09,Elham Hassan,Islamic studies,G101,6
+Thu,S1,07:25,Year 09,Hadeel Alzebdeh,Moral Education,G003,6
+Wed,S7,14:15,Year 09,Hadeel Alzebdeh,Social Studies,G003,6
+Fri,S5,11:25,Year 11,Sophie Groves,Art,G012,6
+Mon,S2,08:20,Year 11,Sophie Groves,Art,G012,6
+Tue,S3,09:35,Year 11,Sophie Groves,Art,G012,6
+Mon,S6,12:20,Year 11,Zeinab Hassan,Chemistry,G117,6
+Thu,S2,08:20,Year 11,Zeinab Hassan,Chemistry,G118,6
+Tue,S1,07:25,Year 11,Zeinab Hassan,Chemistry,G117,6
+Fri,S3,09:35,Year 12,Fatima Roumia,Arabic,G011,6
+Mon,S2,08:20,Year 12,Fatima Roumia,Arabic,SPIG,6
+Tue,S7,14:15,Year 12,Fatima Roumia,Arabic,SPIG,6
+Wed,S1,07:25,Year 12,Fatima Roumia,Arabic,SPIG,6
+Fri,S4,10:30,Year 12,Elham Hassan,Islamic studies,G101,6
+Mon,S5,11:25,Year 12,Elham Hassan,Islamic studies,G006,6
+Thu,S4,10:30,Year 12,Elham Hassan,Islamic studies,G004,6
+Wed,S2,08:20,Year 12,Elham Hassan,Islamic studies,G006,6
+Fri,S6,12:20,Year 10,Rowmicka Coutain,Food technology,G013,4
+Mon,S5,11:25,Year 10,Rowmicka Coutain,Food technology,G013,4
+Tue,S7,14:15,Year 10,Rowmicka Coutain,Food technology,G013,4
+Fri,S2,08:20,Year 12,Faizan Cheema,Chemistry,B117,10
+Mon,S1,07:25,Year 12,Faizan Cheema,Chemistry,B117,10
+Thu,S5,11:25,Year 12,Faizan Cheema,Chemistry,B117,10
+Tue,S1,07:25,Year 12,Faizan Cheema,Chemistry,B119,10
+Tue,S6,12:20,Year 12,Faizan Cheema,Chemistry,B117,10
+Wed,S4,10:30,Year 12,Faizan Cheema,Chemistry,B117,10
+Fri,S1,07:25,Year 12,Amy Tetteh,Psychology,G114,5
+Mon,S3,09:35,Year 12,Amy Tetteh,Psychology,G114,5
+Mon,S7,14:15,Year 12,Amy Tetteh,Psychology,G009,5
+Thu,S6,12:20,Year 12,Amy Tetteh,Psychology,G114,5
+Tue,S5,11:25,Year 12,Amy Tetteh,Psychology,G111,5
+Wed,S3,09:35,Year 12,Amy Tetteh,Psychology,G114,5
+Fri,S6,12:20,Year 12,Ali Al-Kheffaji,Physics,B116,9
+Mon,S6,12:20,Year 12,Ali Al-Kheffaji,Physics,B116,9
+Thu,S7,14:15,Year 12,Ali Al-Kheffaji,Physics,B116,9
+Tue,S2,08:20,Year 12,Ali Al-Kheffaji,Physics,B116,9
+Tue,S4,10:30,Year 12,Ali Al-Kheffaji,Physics,G116,9
+Wed,S7,14:15,Year 12,Ali Al-Kheffaji,Physics,B116,9
+Fri,S2,08:20,Year 10,Ahmed Elgazzar,Arabic,G009,31
+Thu,S1,07:25,Year 10,Ahmed Elgazzar,Arabic,G105,31
+Tue,S4,10:30,Year 10,Ahmed Elgazzar,Arabic,G009,31
+Wed,S7,14:15,Year 10,Ahmed Elgazzar,Arabic,G009,31
+Fri,S1,07:25,Year 10,Abdelmonem Aljabari,Islamic studies,,31
+Mon,S1,07:25,Year 10,Abdelmonem Aljabari,Islamic studies,G113,31
+Tue,S2,08:20,Year 10,Abdelmonem Aljabari,Islamic studies,G113,31
+Wed,S6,12:20,Year 10,Abdelmonem Aljabari,Islamic studies,G113,31
+Mon,S3,09:35,Year 11,Antonia Dixon,Sport,,3
+Thu,S4,10:30,Year 11,Antonia Dixon,Sport,,3
+Wed,S3,09:35,Year 11,Antonia Dixon,Sport,,3
+Fri,S4,10:30,Year 11,Ali Al-Kheffaji,Physics,G118,3
+Mon,S5,11:25,Year 11,Ali Al-Kheffaji,Physics,G118,3
+Thu,S3,09:35,Year 11,Ali Al-Kheffaji,Physics,G118,3
+Fri,S6,12:20,Year 12,Shakeela Salim Patel,BETC-Busniess,,6
+Mon,S6,12:20,Year 12,Shakeela Salim Patel,BETC-Busniess,B114,6
+Thu,S7,14:15,Year 12,Shakeela Salim Patel,BETC-Busniess,TR2,6
+Tue,S2,08:20,Year 12,Shakeela Salim Patel,BETC-Busniess,,6
+Tue,S4,10:30,Year 12,Shakeela Salim Patel,BETC-Busniess,G106,6
+Wed,S7,14:15,Year 12,Shakeela Salim Patel,BETC-Busniess,,6
+Fri,S5,11:25,Year 12,Shakeela Salim Patel,Business Studies,TR2,7
+Mon,S4,10:30,Year 12,Shakeela Salim Patel,Business Studies,B113,7
+Thu,S2,08:20,Year 12,Shakeela Salim Patel,Business Studies,B102,7
+Thu,S3,09:35,Year 12,Shakeela Salim Patel,Business Studies,TR2,7
+Tue,S3,09:35,Year 12,Shakeela Salim Patel,Business Studies,B102,7
+Wed,S5,11:25,Year 12,Shakeela Salim Patel,Business Studies,B102,7
+Fri,S2,08:20,Year 12,Suweiba Odowa,Computing,B116,5
+Mon,S1,07:25,Year 12,Suweiba Odowa,Computing,TR2,5
+Thu,S5,11:25,Year 12,Suweiba Odowa,Computing,,5
+Tue,S1,07:25,Year 12,Suweiba Odowa,Computing,TR1,5
+Tue,S6,12:20,Year 12,Suweiba Odowa,Computing,TR1,5
+Wed,S4,10:30,Year 12,Suweiba Odowa,Computing,TR1,5
+Fri,S6,12:20,Year 10,Sara Nazer Adl,Biology,G116,27
+Mon,S5,11:25,Year 10,Sara Nazer Adl,Biology,G119,27
+Tue,S7,14:15,Year 10,Sara Nazer Adl,Biology,G116,27
+Fri,S2,08:20,Year 07,Mahamed Arshe,Mathematics,G107,25
+Mon,S7,14:15,Year 07,Mahamed Arshe,Mathematics,G107,25
+Thu,S4,10:30,Year 07,Mahamed Arshe,Mathematics,G107,25
+Tue,S6,12:20,Year 07,Mahamed Arshe,Mathematics,G107,25
+Wed,S5,11:25,Year 07,Mahamed Arshe,Mathematics,G107,25
+Fri,S3,09:35,Year 07,Oke Stephanie Enaohwo,Science,G116,25
+Thu,S2,08:20,Year 07,Oke Stephanie Enaohwo,Science,G116,25
+Tue,S2,08:20,Year 07,Oke Stephanie Enaohwo,Science,G116,25
+Wed,S7,14:15,Year 07,Oke Stephanie Enaohwo,Science,G116,25
+Thu,S4,10:30,Year 08,Sumerah Saeed,Product design,B010,25
+Tue,S1,07:25,Year 08,Sumerah Saeed,Product design,B010,25
+Mon,S2,08:20,Year 08,Mahnoor Nasir Awan,Computing,G104,25
+Tue,S7,14:15,Year 08,Harry Jones,Geography,G004,25
+Wed,S5,11:25,Year 08,Harry Jones,History,G003,25
+Mon,S1,07:25,Year 08,Rebecca Clare Simonaitis,Sport,,25
+Thu,S2,08:20,Year 08,Abeer Alzibdeh,Social Science,G108,25
+Tue,S5,11:25,Year 08,Abeer Alzibdeh,Social Science,G115,25
+Fri,S6,12:20,Year 08,Rebecca Clare Simonaitis,Swimming,,25
+Fri,S5,11:25,Year 09,Hanein Alsarayreh,Arabic,G006,25
+Mon,S1,07:25,Year 09,Hanein Alsarayreh,Arabic,G007,25
+Thu,S6,12:20,Year 09,Hanein Alsarayreh,Arabic,G106,25
+Tue,S5,11:25,Year 09,Hanein Alsarayreh,Arabic,G006,25
+Wed,S1,07:25,Year 09,Hanein Alsarayreh,Arabic,G003,25
+Mon,S6,12:20,Year 09,Ishraq Khalilieh,Islamic studies,G110,25
+Thu,S5,11:25,Year 09,Ishraq Khalilieh,Islamic studies,G110,25
+Tue,S6,12:20,Year 09,Ishraq Khalilieh,Islamic studies,G110,25
+Wed,S4,10:30,Year 09,Ishraq Khalilieh,Islamic studies,G110,25
+Tue,S7,14:15,Year 09,Asal Faisal Taher Enayah,Moral Education,G102,25
+Fri,S2,08:20,Year 09,Hanaa Abdallah,Social Studies,G103,25
+Thu,S1,07:25,Year 09,Gavin John Earnshaw,Product design,B011,25
+Wed,S5,11:25,Year 09,Gavin John Earnshaw,Product design,B011,25
+Mon,S4,10:30,Year 09,Naumana Malik,Enterprise,G004,25
+Wed,S3,09:35,Year 09,Naumana Malik,Enterprise,G002,25
+Fri,S1,07:25,Year 09,Mohamed Mustafa Ghanchi,Geography,G102,25
+Tue,S4,10:30,Year 09,Mohamed Mustafa Ghanchi,History,G105,25
+Mon,S3,09:35,Year 09,Rebecca Clare Simonaitis,Sport,,25
+Thu,S4,10:30,Year 09,Rebecca Clare Simonaitis,Swimming,,25
+Fri,S1,07:25,Year 09,Nabeel Hussain,Mathematics,G109,25
+Mon,S2,08:20,Year 09,Nabeel Hussain,Mathematics,G109,25
+Thu,S6,12:20,Year 09,Nabeel Hussain,Mathematics,G109,25
+Tue,S4,10:30,Year 09,Nabeel Hussain,Mathematics,G109,25
+Wed,S1,07:25,Year 09,Nabeel Hussain,Mathematics,G105,25
+Fri,S3,09:35,Year 09,Rouf Ahmed Ditta,Mathematics,G105,25
+Mon,S2,08:20,Year 09,Rouf Ahmed Ditta,Mathematics,G108,25
+Thu,S3,09:35,Year 09,Rouf Ahmed Ditta,Mathematics,G108,25
+Tue,S2,08:20,Year 09,Rouf Ahmed Ditta,Mathematics,G108,25
+Wed,S7,14:15,Year 09,Rouf Ahmed Ditta,Mathematics,G108,25
+Fri,S1,07:25,Year 07,Elizabeth Orotayo,English,G001,24
+Mon,S6,12:20,Year 07,Elizabeth Orotayo,English,G001,24
+Thu,S1,07:25,Year 07,Elizabeth Orotayo,English,G001,24
+Tue,S4,10:30,Year 07,Elizabeth Orotayo,English,G001,24
+Wed,S2,08:20,Year 07,Elizabeth Orotayo,English,G105,24
+Fri,S3,09:35,Year 07,Candice Leigh Pillay,Science,G115,24
+Thu,S2,08:20,Year 07,Candice Leigh Pillay,Science,G115,24
+Tue,S2,08:20,Year 07,Candice Leigh Pillay,Science,G115,24
+Wed,S7,14:15,Year 07,Candice Leigh Pillay,Science,G115,24
+Fri,S1,07:25,Year 08,Reda Attia,Mathematics,G115,24
+Mon,S6,12:20,Year 08,Reda Attia,Mathematics,G106,24
+Thu,S7,14:15,Year 08,Reda Attia,Mathematics,G106,24
+Tue,S3,09:35,Year 08,Reda Attia,Mathematics,G106,24
+Wed,S1,07:25,Year 08,Reda Attia,Mathematics,G106,24
+Fri,S6,12:20,Year 09,Samantha Devoil,English,G002,24
+Mon,S7,14:15,Year 09,Samantha Devoil,English,G001,24
+Thu,S2,08:20,Year 09,Samantha Devoil,English,G002,24
+Tue,S1,07:25,Year 09,Samantha Devoil,English,G002,24
+Wed,S2,08:20,Year 09,Samantha Devoil,English,G002,24
+Fri,S4,10:30,Year 09,Faizan Cheema,Science,G116,24
+Mon,S5,11:25,Year 09,Faizan Cheema,Science,G004,24
+Thu,S7,14:15,Year 09,Faizan Cheema,Science,G116,24
+Tue,S3,09:35,Year 09,Faizan Cheema,Science,G116,24
+Wed,S6,12:20,Year 09,Faizan Cheema,Science,G116,24
+Fri,S2,08:20,Year 07,Noor Rasras,Arabic,G005,23
+Mon,S3,09:35,Year 07,Noor Rasras,Arabic,G009,23
+Thu,S5,11:25,Year 07,Noor Rasras,Arabic,G009,23
+Tue,S7,14:15,Year 07,Noor Rasras,Arabic,G006,23
+Wed,S2,08:20,Year 07,Noor Rasras,Arabic,G009,23
+Fri,S1,07:25,Year 07,Sara Jarrah,Islamic studies,G113,23
+Mon,S2,08:20,Year 07,Sara Jarrah,Islamic studies,G113,23
+Thu,S2,08:20,Year 07,Sara Jarrah,Islamic studies,G113,23
+Tue,S1,07:25,Year 07,Sara Jarrah,Islamic studies,G101,23
+Wed,S4,10:30,Year 07,Eatemad Abdelaal,Moral Education,G102,23
+Fri,S3,09:35,Year 07,Hanaa Abdallah,Social Studies,G103,23
+Thu,S3,09:35,Year 07,Rowmicka Coutain,Food technology,G013,23
+Wed,S4,10:30,Year 07,Rowmicka Coutain,Food technology,G013,23
+Thu,S6,12:20,Year 07,Tahiba Akhtar,Product design,B011,23
+Tue,S2,08:20,Year 07,Tahiba Akhtar,Product design,B012,23
+Fri,S1,07:25,Year 07,Huda Abdullahi Mohamed,English,G002,23
+Mon,S6,12:20,Year 07,Huda Abdullahi Mohamed,English,G002,23
+Thu,S1,07:25,Year 07,Huda Abdullahi Mohamed,English,G002,23
+Tue,S4,10:30,Year 07,Huda Abdullahi Mohamed,English,G002,23
+Wed,S2,08:20,Year 07,Huda Abdullahi Mohamed,English,G003,23
+Mon,S3,09:35,Year 07,Suweiba Odowa,Computing,G108,23
+Mon,S2,08:20,Year 07,Sula Graham,Geography,G105,23
+Thu,S5,11:25,Year 07,Sula Graham,History,G005,23
+Tue,S1,07:25,Year 07,Antonia Dixon,Sport,,23
+Fri,S4,10:30,Year 07,Abeer Alzibdeh,Social Science,G117,23
+Tue,S7,14:15,Year 07,Abeer Alzibdeh,Social Science,G117,23
+Mon,S5,11:25,Year 07,Antonia Dixon,Swimming,,23
+Mon,S5,11:25,Year 07,Suweiba Odowa,Computing,G104,23
+Thu,S4,10:30,Year 07,Mehwish Adnan,Geography,G109,23
+Wed,S6,12:20,Year 07,Mehwish Adnan,History,G001,23
+Fri,S4,10:30,Year 07,Antonia Dixon,Sport,,23
+Mon,S4,10:30,Year 07,Abeer Alzibdeh,Social Science,G118,23
+Tue,S4,10:30,Year 07,Abeer Alzibdeh,Social Science,G118,23
+Wed,S1,07:25,Year 07,Antonia Dixon,Swimming,,23
+Fri,S5,11:25,Year 07,Anha Begum,Mathematics,G106,23
+Mon,S1,07:25,Year 07,Anha Begum,Mathematics,G106,23
+Thu,S4,10:30,Year 07,Anha Begum,Mathematics,G104,23
+Tue,S5,11:25,Year 07,Anha Begum,Mathematics,G106,23
+Wed,S6,12:20,Year 07,Anha Begum,Mathematics,G106,23
+Fri,S2,08:20,Year 07,Sara Nazer Adl,Science,G118,23
+Mon,S6,12:20,Year 07,Sara Nazer Adl,Science,G118,23
+Tue,S3,09:35,Year 07,Sara Nazer Adl,Science,G118,23
+Wed,S3,09:35,Year 07,Sara Nazer Adl,Science,G118,23
+Fri,S3,09:35,Year 08,Smood Al Bostanji,Arabic,G006,23
+Mon,S4,10:30,Year 08,Smood Al Bostanji,Arabic,G006,23
+Thu,S4,10:30,Year 08,Smood Al Bostanji,Arabic,G006,23
+Tue,S3,09:35,Year 08,Smood Al Bostanji,Arabic,G006,23
+Wed,S5,11:25,Year 08,Smood Al Bostanji,Arabic,G006,23
+Fri,S5,11:25,Year 08,Zainab Yagoub,Islamic studies,G111,23
+Mon,S3,09:35,Year 08,Zainab Yagoub,Islamic studies,G111,23
+Tue,S2,08:20,Year 08,Zainab Yagoub,Islamic studies,G111,23
+Wed,S6,12:20,Year 08,Zainab Yagoub,Islamic studies,G111,23
+Mon,S6,12:20,Year 08,Hanaa Abdallah,Moral Education,G103,23
+Thu,S3,09:35,Year 08,Hanaa Abdallah,Social Studies,G103,23
+Tue,S4,10:30,Year 08,Sophie Groves,Art,G012,23
+Wed,S2,08:20,Year 08,Sophie Groves,Art,G012,23
+Fri,S3,09:35,Year 08,Zara Ifsa Hamid,English,G002,23
+Mon,S3,09:35,Year 08,Zara Ifsa Hamid,English,G002,23
+Thu,S5,11:25,Year 08,Zara Ifsa Hamid,English,G002,23
+Tue,S2,08:20,Year 08,Zara Ifsa Hamid,English,G005,23
+Wed,S6,12:20,Year 08,Zara Ifsa Hamid,English,G002,23
+Tue,S1,07:25,Year 08,Naumana Malik,Computing,G104,23
+Thu,S1,07:25,Year 08,Ali Jaabir,Geography,G101,23
+Fri,S2,08:20,Year 08,Ali Jaabir,History,G004,23
+Thu,S7,14:15,Year 08,Kristin Quinn,Sport,,23
+Tue,S6,12:20,Year 08,Abeer Alzibdeh,Social Science,G116,23
+Wed,S1,07:25,Year 08,Abeer Alzibdeh,Social Science,G118,23
+Mon,S2,08:20,Year 08,Kristin Quinn,Swimming,,23
+Fri,S1,07:25,Year 08,Jacob Morgan Lee,Mathematics,G104,23
+Mon,S6,12:20,Year 08,Jacob Morgan Lee,Mathematics,G105,23
+Thu,S7,14:15,Year 08,Jacob Morgan Lee,Mathematics,G109,23
+Tue,S3,09:35,Year 08,Jacob Morgan Lee,Mathematics,G105,23
+Wed,S1,07:25,Year 08,Jacob Morgan Lee,Mathematics,G109,23
+Fri,S5,11:25,Year 08,Edna Bempah,Science,G116,23
+Mon,S4,10:30,Year 08,Edna Bempah,Science,G116,23
+Thu,S3,09:35,Year 08,Edna Bempah,Science,G116,23
+Wed,S4,10:30,Year 08,Edna Bempah,Science,G116,23
+Fri,S6,12:20,Year 09,Zeinab Hassan,Science,G118,23
+Mon,S5,11:25,Year 09,Zeinab Hassan,Science,G116,23
+Thu,S7,14:15,Year 09,Zeinab Hassan,Science,G118,23
+Tue,S5,11:25,Year 09,Zeinab Hassan,Science,G118,23
+Wed,S6,12:20,Year 09,Zeinab Hassan,Science,G119,23
+Fri,S6,12:20,Year 07,Haya Alasad,Arabic,G009,22
+Mon,S1,07:25,Year 07,Haya Alasad,Arabic,G009,22
+Thu,S7,14:15,Year 07,Haya Alasad,Arabic,G009,22
+Tue,S3,09:35,Year 07,Haya Alasad,Arabic,G009,22
+Wed,S3,09:35,Year 07,Haya Alasad,Arabic,G009,22
+Fri,S5,11:25,Year 07,Bayan Dababseh,Islamic studies,G112,22
+Mon,S4,10:30,Year 07,Bayan Dababseh,Islamic studies,G112,22
+Thu,S6,12:20,Year 07,Bayan Dababseh,Islamic studies,G112,22
+Wed,S1,07:25,Year 07,Bayan Dababseh,Islamic studies,G112,22
+Tue,S5,11:25,Year 07,Asal Faisal Taher Enayah,Moral Education,G110,22
+Wed,S6,12:20,Year 07,Amal Khalil,Social Studies,G007,22
+Fri,S1,07:25,Year 07,Noor Rasras,Arabic,G008,22
+Mon,S2,08:20,Year 07,Noor Rasras,Arabic,G009,22
+Thu,S3,09:35,Year 07,Noor Rasras,Arabic,G009,22
+Tue,S6,12:20,Year 07,Noor Rasras,Arabic,G009,22
+Wed,S4,10:30,Year 07,Noor Rasras,Arabic,G009,22
+Fri,S4,10:30,Year 07,Bayan Dababseh,Islamic studies,G112,22
+Mon,S5,11:25,Year 07,Bayan Dababseh,Islamic studies,G112,22
+Thu,S5,11:25,Year 07,Bayan Dababseh,Islamic studies,G112,22
+Tue,S4,10:30,Year 07,Bayan Dababseh,Islamic studies,G112,22
+Wed,S5,11:25,Year 07,Asal Faisal Taher Enayah,Moral Education,G008,22
+Thu,S1,07:25,Year 07,Mohamed Bayyoumi,Social Studies,G103,22
+Thu,S3,09:35,Year 07,Tahiba Akhtar,Product design,B010,22
+Wed,S4,10:30,Year 07,Tahiba Akhtar,Product design,B010,22
+Thu,S7,14:15,Year 07,Sumerah Saeed,Product design,B010,22
+Wed,S1,07:25,Year 07,Sumerah Saeed,Product design,B010,22
+Fri,S6,12:20,Year 07,Farahnaaz Rajub,English,G005,22
+Mon,S4,10:30,Year 07,Farahnaaz Rajub,English,G005,22
+Thu,S2,08:20,Year 07,Farahnaaz Rajub,English,G005,22
+Tue,S1,07:25,Year 07,Farahnaaz Rajub,English,G005,22
+Wed,S2,08:20,Year 07,Farahnaaz Rajub,English,G005,22
+Thu,S5,11:25,Year 07,Naumana Malik,Computing,G104,22
+Fri,S4,10:30,Year 07,Mehwish Adnan,Geography,G109,22
+Mon,S3,09:35,Year 07,Mehwish Adnan,History,G107,22
+Mon,S5,11:25,Year 07,Kristin Quinn,Sport,,22
+Mon,S2,08:20,Year 07,Nayla AlKadi,Social Science,G115,22
+Tue,S7,14:15,Year 07,Nayla AlKadi,Social Science,G115,22
+Tue,S1,07:25,Year 07,Kristin Quinn,Swimming,,22
+Tue,S7,14:15,Year 07,Naumana Malik,Computing,G005,22
+Fri,S3,09:35,Year 07,Jafrina Jahan,Geography,G009,22
+Thu,S6,12:20,Year 07,Jafrina Jahan,History,G001,22
+Mon,S7,14:15,Year 07,Rebecca Clare Simonaitis,Sport,,22
+Mon,S3,09:35,Year 07,Abeer Alzibdeh,Social Science,G118,22
+Wed,S7,14:15,Year 07,Abeer Alzibdeh,Social Science,G118,22
+Tue,S2,08:20,Year 07,Rebecca Clare Simonaitis,Swimming,,22
+Fri,S2,08:20,Year 07,Haleema Zahoor Jan,Mathematics,G105,22
+Mon,S7,14:15,Year 07,Haleema Zahoor Jan,Mathematics,G105,22
+Thu,S4,10:30,Year 07,Haleema Zahoor Jan,Mathematics,G105,22
+Tue,S6,12:20,Year 07,Haleema Zahoor Jan,Mathematics,G105,22
+Wed,S5,11:25,Year 07,Haleema Zahoor Jan,Mathematics,G105,22
+Mon,S7,14:15,Year 07,Shannan OBrien,Science,G117,22
+Thu,S3,09:35,Year 07,Shannan OBrien,Science,G117,22
+Tue,S6,12:20,Year 07,Shannan OBrien,Science,G117,22
+Wed,S5,11:25,Year 07,Shannan OBrien,Science,G117,22
+Fri,S1,07:25,Year 08,Smood Al Bostanji,Arabic,G007,22
+Mon,S6,12:20,Year 08,Smood Al Bostanji,Arabic,G007,22
+Thu,S3,09:35,Year 08,Smood Al Bostanji,Arabic,G007,22
+Tue,S1,07:25,Year 08,Smood Al Bostanji,Arabic,G007,22
+Wed,S1,07:25,Year 08,Smood Al Bostanji,Arabic,G007,22
+Mon,S2,08:20,Year 08,Zainab Yagoub,Islamic studies,G111,22
+Thu,S6,12:20,Year 08,Zainab Yagoub,Islamic studies,G111,22
+Tue,S6,12:20,Year 08,Zainab Yagoub,Islamic studies,G111,22
+Wed,S4,10:30,Year 08,Zainab Yagoub,Islamic studies,G111,22
+Tue,S7,14:15,Year 08,Amal Khalil,Moral Education,G103,22
+Fri,S6,12:20,Year 08,Hanaa Abdallah,Social Studies,G103,22
+Mon,S4,10:30,Year 08,Shahreen Ahmed,Food technology,G013,22
+Thu,S1,07:25,Year 08,Shahreen Ahmed,Food technology,G013,22
+Fri,S3,09:35,Year 08,Emilia Rocio Ghirardi,English,G004,22
+Mon,S3,09:35,Year 08,Emilia Rocio Ghirardi,English,G004,22
+Thu,S5,11:25,Year 08,Emilia Rocio Ghirardi,English,G004,22
+Tue,S2,08:20,Year 08,Emilia Rocio Ghirardi,English,G004,22
+Wed,S6,12:20,Year 08,Emilia Rocio Ghirardi,English,G004,22
+Wed,S5,11:25,Year 08,Naumana Malik,Computing,G001,22
+Thu,S2,08:20,Year 08,Mehwish Adnan,Geography,G007,22
+Tue,S3,09:35,Year 08,Mehwish Adnan,History,G110,22
+Fri,S4,10:30,Year 08,Kristin Quinn,Sport,,22
+Mon,S7,14:15,Year 08,Abeer Alzibdeh,Social Science,G005,22
+Wed,S2,08:20,Year 08,Abeer Alzibdeh,Social Science,G102,22
+Thu,S5,11:25,Year 08,Kristin Quinn,Swimming,,22
+Fri,S1,07:25,Year 08,Sehrish Hussain,Mathematics,G106,22
+Mon,S5,11:25,Year 08,Sehrish Hussain,Mathematics,G106,22
+Thu,S2,08:20,Year 08,Sehrish Hussain,Mathematics,G106,22
+Tue,S7,14:15,Year 08,Sehrish Hussain,Mathematics,G106,22
+Wed,S3,09:35,Year 08,Sehrish Hussain,Mathematics,G106,22
+Fri,S5,11:25,Year 08,Anita Owusu,Science,G115,22
+Mon,S4,10:30,Year 08,Anita Owusu,Science,G115,22
+Thu,S3,09:35,Year 08,Anita Owusu,Science,G115,22
+Wed,S4,10:30,Year 08,Anita Owusu,Science,G115,22
+Fri,S6,12:20,Year 09,Asal Faisal Taher Enayah,Arabic,G006,22
+Mon,S2,08:20,Year 09,Asal Faisal Taher Enayah,Arabic,G006,22
+Thu,S7,14:15,Year 09,Asal Faisal Taher Enayah,Arabic,G006,22
+Tue,S4,10:30,Year 09,Asal Faisal Taher Enayah,Arabic,G006,22
+Wed,S1,07:25,Year 09,Asal Faisal Taher Enayah,Arabic,G006,22
+Fri,S1,07:25,Year 09,Zainab Yagoub,Islamic studies,G111,22
+Thu,S2,08:20,Year 09,Zainab Yagoub,Islamic studies,G111,22
+Tue,S3,09:35,Year 09,Zainab Yagoub,Islamic studies,G111,22
+Wed,S3,09:35,Year 09,Zainab Yagoub,Islamic studies,G111,22
+Mon,S4,10:30,Year 09,Hanaa Abdallah,Moral Education,G103,22
+Thu,S4,10:30,Year 09,Hanaa Abdallah,Social Studies,G103,22
+Fri,S5,11:25,Year 09,Sumerah Saeed,Product design,B010,22
+Tue,S7,14:15,Year 09,Sumerah Saeed,Product design,B010,22
+Mon,S6,12:20,Year 09,Tahiba Akhtar,Product design,B010,22
+Wed,S6,12:20,Year 09,Tahiba Akhtar,Product design,B010,22
+Fri,S2,08:20,Year 09,Samantha Devoil,English,G003,22
+Mon,S1,07:25,Year 09,Samantha Devoil,English,G101,22
+Thu,S3,09:35,Year 09,Samantha Devoil,English,G003,22
+Tue,S3,09:35,Year 09,Samantha Devoil,English,G001,22
+Wed,S4,10:30,Year 09,Samantha Devoil,English,G101,22
+Fri,S2,08:20,Year 09,Huda Abdullahi Mohamed,English,G002,22
+Mon,S1,07:25,Year 09,Huda Abdullahi Mohamed,English,G003,22
+Thu,S3,09:35,Year 09,Huda Abdullahi Mohamed,English,G002,22
+Tue,S3,09:35,Year 09,Huda Abdullahi Mohamed,English,G005,22
+Wed,S4,10:30,Year 09,Huda Abdullahi Mohamed,English,G003,22
+Fri,S6,12:20,Year 09,Emilia Rocio Ghirardi,English,G004,22
+Mon,S7,14:15,Year 09,Emilia Rocio Ghirardi,English,G004,22
+Thu,S2,08:20,Year 09,Emilia Rocio Ghirardi,English,G004,22
+Tue,S1,07:25,Year 09,Emilia Rocio Ghirardi,English,G004,22
+Wed,S2,08:20,Year 09,Emilia Rocio Ghirardi,English,G004,22
+Mon,S6,12:20,Year 09,Sula Graham,Enterprise,G101,22
+Thu,S4,10:30,Year 09,Sula Graham,Enterprise,G101,22
+Wed,S3,09:35,Year 09,Ali Jaabir,Geography,G005,22
+Mon,S4,10:30,Year 09,Ali Jaabir,History,G104,22
+Thu,S2,08:20,Year 09,Rebecca Clare Simonaitis,Sport,,22
+Tue,S6,12:20,Year 09,Rebecca Clare Simonaitis,Swimming,,22
+Thu,S6,12:20,Year 09,Sareena Babu,Enterprise,G005,22
+Tue,S5,11:25,Year 09,Sareena Babu,Enterprise,G003,22
+Mon,S3,09:35,Year 09,Ali Jaabir,Geography,G105,22
+Tue,S1,07:25,Year 09,Ali Jaabir,History,G003,22
+Wed,S7,14:15,Year 09,Antonia Dixon,Sport,,22
+Fri,S5,11:25,Year 09,Rebecca Clare Simonaitis,Swimming,,22
+Fri,S4,10:30,Year 09,Candice Leigh Pillay,Science,G115,22
+Mon,S5,11:25,Year 09,Candice Leigh Pillay,Science,G115,22
+Thu,S7,14:15,Year 09,Candice Leigh Pillay,Science,G115,22
+Tue,S3,09:35,Year 09,Candice Leigh Pillay,Science,G115,22
+Wed,S6,12:20,Year 09,Candice Leigh Pillay,Science,G115,22
+Fri,S3,09:35,Year 10,Nabeel Hussain,Mathematics,G101,22
+Mon,S6,12:20,Year 10,Nabeel Hussain,Mathematics,G109,22
+Thu,S2,08:20,Year 10,Nabeel Hussain,Mathematics,G109,22
+Tue,S1,07:25,Year 10,Nabeel Hussain,Mathematics,G109,22
+Fri,S1,07:25,Year 07,Haya Alasad,Arabic,G009,21
+Mon,S2,08:20,Year 07,Haya Alasad,Arabic,G007,21
+Thu,S1,07:25,Year 07,Haya Alasad,Arabic,G009,21
+Tue,S6,12:20,Year 07,Haya Alasad,Arabic,G007,21
+Wed,S4,10:30,Year 07,Haya Alasad,Arabic,G007,21
+Fri,S4,10:30,Year 07,Sara Jarrah,Islamic studies,G113,21
+Thu,S5,11:25,Year 07,Sara Jarrah,Islamic studies,G113,21
+Tue,S4,10:30,Year 07,Sara Jarrah,Islamic studies,G108,21
+Wed,S5,11:25,Year 07,Sara Jarrah,Islamic studies,G113,21
+Mon,S5,11:25,Year 07,Amal Khalil,Moral Education,G009,21
+Thu,S3,09:35,Year 07,Mohamed Bayyoumi,Social Studies,G006,21
+Thu,S7,14:15,Year 07,Gavin John Earnshaw,Product design,B011,21
+Wed,S1,07:25,Year 07,Gavin John Earnshaw,Product design,B011,21
+Thu,S3,09:35,Year 07,Sara Burns,Art,G011,21
+Wed,S4,10:30,Year 07,Sara Burns,Art,G011,21
+Fri,S6,12:20,Year 07,Anna-Maria Anyinsah-Bondzie,English,G001,21
+Mon,S4,10:30,Year 07,Anna-Maria Anyinsah-Bondzie,English,G001,21
+Thu,S2,08:20,Year 07,Anna-Maria Anyinsah-Bondzie,English,G001,21
+Tue,S1,07:25,Year 07,Anna-Maria Anyinsah-Bondzie,English,G001,21
+Wed,S2,08:20,Year 07,Anna-Maria Anyinsah-Bondzie,English,G001,21
+Fri,S5,11:25,Year 07,Nooriyah Abdoel,English,G003,21
+Mon,S6,12:20,Year 07,Nooriyah Abdoel,English,G003,21
+Thu,S7,14:15,Year 07,Nooriyah Abdoel,English,G003,21
+Tue,S3,09:35,Year 07,Nooriyah Abdoel,English,G003,21
+Wed,S3,09:35,Year 07,Nooriyah Abdoel,English,G003,21
+Wed,S7,14:15,Year 07,Naumana Malik,Computing,G104,21
+Tue,S7,14:15,Year 07,Jafrina Jahan,Geography,G001,21
+Mon,S3,09:35,Year 07,Jafrina Jahan,History,G103,21
+Tue,S2,08:20,Year 07,Kristin Quinn,Sport,,21
+Fri,S3,09:35,Year 07,Abeer Alzibdeh,Social Science,G112,21
+Thu,S6,12:20,Year 07,Abeer Alzibdeh,Social Science,G115,21
+Mon,S7,14:15,Year 07,Kristin Quinn,Swimming,,21
+Fri,S4,10:30,Year 07,Naumana Malik,Computing,G104,21
+Mon,S2,08:20,Year 07,Ali Jaabir,Geography,G003,21
+Tue,S7,14:15,Year 07,Ali Jaabir,History,G002,21
+Mon,S5,11:25,Year 07,Rebecca Clare Simonaitis,Sport,,21
+Mon,S3,09:35,Year 07,Nayla AlKadi,Social Science,G116,21
+Thu,S5,11:25,Year 07,Nayla AlKadi,Social Science,G109,21
+Tue,S1,07:25,Year 07,Rebecca Clare Simonaitis,Swimming,,21
+Fri,S6,12:20,Year 07,Elyaas Abdulaahi,Mathematics,G102,21
+Mon,S1,07:25,Year 07,Elyaas Abdulaahi,Mathematics,G102,21
+Thu,S1,07:25,Year 07,Elyaas Abdulaahi,Mathematics,G102,21
+Tue,S5,11:25,Year 07,Elyaas Abdulaahi,Mathematics,G102,21
+Wed,S7,14:15,Year 07,Elyaas Abdulaahi,Mathematics,G102,21
+Thu,S4,10:30,Year 08,Sophie Groves,Art,G012,21
+Tue,S1,07:25,Year 08,Sophie Groves,Art,G012,21
+Fri,S3,09:35,Year 08,Elizabeth Orotayo,English,G001,21
+Mon,S5,11:25,Year 08,Elizabeth Orotayo,English,G001,21
+Thu,S4,10:30,Year 08,Elizabeth Orotayo,English,G001,21
+Tue,S5,11:25,Year 08,Elizabeth Orotayo,English,G001,21
+Wed,S7,14:15,Year 08,Elizabeth Orotayo,English,G001,21
+Fri,S3,09:35,Year 08,Samantha Devoil,English,G003,21
+Mon,S3,09:35,Year 08,Samantha Devoil,English,G003,21
+Thu,S5,11:25,Year 08,Samantha Devoil,English,G003,21
+Tue,S2,08:20,Year 08,Samantha Devoil,English,G002,21
+Wed,S6,12:20,Year 08,Samantha Devoil,English,G003,21
+Fri,S4,10:30,Year 08,Huda Abdullahi Mohamed,English,G002,21
+Mon,S7,14:15,Year 08,Huda Abdullahi Mohamed,English,G002,21
+Thu,S6,12:20,Year 08,Huda Abdullahi Mohamed,English,G002,21
+Tue,S5,11:25,Year 08,Huda Abdullahi Mohamed,English,G002,21
+Wed,S7,14:15,Year 08,Huda Abdullahi Mohamed,English,G002,21
+Wed,S5,11:25,Year 08,Mahnoor Nasir Awan,Computing,G104,21
+Thu,S2,08:20,Year 08,Mohamed Mustafa Ghanchi,Geography,G103,21
+Mon,S2,08:20,Year 08,Mohamed Mustafa Ghanchi,History,G103,21
+Tue,S7,14:15,Year 08,Rebecca Clare Simonaitis,Sport,,21
+Fri,S6,12:20,Year 08,Abeer Alzibdeh,Social Science,G107,21
+Mon,S1,07:25,Year 08,Abeer Alzibdeh,Social Science,G116,21
+Tue,S5,11:25,Year 08,Rebecca Clare Simonaitis,Swimming,,21
+Fri,S5,11:25,Year 08,Ali Ahmed,Mathematics,G107,21
+Mon,S1,07:25,Year 08,Ali Ahmed,Mathematics,G107,21
+Thu,S7,14:15,Year 08,Ali Ahmed,Mathematics,G107,21
+Tue,S2,08:20,Year 08,Ali Ahmed,Mathematics,G107,21
+Wed,S6,12:20,Year 08,Ali Ahmed,Mathematics,G107,21
+Fri,S6,12:20,Year 08,Candice Leigh Pillay,Science,G115,21
+Mon,S1,07:25,Year 08,Candice Leigh Pillay,Science,G115,21
+Thu,S5,11:25,Year 08,Candice Leigh Pillay,Science,G115,21
+Wed,S4,10:30,Year 08,Candice Leigh Pillay,Science,G117,21
+Fri,S5,11:25,Year 08,Sara Nazer Adl,Science,G114,21
+Mon,S4,10:30,Year 08,Sara Nazer Adl,Science,G114,21
+Thu,S3,09:35,Year 08,Sara Nazer Adl,Science,G119,21
+Wed,S4,10:30,Year 08,Sara Nazer Adl,Science,G114,21
+Fri,S2,08:20,Year 08,Anita Owusu,Science,G115,21
+Mon,S3,09:35,Year 08,Anita Owusu,Science,G115,21
+Tue,S4,10:30,Year 08,Anita Owusu,Science,G115,21
+Wed,S3,09:35,Year 08,Anita Owusu,Science,G115,21
+Fri,S2,08:20,Year 09,Asal Faisal Taher Enayah,Arabic,G006,21
+Mon,S6,12:20,Year 09,Asal Faisal Taher Enayah,Arabic,G006,21
+Thu,S5,11:25,Year 09,Asal Faisal Taher Enayah,Arabic,G006,21
+Tue,S6,12:20,Year 09,Asal Faisal Taher Enayah,Arabic,G008,21
+Wed,S4,10:30,Year 09,Asal Faisal Taher Enayah,Arabic,G006,21
+Fri,S5,11:25,Year 09,Ishraq Khalilieh,Islamic studies,G110,21
+Thu,S6,12:20,Year 09,Ishraq Khalilieh,Islamic studies,G110,21
+Tue,S7,14:15,Year 09,Ishraq Khalilieh,Islamic studies,G110,21
+Wed,S1,07:25,Year 09,Ishraq Khalilieh,Islamic studies,G110,21
+Mon,S1,07:25,Year 09,Hanaa Abdallah,Moral Education,G103,21
+Tue,S5,11:25,Year 09,Hanaa Abdallah,Social Studies,G103,21
+Fri,S5,11:25,Year 09,Gavin John Earnshaw,Art,G013,21
+Tue,S7,14:15,Year 09,Gavin John Earnshaw,Art,B011,21
+Thu,S1,07:25,Year 09,Sumerah Saeed,Product design,B010,21
+Wed,S5,11:25,Year 09,Sumerah Saeed,Product design,B010,21
+Mon,S4,10:30,Year 09,Suweiba Odowa,Enterprise,G107,21
+Wed,S3,09:35,Year 09,Suweiba Odowa,Enterprise,G107,21
+Mon,S6,12:20,Year 09,Mohamed Mustafa Ghanchi,Geography,G009,21
+Thu,S4,10:30,Year 09,Mohamed Mustafa Ghanchi,History,G002,21
+Tue,S6,12:20,Year 09,Kristin Quinn,Sport,,21
+Thu,S2,08:20,Year 09,Kristin Quinn,Swimming,,21
+Fri,S1,07:25,Year 09,Mujahed Nayef,Enterprise,G003,21
+Mon,S4,10:30,Year 09,Mujahed Nayef,Enterprise,G002,21
+Wed,S3,09:35,Year 09,Mohamed Mustafa Ghanchi,Geography,G104,21
+Mon,S3,09:35,Year 09,Mohamed Mustafa Ghanchi,History,G005,21
+Tue,S4,10:30,Year 09,Kristin Quinn,Sport,,21
+Thu,S4,10:30,Year 09,Kristin Quinn,Swimming,,21
+Fri,S3,09:35,Year 09,Sehrish Hussain,Mathematics,G106,21
+Mon,S2,08:20,Year 09,Sehrish Hussain,Mathematics,G106,21
+Thu,S3,09:35,Year 09,Sehrish Hussain,Mathematics,G106,21
+Tue,S2,08:20,Year 09,Sehrish Hussain,Mathematics,G106,21
+Wed,S7,14:15,Year 09,Sehrish Hussain,Mathematics,G106,21
+Fri,S4,10:30,Year 10,Anna-Maria Anyinsah-Bondzie,English,G001,21
+Mon,S3,09:35,Year 10,Anna-Maria Anyinsah-Bondzie,English,G001,21
+Thu,S7,14:15,Year 10,Anna-Maria Anyinsah-Bondzie,English,G001,21
+Tue,S3,09:35,Year 10,Anna-Maria Anyinsah-Bondzie,English,G104,21
+Wed,S3,09:35,Year 10,Anna-Maria Anyinsah-Bondzie,English,G001,21
+Thu,S6,12:20,Year 10,Kristin Quinn,Sport,,21
+Wed,S5,11:25,Year 10,Kristin Quinn,Sport,,21
+Fri,S5,11:25,Year 07,Anisha Masood,Mathematics,G108,20
+Mon,S1,07:25,Year 07,Anisha Masood,Mathematics,G108,20
+Thu,S4,10:30,Year 07,Anisha Masood,Mathematics,G108,20
+Tue,S5,11:25,Year 07,Anisha Masood,Mathematics,G108,20
+Wed,S6,12:20,Year 07,Anisha Masood,Mathematics,G108,20
+Fri,S2,08:20,Year 07,Hasnain Altaf,Science,G116,20
+Mon,S6,12:20,Year 07,Hasnain Altaf,Science,G116,20
+Tue,S3,09:35,Year 07,Hasnain Altaf,Science,G117,20
+Wed,S3,09:35,Year 07,Hasnain Altaf,Science,G116,20
+Fri,S4,10:30,Year 08,Noor Rasras,Arabic,G007,20
+Mon,S5,11:25,Year 08,Noor Rasras,Arabic,G008,20
+Thu,S1,07:25,Year 08,Noor Rasras,Arabic,G004,20
+Tue,S4,10:30,Year 08,Noor Rasras,Arabic,G008,20
+Wed,S7,14:15,Year 08,Noor Rasras,Arabic,G008,20
+Fri,S2,08:20,Year 08,Bayan Dababseh,Islamic studies,G112,20
+Mon,S7,14:15,Year 08,Bayan Dababseh,Islamic studies,G112,20
+Tue,S6,12:20,Year 08,Bayan Dababseh,Islamic studies,G112,20
+Wed,S2,08:20,Year 08,Bayan Dababseh,Islamic studies,G112,20
+Thu,S6,12:20,Year 08,Mohamed Bayyoumi,Moral Education,G103,20
+Wed,S3,09:35,Year 08,Hanaa Abdallah,Social Studies,G103,20
+Thu,S4,10:30,Year 08,Sara Burns,Art,G011,20
+Tue,S1,07:25,Year 08,Sara Burns,Art,G011,20
+Fri,S4,10:30,Year 08,Mariam Yousaf,English,G108,20
+Mon,S7,14:15,Year 08,Mariam Yousaf,English,G003,20
+Thu,S6,12:20,Year 08,Mariam Yousaf,English,G004,20
+Tue,S5,11:25,Year 08,Mariam Yousaf,English,G005,20
+Wed,S7,14:15,Year 08,Mariam Yousaf,English,G004,20
+Fri,S3,09:35,Year 08,Farahnaaz Rajub,English,G005,20
+Mon,S5,11:25,Year 08,Farahnaaz Rajub,English,G005,20
+Thu,S4,10:30,Year 08,Farahnaaz Rajub,English,G005,20
+Tue,S5,11:25,Year 08,Farahnaaz Rajub,English,G004,20
+Wed,S7,14:15,Year 08,Farahnaaz Rajub,English,G005,20
+Fri,S6,12:20,Year 08,Mahnoor Nasir Awan,Computing,G104,20
+Thu,S2,08:20,Year 08,Harry Jones,Geography,G101,20
+Mon,S1,07:25,Year 08,Harry Jones,History,G104,20
+Tue,S5,11:25,Year 08,Kristin Quinn,Sport,,20
+Mon,S2,08:20,Year 08,Abeer Alzibdeh,Social Science,G117,20
+Wed,S5,11:25,Year 08,Abeer Alzibdeh,Social Science,G108,20
+Tue,S7,14:15,Year 08,Kristin Quinn,Swimming,,20
+Fri,S5,11:25,Year 08,Mahamed Arshe,Mathematics,G105,20
+Mon,S1,07:25,Year 08,Mahamed Arshe,Mathematics,G109,20
+Thu,S7,14:15,Year 08,Mahamed Arshe,Mathematics,G105,20
+Tue,S2,08:20,Year 08,Mahamed Arshe,Mathematics,G105,20
+Wed,S6,12:20,Year 08,Mahamed Arshe,Mathematics,G105,20
+Fri,S2,08:20,Year 08,Candice Leigh Pillay,Science,G117,20
+Mon,S3,09:35,Year 08,Candice Leigh Pillay,Science,G117,20
+Tue,S4,10:30,Year 08,Candice Leigh Pillay,Science,G117,20
+Wed,S3,09:35,Year 08,Candice Leigh Pillay,Science,G117,20
+Fri,S6,12:20,Year 08,Mohamed Abdi Hassan,Science,G119,20
+Mon,S1,07:25,Year 08,Mohamed Abdi Hassan,Science,G118,20
+Thu,S5,11:25,Year 08,Mohamed Abdi Hassan,Science,G119,20
+Wed,S4,10:30,Year 08,Mohamed Abdi Hassan,Science,G119,20
+Fri,S4,10:30,Year 09,Hanein Alsarayreh,Arabic,G008,20
+Mon,S3,09:35,Year 09,Hanein Alsarayreh,Arabic,G007,20
+Thu,S1,07:25,Year 09,Hanein Alsarayreh,Arabic,G008,20
+Tue,S1,07:25,Year 09,Hanein Alsarayreh,Arabic,G008,20
+Wed,S5,11:25,Year 09,Hanein Alsarayreh,Arabic,G007,20
+Fri,S3,09:35,Year 09,Zainab Yagoub,Islamic studies,G111,20
+Mon,S7,14:15,Year 09,Zainab Yagoub,Islamic studies,G111,20
+Thu,S5,11:25,Year 09,Zainab Yagoub,Islamic studies,G111,20
+Wed,S2,08:20,Year 09,Zainab Yagoub,Islamic studies,G111,20
+Wed,S7,14:15,Year 09,Mohamed Bayyoumi,Moral Education,G007,20
+Tue,S2,08:20,Year 09,Hanaa Abdallah,Social Studies,G103,20
+Fri,S4,10:30,Year 09,Nooriyah Abdoel,English,G003,20
+Mon,S1,07:25,Year 09,Nooriyah Abdoel,English,G005,20
+Thu,S3,09:35,Year 09,Nooriyah Abdoel,English,G001,20
+Tue,S6,12:20,Year 09,Nooriyah Abdoel,English,G005,20
+Wed,S4,10:30,Year 09,Nooriyah Abdoel,English,G001,20
+Fri,S3,09:35,Year 09,Reda Attia,Mathematics,G104,20
+Mon,S5,11:25,Year 09,Reda Attia,Mathematics,G103,20
+Thu,S1,07:25,Year 09,Reda Attia,Mathematics,G104,20
+Tue,S7,14:15,Year 09,Reda Attia,Mathematics,G104,20
+Wed,S2,08:20,Year 09,Reda Attia,Mathematics,G104,20
+Fri,S1,07:25,Year 09,Ali Ahmed,Mathematics,G107,20
+Mon,S2,08:20,Year 09,Ali Ahmed,Mathematics,G107,20
+Thu,S6,12:20,Year 09,Ali Ahmed,Mathematics,G107,20
+Tue,S4,10:30,Year 09,Ali Ahmed,Mathematics,G107,20
+Wed,S1,07:25,Year 09,Ali Ahmed,Mathematics,G107,20
+Fri,S2,08:20,Year 09,Edna Bempah,Science,G114,20
+Mon,S7,14:15,Year 09,Edna Bempah,Science,G116,20
+Thu,S5,11:25,Year 09,Edna Bempah,Science,G116,20
+Tue,S2,08:20,Year 09,Edna Bempah,Science,G118,20
+Wed,S5,11:25,Year 09,Edna Bempah,Science,G116,20
+Mon,S7,14:15,Year 10,Mahnoor Nasir Awan,Core science,G104,20
+Thu,S3,09:35,Year 10,Mahnoor Nasir Awan,Core science,G104,20
+Tue,S5,11:25,Year 10,Mahnoor Nasir Awan,Core science,G104,20
+Fri,S4,10:30,Year 10,Halima Hasan Jogi,English,G102,20
+Mon,S3,09:35,Year 10,Halima Hasan Jogi,English,G112,20
+Thu,S7,14:15,Year 10,Halima Hasan Jogi,English,G002,20
+Tue,S3,09:35,Year 10,Halima Hasan Jogi,English,G101,20
+Wed,S3,09:35,Year 10,Halima Hasan Jogi,English,G101,20
+Thu,S6,12:20,Year 10,Antonia Dixon,Sport,,20
+Wed,S5,11:25,Year 10,Antonia Dixon,Sport,,20
+Fri,S1,07:25,Year 11,Halima Hasan Jogi,English,G006,20
+Mon,S4,10:30,Year 11,Halima Hasan Jogi,English,G003,20
+Thu,S6,12:20,Year 11,Halima Hasan Jogi,English,G003,20
+Tue,S6,12:20,Year 11,Halima Hasan Jogi,English,G003,20
+Wed,S2,08:20,Year 11,Halima Hasan Jogi,English,S_LI,20
+Fri,S3,09:35,Year 11,Jacob Morgan Lee,Mathematics,G114,20
+Mon,S7,14:15,Year 11,Jacob Morgan Lee,Mathematics,G109,20
+Tue,S7,14:15,Year 11,Jacob Morgan Lee,Mathematics,G109,20
+Wed,S5,11:25,Year 11,Jacob Morgan Lee,Mathematics,G109,20
+Thu,S5,11:25,Year 11,Antonia Dixon,Sport,,20
+Wed,S4,10:30,Year 11,Antonia Dixon,Sport,,20
+Mon,S6,12:20,Year 11,Anita Owusu,Biology,G114,2
+Thu,S2,08:20,Year 11,Anita Owusu,Biology,G114,2
+Tue,S1,07:25,Year 11,Anita Owusu,Biology,G114,2
+Fri,S5,11:25,Year 11,Mujahed Nayef,Economics,G102,2
+Mon,S2,08:20,Year 11,Mujahed Nayef,Economics,G102,2
+Tue,S3,09:35,Year 11,Mujahed Nayef,Economics,G102,2
+Fri,S2,08:20,Year 12,Mohamed Mustafa Ghanchi,BETC-Busniess,,4
+Mon,S1,07:25,Year 12,Mohamed Mustafa Ghanchi,BETC-Busniess,G112,4
+Thu,S5,11:25,Year 12,Mohamed Mustafa Ghanchi,BETC-Busniess,TR2,4
+Tue,S1,07:25,Year 12,Mohamed Mustafa Ghanchi,BETC-Busniess,G009,4
+Tue,S6,12:20,Year 12,Mohamed Mustafa Ghanchi,BETC-Busniess,TR2,4
+Wed,S4,10:30,Year 12,Mohamed Mustafa Ghanchi,BETC-Busniess,B012,4
+Fri,S1,07:25,Year 12,Nathan Hall,Economics,TR2,5
+Mon,S3,09:35,Year 12,Nathan Hall,Economics,TR2,5
+Mon,S7,14:15,Year 12,Nathan Hall,Economics,TR2,5
+Thu,S6,12:20,Year 12,Nathan Hall,Economics,TR2,5
+Tue,S5,11:25,Year 12,Nathan Hall,Economics,TR2,5
+Wed,S3,09:35,Year 12,Nathan Hall,Economics,TR2,5
+Fri,S6,12:20,Year 12,Jasmine Rachael Clarke,English Literature,TR1,3
+Mon,S6,12:20,Year 12,Jasmine Rachael Clarke,English Literature,TR1,3
+Thu,S7,14:15,Year 12,Jasmine Rachael Clarke,English Literature,TR1,3
+Tue,S2,08:20,Year 12,Jasmine Rachael Clarke,English Literature,TR1,3
+Tue,S4,10:30,Year 12,Jasmine Rachael Clarke,English Literature,TR2,3
+Wed,S7,14:15,Year 12,Jasmine Rachael Clarke,English Literature,TR2,3
+Fri,S5,11:25,Year 12,Batoul Al Sarraj,Maths - Mechanics,TR1,6
+Mon,S4,10:30,Year 12,Batoul Al Sarraj,Maths - Mechanics,TR1,6
+Thu,S2,08:20,Year 12,Batoul Al Sarraj,Maths - Mechanics,TR1,6
+Thu,S3,09:35,Year 12,Batoul Al Sarraj,Maths - Mechanics,TR1,6
+Tue,S3,09:35,Year 12,Batoul Al Sarraj,Maths - Mechanics,TR1,6
+Wed,S5,11:25,Year 12,Batoul Al Sarraj,Maths - Mechanics,TR1,6
+Fri,S4,10:30,Year 13,Mujahed Nayef,Economics,TR2,4
+Fri,S6,12:20,Year 13,Mujahed Nayef,Economics,TR2,4
+Tue,S2,08:20,Year 13,Mujahed Nayef,Economics,G003,4
+Wed,S1,07:25,Year 13,Mujahed Nayef,Economics,TR2,4
+Wed,S4,10:30,Year 13,Mujahed Nayef,Economics,TR2,4
+Fri,S5,11:25,Year 13,Harry Jones,Geography,G001,2
+Tue,S1,07:25,Year 13,Harry Jones,Geography,G112,2
+Wed,S6,12:20,Year 13,Harry Jones,Geography,G005,2
+Fri,S5,11:25,Year 07,Noor Rasras,Arabic,G007,19
+Mon,S1,07:25,Year 07,Noor Rasras,Arabic,G008,19
+Thu,S6,12:20,Year 07,Noor Rasras,Arabic,G007,19
+Tue,S5,11:25,Year 07,Noor Rasras,Arabic,G008,19
+Wed,S1,07:25,Year 07,Noor Rasras,Arabic,G008,19
+Fri,S6,12:20,Year 07,Sara Jarrah,Islamic studies,G113,19
+Mon,S4,10:30,Year 07,Sara Jarrah,Islamic studies,G113,19
+Wed,S3,09:35,Year 07,Sara Jarrah,Islamic studies,G113,19
+Wed,S6,12:20,Year 07,Sara Jarrah,Islamic studies,G110,19
+Thu,S7,14:15,Year 07,Nayla AlKadi,Moral Education,G104,19
+Tue,S3,09:35,Year 07,Hanaa Abdallah,Social Studies,G103,19
+Fri,S5,11:25,Year 07,Emilia Rocio Ghirardi,English,G004,19
+Mon,S6,12:20,Year 07,Emilia Rocio Ghirardi,English,G004,19
+Thu,S7,14:15,Year 07,Emilia Rocio Ghirardi,English,G004,19
+Tue,S3,09:35,Year 07,Emilia Rocio Ghirardi,English,G004,19
+Wed,S3,09:35,Year 07,Emilia Rocio Ghirardi,English,G004,19
+Fri,S1,07:25,Year 07,Mariam Yousaf,English,G005,19
+Mon,S6,12:20,Year 07,Mariam Yousaf,English,G005,19
+Thu,S1,07:25,Year 07,Mariam Yousaf,English,G005,19
+Tue,S4,10:30,Year 07,Mariam Yousaf,English,G005,19
+Wed,S2,08:20,Year 07,Mariam Yousaf,English,G106,19
+Fri,S6,12:20,Year 07,Nabeel Hussain,Mathematics,G109,19
+Mon,S1,07:25,Year 07,Nabeel Hussain,Mathematics,G105,19
+Thu,S1,07:25,Year 07,Nabeel Hussain,Mathematics,G109,19
+Tue,S5,11:25,Year 07,Nabeel Hussain,Mathematics,G109,19
+Wed,S7,14:15,Year 07,Nabeel Hussain,Mathematics,G109,19
+Fri,S2,08:20,Year 07,Sehrish Hussain,Mathematics,G106,19
+Mon,S7,14:15,Year 07,Sehrish Hussain,Mathematics,G106,19
+Thu,S4,10:30,Year 07,Sehrish Hussain,Mathematics,G106,19
+Tue,S6,12:20,Year 07,Sehrish Hussain,Mathematics,G106,19
+Wed,S5,11:25,Year 07,Sehrish Hussain,Mathematics,G106,19
+Fri,S6,12:20,Year 08,Smood Al Bostanji,Arabic,G008,19
+Mon,S2,08:20,Year 08,Smood Al Bostanji,Arabic,G008,19
+Thu,S6,12:20,Year 08,Smood Al Bostanji,Arabic,G008,19
+Tue,S7,14:15,Year 08,Smood Al Bostanji,Arabic,G007,19
+Wed,S4,10:30,Year 08,Smood Al Bostanji,Arabic,G008,19
+Mon,S6,12:20,Year 08,Zainab Yagoub,Islamic studies,G111,19
+Thu,S3,09:35,Year 08,Zainab Yagoub,Islamic studies,G111,19
+Tue,S1,07:25,Year 08,Zainab Yagoub,Islamic studies,G111,19
+Wed,S1,07:25,Year 08,Zainab Yagoub,Islamic studies,G111,19
+Fri,S1,07:25,Year 08,Hanaa Abdallah,Moral Education,G103,19
+Tue,S6,12:20,Year 08,Hanaa Abdallah,Social Studies,G103,19
+Mon,S4,10:30,Year 08,Sara Burns,Art,G011,19
+Thu,S1,07:25,Year 08,Sara Burns,Art,G011,19
+Wed,S2,08:20,Year 08,Naumana Malik,Computing,G116,19
+Thu,S2,08:20,Year 08,Ali Jaabir,Geography,G003,19
+Mon,S7,14:15,Year 08,Ali Jaabir,History,G103,19
+Wed,S5,11:25,Year 08,Rebecca Clare Simonaitis,Sport,,19
+Thu,S5,11:25,Year 08,Abeer Alzibdeh,Social Science,G001,19
+Tue,S3,09:35,Year 08,Abeer Alzibdeh,Social Science,G114,19
+Fri,S4,10:30,Year 08,Rebecca Clare Simonaitis,Swimming,,19
+Fri,S1,07:25,Year 08,Haleema Zahoor Jan,Mathematics,G105,19
+Mon,S5,11:25,Year 08,Haleema Zahoor Jan,Mathematics,G105,19
+Thu,S2,08:20,Year 08,Haleema Zahoor Jan,Mathematics,G105,19
+Tue,S7,14:15,Year 08,Haleema Zahoor Jan,Mathematics,G105,19
+Wed,S3,09:35,Year 08,Haleema Zahoor Jan,Mathematics,G105,19
+Fri,S1,07:25,Year 08,Rouf Ahmed Ditta,Mathematics,G108,19
+Mon,S6,12:20,Year 08,Rouf Ahmed Ditta,Mathematics,G108,19
+Thu,S7,14:15,Year 08,Rouf Ahmed Ditta,Mathematics,G108,19
+Tue,S3,09:35,Year 08,Rouf Ahmed Ditta,Mathematics,G108,19
+Wed,S1,07:25,Year 08,Rouf Ahmed Ditta,Mathematics,G108,19
+Fri,S6,12:20,Year 09,Mahidul Islam,Science,G114,19
+Mon,S5,11:25,Year 09,Mahidul Islam,Science,G114,19
+Thu,S7,14:15,Year 09,Mahidul Islam,Science,G114,19
+Tue,S5,11:25,Year 09,Mahidul Islam,Science,G116,19
+Wed,S6,12:20,Year 09,Mahidul Islam,Science,G114,19
+Fri,S2,08:20,Year 09,Edel Quigley,Science,G108,19
+Mon,S7,14:15,Year 09,Edel Quigley,Science,G114,19
+Thu,S5,11:25,Year 09,Edel Quigley,Science,G117,19
+Tue,S2,08:20,Year 09,Edel Quigley,Science,G119,19
+Wed,S5,11:25,Year 09,Edel Quigley,Science,G114,19
+Fri,S3,09:35,Year 10,Elyaas Abdulaahi,Mathematics,G107,19
+Mon,S6,12:20,Year 10,Elyaas Abdulaahi,Mathematics,G107,19
+Thu,S2,08:20,Year 10,Elyaas Abdulaahi,Mathematics,G107,19
+Tue,S1,07:25,Year 10,Elyaas Abdulaahi,Mathematics,G107,19
+Fri,S6,12:20,Year 11,Ahmed Elgazzar,Arabic,G101,19
+Mon,S1,07:25,Year 11,Ahmed Elgazzar,Arabic,G006,19
+Tue,S2,08:20,Year 11,Ahmed Elgazzar,Arabic,G006,19
+Wed,S6,12:20,Year 11,Ahmed Elgazzar,Arabic,G006,19
+Fri,S2,08:20,Year 11,Abdelmonem Aljabari,Islamic studies,G113,19
+Thu,S1,07:25,Year 11,Abdelmonem Aljabari,Islamic studies,G113,19
+Tue,S4,10:30,Year 11,Abdelmonem Aljabari,Islamic studies,G113,19
+Wed,S7,14:15,Year 11,Abdelmonem Aljabari,Islamic studies,G113,19
+Mon,S7,14:15,Year 07,Hasnain Altaf,Science,G115,18
+Thu,S3,09:35,Year 07,Hasnain Altaf,Science,G102,18
+Tue,S6,12:20,Year 07,Hasnain Altaf,Science,G115,18
+Wed,S5,11:25,Year 07,Hasnain Altaf,Science,G115,18
+Fri,S2,08:20,Year 08,Smood Al Bostanji,Arabic,G007,18
+Mon,S5,11:25,Year 08,Smood Al Bostanji,Arabic,G007,18
+Thu,S1,07:25,Year 08,Smood Al Bostanji,Arabic,G007,18
+Tue,S4,10:30,Year 08,Smood Al Bostanji,Arabic,G007,18
+Wed,S3,09:35,Year 08,Smood Al Bostanji,Arabic,G007,18
+Mon,S7,14:15,Year 08,Sara Jarrah,Islamic studies,G113,18
+Thu,S6,12:20,Year 08,Sara Jarrah,Islamic studies,G113,18
+Tue,S6,12:20,Year 08,Sara Jarrah,Islamic studies,G113,18
+Wed,S2,08:20,Year 08,Sara Jarrah,Islamic studies,G107,18
+Fri,S4,10:30,Year 08,Nayla AlKadi,Moral Education,G106,18
+Wed,S7,14:15,Year 08,Hanaa Abdallah,Social Studies,G105,18
+Fri,S5,11:25,Year 08,Ibrahim Mohamed Abla,Arabic,G008,18
+Mon,S4,10:30,Year 08,Ibrahim Mohamed Abla,Arabic,G009,18
+Thu,S4,10:30,Year 08,Ibrahim Mohamed Abla,Arabic,G009,18
+Tue,S3,09:35,Year 08,Ibrahim Mohamed Abla,Arabic,G008,18
+Wed,S5,11:25,Year 08,Ibrahim Mohamed Abla,Arabic,G009,18
+Mon,S6,12:20,Year 08,Bayan Dababseh,Islamic studies,G112,18
+Thu,S3,09:35,Year 08,Bayan Dababseh,Islamic studies,G112,18
+Tue,S2,08:20,Year 08,Bayan Dababseh,Islamic studies,G112,18
+Wed,S6,12:20,Year 08,Bayan Dababseh,Islamic studies,G112,18
+Fri,S3,09:35,Year 08,Eatemad Abdelaal,Moral Education,G102,18
+Mon,S3,09:35,Year 08,Hanaa Abdallah,Social Studies,G106,18
+Tue,S4,10:30,Year 08,Sumerah Saeed,Product design,B010,18
+Wed,S2,08:20,Year 08,Sumerah Saeed,Product design,B010,18
+Tue,S6,12:20,Year 08,Mahnoor Nasir Awan,Computing,G104,18
+Wed,S1,07:25,Year 08,Sula Graham,Geography,G103,18
+Tue,S1,07:25,Year 08,Sula Graham,History,G103,18
+Mon,S2,08:20,Year 08,Rebecca Clare Simonaitis,Sport,,18
+Fri,S2,08:20,Year 08,Abeer Alzibdeh,Social Science,G111,18
+Thu,S1,07:25,Year 08,Abeer Alzibdeh,Social Science,G115,18
+Thu,S7,14:15,Year 08,Rebecca Clare Simonaitis,Swimming,,18
+Fri,S1,07:25,Year 09,Rawan Hamed Mahmoud,Arabic,G004,18
+Mon,S2,08:20,Year 09,Rawan Hamed Mahmoud,Arabic,G004,18
+Thu,S7,14:15,Year 09,Rawan Hamed Mahmoud,Arabic,G113,18
+Tue,S3,09:35,Year 09,Rawan Hamed Mahmoud,Arabic,G113,18
+Wed,S1,07:25,Year 09,Rawan Hamed Mahmoud,Arabic,G113,18
+Fri,S6,12:20,Year 09,Ishraq Khalilieh,Islamic studies,G110,18
+Mon,S4,10:30,Year 09,Ishraq Khalilieh,Islamic studies,G110,18
+Thu,S4,10:30,Year 09,Ishraq Khalilieh,Islamic studies,G110,18
+Wed,S3,09:35,Year 09,Ishraq Khalilieh,Islamic studies,G110,18
+Tue,S4,10:30,Year 09,Amal Khalil,Moral Education,G103,18
+Thu,S2,08:20,Year 09,Hanaa Abdallah,Social Studies,G006,18
+Mon,S6,12:20,Year 09,Sara Burns,Art,G011,18
+Wed,S6,12:20,Year 09,Sara Burns,Art,G011,18
+Fri,S4,10:30,Year 09,Emilia Rocio Ghirardi,English,G004,18
+Mon,S1,07:25,Year 09,Emilia Rocio Ghirardi,English,G004,18
+Thu,S3,09:35,Year 09,Emilia Rocio Ghirardi,English,G004,18
+Tue,S6,12:20,Year 09,Emilia Rocio Ghirardi,English,G004,18
+Wed,S4,10:30,Year 09,Emilia Rocio Ghirardi,English,G004,18
+Mon,S3,09:35,Year 09,Naumana Malik,Enterprise,G104,18
+Tue,S5,11:25,Year 09,Naumana Malik,Enterprise,G105,18
+Fri,S5,11:25,Year 09,Mehwish Adnan,Geography,G002,18
+Tue,S1,07:25,Year 09,Mehwish Adnan,History,G102,18
+Wed,S7,14:15,Year 09,Rebecca Clare Simonaitis,Sport,,18
+Thu,S6,12:20,Year 09,Rebecca Clare Simonaitis,Swimming,,18
+Fri,S3,09:35,Year 09,Anha Begum,Mathematics,G109,18
+Mon,S5,11:25,Year 09,Anha Begum,Mathematics,G107,18
+Thu,S1,07:25,Year 09,Anha Begum,Mathematics,G107,18
+Tue,S7,14:15,Year 09,Anha Begum,Mathematics,G107,18
+Wed,S2,08:20,Year 09,Anha Begum,Mathematics,G109,18
+Fri,S6,12:20,Year 09,Oke Stephanie Enaohwo,Science,G117,18
+Mon,S5,11:25,Year 09,Oke Stephanie Enaohwo,Science,G117,18
+Thu,S7,14:15,Year 09,Oke Stephanie Enaohwo,Science,G117,18
+Tue,S5,11:25,Year 09,Oke Stephanie Enaohwo,Science,G117,18
+Wed,S6,12:20,Year 09,Oke Stephanie Enaohwo,Science,G117,18
+Fri,S5,11:25,Year 10,Tahiba Akhtar,Product design,B011,18
+Thu,S4,10:30,Year 10,Tahiba Akhtar,Product design,B011,18
+Wed,S2,08:20,Year 10,Tahiba Akhtar,Product design,B011,18
+Fri,S3,09:35,Year 07,Haya Alasad,Arabic,G008,17
+Mon,S3,09:35,Year 07,Haya Alasad,Arabic,G008,17
+Thu,S5,11:25,Year 07,Haya Alasad,Arabic,G008,17
+Tue,S7,14:15,Year 07,Haya Alasad,Arabic,G008,17
+Wed,S2,08:20,Year 07,Haya Alasad,Arabic,G008,17
+Fri,S1,07:25,Year 07,Bayan Dababseh,Islamic studies,G112,17
+Thu,S2,08:20,Year 07,Bayan Dababseh,Islamic studies,G112,17
+Tue,S1,07:25,Year 07,Bayan Dababseh,Islamic studies,G113,17
+Wed,S4,10:30,Year 07,Bayan Dababseh,Islamic studies,G113,17
+Fri,S2,08:20,Year 07,Amal Khalil,Moral Education,G104,17
+Mon,S2,08:20,Year 07,Amal Khalil,Social Studies,G112,17
+Thu,S6,12:20,Year 07,Rowmicka Coutain,Food technology,G013,17
+Tue,S2,08:20,Year 07,Rowmicka Coutain,Food technology,G013,17
+Mon,S5,11:25,Year 07,Naumana Malik,Computing,G109,17
+Fri,S4,10:30,Year 07,Ali Jaabir,Geography,G105,17
+Tue,S4,10:30,Year 07,Ali Jaabir,History,G003,17
+Wed,S1,07:25,Year 07,Rebecca Clare Simonaitis,Sport,,17
+Thu,S4,10:30,Year 07,Abeer Alzibdeh,Social Science,G112,17
+Wed,S6,12:20,Year 07,Abeer Alzibdeh,Social Science,G118,17
+Mon,S4,10:30,Year 07,Rebecca Clare Simonaitis,Swimming,,17
+Fri,S3,09:35,Year 07,Hasnain Altaf,Science,G117,17
+Thu,S2,08:20,Year 07,Hasnain Altaf,Science,G117,17
+Tue,S2,08:20,Year 07,Hasnain Altaf,Science,G114,17
+Wed,S7,14:15,Year 07,Hasnain Altaf,Science,G117,17
+Fri,S2,08:20,Year 08,Fatima Roumia,Arabic,G110,17
+Mon,S5,11:25,Year 08,Fatima Roumia,Arabic,SPIG,17
+Thu,S1,07:25,Year 08,Fatima Roumia,Arabic,SPIG,17
+Tue,S4,10:30,Year 08,Fatima Roumia,Arabic,SPIG,17
+Wed,S3,09:35,Year 08,Fatima Roumia,Arabic,SPIG,17
+Mon,S7,14:15,Year 08,Elham Hassan,Islamic studies,G101,17
+Thu,S6,12:20,Year 08,Elham Hassan,Islamic studies,G102,17
+Tue,S6,12:20,Year 08,Elham Hassan,Islamic studies,G101,17
+Wed,S7,14:15,Year 08,Elham Hassan,Islamic studies,G101,17
+Wed,S2,08:20,Year 08,Hadeel Alzebdeh,Moral Education,G101,17
+Fri,S4,10:30,Year 08,Hadeel Alzebdeh,Social Studies,G110,17
+Fri,S3,09:35,Year 09,Hanein Alsarayreh,Arabic,G007,17
+Mon,S7,14:15,Year 09,Hanein Alsarayreh,Arabic,G007,17
+Thu,S5,11:25,Year 09,Hanein Alsarayreh,Arabic,G007,17
+Tue,S2,08:20,Year 09,Hanein Alsarayreh,Arabic,G007,17
+Wed,S2,08:20,Year 09,Hanein Alsarayreh,Arabic,G007,17
+Mon,S3,09:35,Year 09,Ishraq Khalilieh,Islamic studies,G110,17
+Thu,S1,07:25,Year 09,Ishraq Khalilieh,Islamic studies,G110,17
+Tue,S1,07:25,Year 09,Ishraq Khalilieh,Islamic studies,G110,17
+Wed,S7,14:15,Year 09,Ishraq Khalilieh,Islamic studies,G110,17
+Wed,S5,11:25,Year 09,Nayla AlKadi,Moral Education,G005,17
+Fri,S4,10:30,Year 09,Hanaa Abdallah,Social Studies,G103,17
+Fri,S4,10:30,Year 09,Asal Faisal Taher Enayah,Arabic,G006,17
+Mon,S3,09:35,Year 09,Asal Faisal Taher Enayah,Arabic,G006,17
+Thu,S1,07:25,Year 09,Asal Faisal Taher Enayah,Arabic,G006,17
+Tue,S1,07:25,Year 09,Asal Faisal Taher Enayah,Arabic,G006,17
+Wed,S7,14:15,Year 09,Asal Faisal Taher Enayah,Arabic,G006,17
+Fri,S3,09:35,Year 09,Ishraq Khalilieh,Islamic studies,G110,17
+Mon,S7,14:15,Year 09,Ishraq Khalilieh,Islamic studies,G110,17
+Tue,S2,08:20,Year 09,Ishraq Khalilieh,Islamic studies,G110,17
+Wed,S2,08:20,Year 09,Ishraq Khalilieh,Islamic studies,G110,17
+Wed,S5,11:25,Year 09,Hanaa Abdallah,Moral Education,G103,17
+Thu,S5,11:25,Year 09,Hanaa Abdallah,Social Studies,G103,17
+Fri,S5,11:25,Year 09,Sara Burns,Art,G011,17
+Tue,S7,14:15,Year 09,Sara Burns,Art,G011,17
+Fri,S4,10:30,Year 09,Farahnaaz Rajub,English,G005,17
+Mon,S1,07:25,Year 09,Farahnaaz Rajub,English,G001,17
+Thu,S3,09:35,Year 09,Farahnaaz Rajub,English,G005,17
+Tue,S6,12:20,Year 09,Farahnaaz Rajub,English,G001,17
+Wed,S4,10:30,Year 09,Farahnaaz Rajub,English,G005,17
+Mon,S6,12:20,Year 09,Mujahed Nayef,Enterprise,G104,17
+Thu,S2,08:20,Year 09,Mujahed Nayef,Enterprise,G104,17
+Tue,S6,12:20,Year 09,Ali Jaabir,Geography,G102,17
+Thu,S4,10:30,Year 09,Ali Jaabir,History,G003,17
+Wed,S3,09:35,Year 09,Kristin Quinn,Sport,,17
+Mon,S4,10:30,Year 09,Kristin Quinn,Swimming,,17
+Fri,S3,09:35,Year 09,Anisha Masood,Mathematics,G108,17
+Mon,S5,11:25,Year 09,Anisha Masood,Mathematics,G108,17
+Thu,S1,07:25,Year 09,Anisha Masood,Mathematics,G108,17
+Tue,S7,14:15,Year 09,Anisha Masood,Mathematics,G108,17
+Wed,S2,08:20,Year 09,Anisha Masood,Mathematics,G108,17
+Mon,S2,08:20,Year 10,Amy Tetteh,Psychology,G116,17
+Tue,S6,12:20,Year 10,Amy Tetteh,Psychology,G109,17
+Wed,S4,10:30,Year 10,Amy Tetteh,Psychology,G105,17
+Mon,S3,09:35,Year 11,Mahnoor Nasir Awan,Business Studies,G102,17
+Thu,S4,10:30,Year 11,Mahnoor Nasir Awan,Business Studies,G102,17
+Wed,S3,09:35,Year 11,Mahnoor Nasir Awan,Business Studies,G102,17
+Fri,S5,11:25,Year 07,Haya Alasad,Arabic,G009,16
+Mon,S4,10:30,Year 07,Haya Alasad,Arabic,G008,16
+Thu,S6,12:20,Year 07,Haya Alasad,Arabic,G009,16
+Tue,S5,11:25,Year 07,Haya Alasad,Arabic,G009,16
+Wed,S1,07:25,Year 07,Haya Alasad,Arabic,G009,16
+Fri,S6,12:20,Year 07,Bayan Dababseh,Islamic studies,G112,16
+Thu,S7,14:15,Year 07,Bayan Dababseh,Islamic studies,G112,16
+Tue,S3,09:35,Year 07,Bayan Dababseh,Islamic studies,G112,16
+Wed,S3,09:35,Year 07,Bayan Dababseh,Islamic studies,G112,16
+Mon,S1,07:25,Year 07,Asal Faisal Taher Enayah,Moral Education,G110,16
+Wed,S6,12:20,Year 07,Hanaa Abdallah,Social Studies,G103,16
+Fri,S2,08:20,Year 09,Louie George Holmes,English,G101,16
+Mon,S1,07:25,Year 09,Louie George Holmes,English,G002,16
+Thu,S3,09:35,Year 09,Louie George Holmes,English,G101,16
+Tue,S3,09:35,Year 09,Louie George Holmes,English,G002,16
+Wed,S4,10:30,Year 09,Louie George Holmes,English,G002,16
+Fri,S2,08:20,Year 09,Zeinab Hassan,Science,G119,16
+Mon,S7,14:15,Year 09,Zeinab Hassan,Science,G118,16
+Thu,S5,11:25,Year 09,Zeinab Hassan,Science,G118,16
+Tue,S2,08:20,Year 09,Zeinab Hassan,Science,G117,16
+Wed,S5,11:25,Year 09,Zeinab Hassan,Science,G118,16
+Mon,S4,10:30,Year 10,Mahnoor Nasir Awan,Business Studies,G102,16
+Thu,S5,11:25,Year 10,Mahnoor Nasir Awan,Business Studies,G102,16
+Wed,S1,07:25,Year 10,Mahnoor Nasir Awan,Business Studies,G102,16
+Mon,S2,08:20,Year 10,Zeinab Hassan,Chemistry,G118,16
+Tue,S6,12:20,Year 10,Zeinab Hassan,Chemistry,G118,16
+Wed,S4,10:30,Year 10,Zeinab Hassan,Chemistry,G118,16
+Fri,S4,10:30,Year 11,Adebimpe Sogbesan,Biology,G114,16
+Mon,S5,11:25,Year 11,Adebimpe Sogbesan,Biology,G101,16
+Thu,S3,09:35,Year 11,Adebimpe Sogbesan,Biology,G114,16
+Fri,S6,12:20,Year 09,Hanein Alsarayreh,Arabic,G007,15
+Mon,S4,10:30,Year 09,Hanein Alsarayreh,Arabic,G007,15
+Thu,S4,10:30,Year 09,Hanein Alsarayreh,Arabic,G007,15
+Tue,S3,09:35,Year 09,Hanein Alsarayreh,Arabic,G007,15
+Wed,S3,09:35,Year 09,Hanein Alsarayreh,Arabic,G008,15
+Fri,S1,07:25,Year 09,Ishraq Khalilieh,Islamic studies,G110,15
+Mon,S2,08:20,Year 09,Ishraq Khalilieh,Islamic studies,G110,15
+Thu,S2,08:20,Year 09,Ishraq Khalilieh,Islamic studies,G110,15
+Tue,S4,10:30,Year 09,Ishraq Khalilieh,Islamic studies,G110,15
+Wed,S1,07:25,Year 09,Amal Khalil,Moral Education,G002,15
+Thu,S7,14:15,Year 09,Hanaa Abdallah,Social Studies,G103,15
+Mon,S6,12:20,Year 09,Rowmicka Coutain,Food technology,G013,15
+Wed,S6,12:20,Year 09,Rowmicka Coutain,Food technology,G013,15
+Mon,S3,09:35,Year 09,Shakeela Salim Patel,Enterprise,G109,15
+Thu,S6,12:20,Year 09,Shakeela Salim Patel,Enterprise,G108,15
+Tue,S5,11:25,Year 09,Mohamed Mustafa Ghanchi,Geography,G101,15
+Tue,S1,07:25,Year 09,Mohamed Mustafa Ghanchi,History,G105,15
+Fri,S5,11:25,Year 09,Kristin Quinn,Sport,,15
+Wed,S7,14:15,Year 09,Kristin Quinn,Swimming,,15
+Fri,S1,07:25,Year 09,Anisha Masood,Mathematics,G101,15
+Mon,S2,08:20,Year 09,Anisha Masood,Mathematics,G101,15
+Thu,S6,12:20,Year 09,Anisha Masood,Mathematics,G101,15
+Tue,S4,10:30,Year 09,Anisha Masood,Mathematics,G101,15
+Wed,S1,07:25,Year 09,Anisha Masood,Mathematics,G101,15
+Fri,S5,11:25,Year 10,Edel Quigley,Chemistry,G117,15
+Thu,S4,10:30,Year 10,Edel Quigley,Chemistry,G117,15
+Wed,S2,08:20,Year 10,Edel Quigley,Chemistry,G117,15
+Mon,S4,10:30,Year 10,Shannan OBrien,Physics,G117,15
+Thu,S5,11:25,Year 10,Shannan OBrien,Physics,G114,15
+Wed,S1,07:25,Year 10,Shannan OBrien,Physics,G117,15
+Mon,S7,14:15,Year 10,Sophie Groves,Art,G012,13
+Thu,S3,09:35,Year 10,Sophie Groves,Art,G012,13
+Tue,S5,11:25,Year 10,Sophie Groves,Art,G012,13
+Thu,S7,14:15,Year 11,Edel Quigley,Chemistry,G007,13
+Tue,S5,11:25,Year 11,Edel Quigley,Chemistry,G119,13
+Wed,S1,07:25,Year 11,Edel Quigley,Chemistry,G115,13
+Thu,S1,07:25,Year 12,Carla Victoria Howe,Sport,,13
+Wed,S6,12:20,Year 12,Carla Victoria Howe,Sport,,13
+Fri,S5,11:25,Year 11,Suweiba Odowa,Computing,G104,12
+Mon,S2,08:20,Year 11,Suweiba Odowa,Computing,G005,12
+Tue,S3,09:35,Year 11,Suweiba Odowa,Computing,G107,12
+Mon,S6,12:20,Year 11,Amy Tetteh,Psychology,G008,12
+Thu,S2,08:20,Year 11,Amy Tetteh,Psychology,G008,12
+Tue,S1,07:25,Year 11,Amy Tetteh,Psychology,G116,12
+Fri,S2,08:20,Year 08,Ibrahim Mohamed Abla,Arabic,G008,11
+Mon,S7,14:15,Year 08,Ibrahim Mohamed Abla,Arabic,G006,11
+Thu,S6,12:20,Year 08,Ibrahim Mohamed Abla,Arabic,G006,11
+Tue,S6,12:20,Year 08,Ibrahim Mohamed Abla,Arabic,G006,11
+Wed,S3,09:35,Year 08,Ibrahim Mohamed Abla,Arabic,G006,11
+Fri,S4,10:30,Year 08,Zainab Yagoub,Islamic studies,G111,11
+Mon,S5,11:25,Year 08,Zainab Yagoub,Islamic studies,G111,11
+Thu,S1,07:25,Year 08,Zainab Yagoub,Islamic studies,G111,11
+Wed,S7,14:15,Year 08,Zainab Yagoub,Islamic studies,G111,11
+Tue,S4,10:30,Year 08,Eatemad Abdelaal,Moral Education,G111,11
+Wed,S2,08:20,Year 08,Hanaa Abdallah,Social Studies,G103,11
+Fri,S6,12:20,Year 10,Nathan Hall,Economics,G108,10
+Mon,S5,11:25,Year 10,Nathan Hall,Economics,G003,10
+Tue,S7,14:15,Year 10,Nathan Hall,Economics,G003,10
+Mon,S4,10:30,Year 10,Harry Jones,Geography,G105,10
+Thu,S5,11:25,Year 10,Harry Jones,Geography,G105,10
+Wed,S1,07:25,Year 10,Harry Jones,Geography,G005,10
+Fri,S1,07:25,Year 10,Fatima Roumia,Arabic,SPIG,10
+Mon,S1,07:25,Year 10,Fatima Roumia,Arabic,SPIG,10
+Tue,S2,08:20,Year 10,Fatima Roumia,Arabic,SPIG,10
+Wed,S7,14:15,Year 10,Fatima Roumia,Arabic,SPIG,10
+Fri,S2,08:20,Year 10,Elham Hassan,Islamic studies,G102,10
+Thu,S1,07:25,Year 10,Elham Hassan,Islamic studies,G106,10
+Tue,S4,10:30,Year 10,Elham Hassan,Islamic studies,G102,10
+Wed,S6,12:20,Year 10,Elham Hassan,Islamic studies,G102,10
+Fri,S4,10:30,Year 11,Harry Jones,Geography,G107,1
+Mon,S5,11:25,Year 11,Harry Jones,Geography,G102,1
+Thu,S3,09:35,Year 11,Harry Jones,Geography,G107,1
+Fri,S1,07:25,Year 13,Jasmine Rachael Clarke,English Literature,S_LI,2
+Mon,S1,07:25,Year 13,Jasmine Rachael Clarke,English Literature,TR1,2
+Thu,S4,10:30,Year 13,Jasmine Rachael Clarke,English Literature,TR1,2
+Tue,S4,10:30,Year 13,Jasmine Rachael Clarke,English Literature,TR1,2
+Wed,S7,14:15,Year 13,Jasmine Rachael Clarke,English Literature,TR1,2
+Mon,S4,10:30,Year 13,Jafrina Jahan,History,G101,1
+Thu,S2,08:20,Year 13,Jafrina Jahan,History,SPIG,1
+Wed,S2,08:20,Year 13,Jafrina Jahan,History,G013,1
+Fri,S5,11:25,Year 13,Naomi Watt,Mathematics,G005,2
+Mon,S2,08:20,Year 13,Naomi Watt,Mathematics,TR2,2
+Thu,S3,09:35,Year 13,Naomi Watt,Mathematics,G109,2
+Tue,S1,07:25,Year 13,Naomi Watt,Mathematics,G106,2
+Wed,S6,12:20,Year 13,Naomi Watt,Mathematics,TR2,2
+Fri,S3,09:35,Year 13,Ali Al-Kheffaji,Physics,TR1,1
+Mon,S7,14:15,Year 13,Ali Al-Kheffaji,Physics,B114,1
+Thu,S5,11:25,Year 13,Ali Al-Kheffaji,Physics,B115,1
+Tue,S7,14:15,Year 13,Ali Al-Kheffaji,Physics,TR1,1
+Wed,S3,09:35,Year 13,Ali Al-Kheffaji,Physics,B116,1
+Fri,S3,09:35,Year 07,Hani Abu-Ateyih,Arabic,B008,22
+Mon,S2,08:20,Year 07,Hani Abu-Ateyih,Arabic,B008,22
+Thu,S5,11:25,Year 07,Hani Abu-Ateyih,Arabic,B008,22
+Tue,S5,11:25,Year 07,Hani Abu-Ateyih,Arabic,B110,22
+Wed,S7,14:15,Year 07,Hani Abu-Ateyih,Arabic,B008,22
+Mon,S6,12:20,Year 07,Mahmoud Dababseh,Islamic studies,B110,22
+Thu,S4,10:30,Year 07,Mahmoud Dababseh,Islamic studies,B110,22
+Tue,S3,09:35,Year 07,Mahmoud Dababseh,Islamic studies,B110,22
+Wed,S3,09:35,Year 07,Mahmoud Dababseh,Islamic studies,B110,22
+Fri,S4,10:30,Year 07,Omar Banat,Moral Education,B008,22
+Wed,S4,10:30,Year 07,Ahmed Moustafa,Social Studies,B006,22
+Fri,S4,10:30,Year 07,Suhib Qasem,Arabic,B006,22
+Mon,S2,08:20,Year 07,Suhib Qasem,Arabic,B006,22
+Thu,S5,11:25,Year 07,Suhib Qasem,Arabic,B006,22
+Tue,S5,11:25,Year 07,Suhib Qasem,Arabic,B006,22
+Wed,S7,14:15,Year 07,Suhib Qasem,Arabic,B006,22
+Fri,S3,09:35,Year 07,Mahmoud Dababseh,Islamic studies,B110,22
+Thu,S4,10:30,Year 07,Mahmoud Dababseh,Islamic studies,B111,22
+Tue,S3,09:35,Year 07,Mahmoud Dababseh,Islamic studies,B111,22
+Wed,S4,10:30,Year 07,Mahmoud Dababseh,Islamic studies,B110,22
+Wed,S3,09:35,Year 07,Mohamed Bayyoumi,Moral Education,B115,22
+Mon,S6,12:20,Year 07,Ahmed Moustafa,Social Studies,B104,22
+Fri,S3,09:35,Year 07,Suhib Qasem,Arabic,B009,18
+Mon,S6,12:20,Year 07,Suhib Qasem,Arabic,B009,18
+Thu,S4,10:30,Year 07,Suhib Qasem,Arabic,B009,18
+Tue,S3,09:35,Year 07,Suhib Qasem,Arabic,B009,18
+Wed,S3,09:35,Year 07,Suhib Qasem,Arabic,B009,18
+Fri,S4,10:30,Year 07,Mahmoud Dababseh,Islamic studies,B112,18
+Thu,S5,11:25,Year 07,Mahmoud Dababseh,Islamic studies,B112,18
+Tue,S5,11:25,Year 07,Mahmoud Dababseh,Islamic studies,B112,18
+Wed,S7,14:15,Year 07,Mahmoud Dababseh,Islamic studies,B112,18
+Wed,S4,10:30,Year 07,Taher Suboh,Moral Education,B104,18
+Mon,S2,08:20,Year 07,Ahmed Moustafa,Social Studies,B007,18
+Fri,S6,12:20,Year 07,Hani Abu-Ateyih,Arabic,B008,12
+Mon,S5,11:25,Year 07,Hani Abu-Ateyih,Arabic,B009,12
+Thu,S1,07:25,Year 07,Hani Abu-Ateyih,Arabic,B008,12
+Tue,S2,08:20,Year 07,Hani Abu-Ateyih,Arabic,B008,12
+Wed,S6,12:20,Year 07,Hani Abu-Ateyih,Arabic,B008,12
+Fri,S2,08:20,Year 07,Bara Jarah,Islamic studies,B102,12
+Mon,S6,12:20,Year 07,Bara Jarah,Islamic studies,B113,12
+Thu,S7,14:15,Year 07,Bara Jarah,Islamic studies,B102,12
+Tue,S5,11:25,Year 07,Bara Jarah,Islamic studies,B113,12
+Wed,S2,08:20,Year 07,Malek AlRshaidat,Moral Education,B009,12
+Tue,S1,07:25,Year 07,Ahmed Moustafa,Social Studies,B003,12
+Fri,S2,08:20,Year 07,Hani Abu-Ateyih,Arabic,B006,16
+Mon,S6,12:20,Year 07,Hani Abu-Ateyih,Arabic,B102,16
+Thu,S7,14:15,Year 07,Hani Abu-Ateyih,Arabic,B006,16
+Tue,S1,07:25,Year 07,Hani Abu-Ateyih,Arabic,B006,16
+Wed,S2,08:20,Year 07,Hani Abu-Ateyih,Arabic,B005,16
+Fri,S6,12:20,Year 07,Mahmoud Dababseh,Islamic studies,B110,16
+Mon,S5,11:25,Year 07,Mahmoud Dababseh,Islamic studies,B110,16
+Thu,S1,07:25,Year 07,Mahmoud Dababseh,Islamic studies,B110,16
+Wed,S6,12:20,Year 07,Mahmoud Dababseh,Islamic studies,B110,16
+Tue,S5,11:25,Year 07,Mohamed Bayyoumi,Moral Education,B005,16
+Tue,S2,08:20,Year 07,Ahmed Moustafa,Social Studies,B104,16
+Fri,S1,07:25,Year 07,Suhib Qasem,Arabic,B006,19
+Mon,S7,14:15,Year 07,Suhib Qasem,Arabic,B006,19
+Thu,S3,09:35,Year 07,Suhib Qasem,Arabic,B006,19
+Tue,S4,10:30,Year 07,Suhib Qasem,Arabic,B006,19
+Wed,S5,11:25,Year 07,Suhib Qasem,Arabic,B006,19
+Fri,S5,11:25,Year 07,Mahmoud Dababseh,Islamic studies,B113,19
+Mon,S4,10:30,Year 07,Mahmoud Dababseh,Islamic studies,B110,19
+Tue,S2,08:20,Year 07,Mahmoud Dababseh,Islamic studies,B110,19
+Wed,S4,10:30,Year 07,Mahmoud Dababseh,Islamic studies,B103,19
+Fri,S4,10:30,Year 07,Taher Suboh,Moral Education,B007,19
+Thu,S1,07:25,Year 07,Ahmed Moustafa,Social Studies,B104,19
+Fri,S6,12:20,Year 07,Rawan Hamed Mahmoud,Arabic,B006,20
+Mon,S5,11:25,Year 07,Rawan Hamed Mahmoud,Arabic,B005,20
+Thu,S1,07:25,Year 07,Rawan Hamed Mahmoud,Arabic,B006,20
+Tue,S2,08:20,Year 07,Rawan Hamed Mahmoud,Arabic,B005,20
+Wed,S6,12:20,Year 07,Rawan Hamed Mahmoud,Arabic,B006,20
+Fri,S2,08:20,Year 07,Mahmoud Dababseh,Islamic studies,B110,20
+Thu,S7,14:15,Year 07,Mahmoud Dababseh,Islamic studies,B110,20
+Tue,S1,07:25,Year 07,Mahmoud Dababseh,Islamic studies,B110,20
+Wed,S2,08:20,Year 07,Mahmoud Dababseh,Islamic studies,B110,20
+Mon,S6,12:20,Year 07,Mohamed Bayyoumi,Moral Education,B003,20
+Tue,S5,11:25,Year 07,Ahmed Moustafa,Social Studies,B107,20
+Fri,S1,07:25,Year 07,Hani Abu-Ateyih,Arabic,B005,23
+Mon,S7,14:15,Year 07,Hani Abu-Ateyih,Arabic,B009,23
+Thu,S3,09:35,Year 07,Hani Abu-Ateyih,Arabic,B110,23
+Tue,S4,10:30,Year 07,Hani Abu-Ateyih,Arabic,B110,23
+Wed,S5,11:25,Year 07,Hani Abu-Ateyih,Arabic,B009,23
+Fri,S5,11:25,Year 07,Mohammad Zeyad Alqraini,Islamic studies,B111,23
+Mon,S4,10:30,Year 07,Mohammad Zeyad Alqraini,Islamic studies,B111,23
+Thu,S1,07:25,Year 07,Mohammad Zeyad Alqraini,Islamic studies,B111,23
+Wed,S4,10:30,Year 07,Mohammad Zeyad Alqraini,Islamic studies,B111,23
+Tue,S2,08:20,Year 07,Taher Suboh,Moral Education,B003,23
+Fri,S4,10:30,Year 07,Ahmed Moustafa,Social Studies,B009,23
+Mon,S3,09:35,Year 07,Sara Burns,Art,G011,22
+Tue,S2,08:20,Year 07,Sara Burns,Art,G011,22
+Mon,S3,09:35,Year 07,Gavin John Earnshaw,Product design,B011,22
+Tue,S2,08:20,Year 07,Gavin John Earnshaw,Product design,B011,22
+Mon,S3,09:35,Year 07,Sumerah Saeed,Product design,B010,18
+Tue,S2,08:20,Year 07,Sumerah Saeed,Product design,B010,18
+Mon,S4,10:30,Year 07,Tahiba Akhtar,Product design,B010,19
+Thu,S2,08:20,Year 07,Tahiba Akhtar,Product design,B010,19
+Mon,S4,10:30,Year 07,Gavin John Earnshaw,Product design,B011,20
+Thu,S2,08:20,Year 07,Gavin John Earnshaw,Product design,B011,20
+Mon,S2,08:20,Year 07,Rowmicka Coutain,Food technology,G013,19
+Tue,S6,12:20,Year 07,Rowmicka Coutain,Food technology,G013,19
+Mon,S4,10:30,Year 07,Sophie Groves,Art,G012,22
+Thu,S2,08:20,Year 07,Sophie Groves,Art,G012,22
+Mon,S2,08:20,Year 07,Tahiba Akhtar,Product design,B010,23
+Tue,S6,12:20,Year 07,Tahiba Akhtar,Product design,B011,23
+Fri,S2,08:20,Year 07,Nooriyah Abdoel,English,B002,22
+Mon,S4,10:30,Year 07,Nooriyah Abdoel,English,B008,22
+Thu,S2,08:20,Year 07,Nooriyah Abdoel,English,B110,22
+Tue,S7,14:15,Year 07,Nooriyah Abdoel,English,B106,22
+Wed,S6,12:20,Year 07,Nooriyah Abdoel,English,B106,22
+Fri,S2,08:20,Year 07,Elizabeth Orotayo,English,B001,21
+Mon,S4,10:30,Year 07,Elizabeth Orotayo,English,B001,21
+Thu,S2,08:20,Year 07,Elizabeth Orotayo,English,B001,21
+Tue,S7,14:15,Year 07,Elizabeth Orotayo,English,B001,21
+Wed,S6,12:20,Year 07,Elizabeth Orotayo,English,B001,21
+Fri,S2,08:20,Year 07,Mariam Yousaf,English,B005,19
+Mon,S4,10:30,Year 07,Mariam Yousaf,English,B002,19
+Thu,S2,08:20,Year 07,Mariam Yousaf,English,B005,19
+Tue,S7,14:15,Year 07,Mariam Yousaf,English,B008,19
+Wed,S6,12:20,Year 07,Mariam Yousaf,English,B005,19
+Fri,S5,11:25,Year 07,Anna-Maria Anyinsah-Bondzie,English,B003,23
+Mon,S1,07:25,Year 07,Anna-Maria Anyinsah-Bondzie,English,B003,23
+Thu,S3,09:35,Year 07,Anna-Maria Anyinsah-Bondzie,English,B003,23
+Tue,S6,12:20,Year 07,Anna-Maria Anyinsah-Bondzie,English,B003,23
+Wed,S4,10:30,Year 07,Anna-Maria Anyinsah-Bondzie,English,B003,23
+Fri,S5,11:25,Year 07,Zara Ifsa Hamid,English,B002,20
+Mon,S1,07:25,Year 07,Zara Ifsa Hamid,English,B002,20
+Thu,S3,09:35,Year 07,Zara Ifsa Hamid,English,B002,20
+Tue,S6,12:20,Year 07,Zara Ifsa Hamid,English,B002,20
+Wed,S4,10:30,Year 07,Zara Ifsa Hamid,English,B002,20
+Fri,S3,09:35,Year 07,Huda Abdullahi Mohamed,English,B002,20
+Mon,S5,11:25,Year 07,Huda Abdullahi Mohamed,English,B002,20
+Thu,S2,08:20,Year 07,Huda Abdullahi Mohamed,English,B002,20
+Tue,S7,14:15,Year 07,Huda Abdullahi Mohamed,English,B110,20
+Wed,S3,09:35,Year 07,Huda Abdullahi Mohamed,English,B002,20
+Fri,S5,11:25,Year 07,Elizabeth Orotayo,English,B001,18
+Mon,S1,07:25,Year 07,Elizabeth Orotayo,English,B001,18
+Thu,S3,09:35,Year 07,Elizabeth Orotayo,English,B001,18
+Tue,S6,12:20,Year 07,Elizabeth Orotayo,English,B001,18
+Wed,S4,10:30,Year 07,Elizabeth Orotayo,English,B001,18
+Fri,S3,09:35,Year 07,Louie George Holmes,English,B004,22
+Mon,S5,11:25,Year 07,Louie George Holmes,English,B004,22
+Thu,S2,08:20,Year 07,Louie George Holmes,English,B004,22
+Tue,S7,14:15,Year 07,Louie George Holmes,English,B002,22
+Wed,S3,09:35,Year 07,Louie George Holmes,English,B004,22
+Fri,S5,11:25,Year 07,Mahnoor Nasir Awan,Computing,B117,22
+Thu,S7,14:15,Year 07,Mehwish Adnan,Geography,SP1B,22
+Wed,S1,07:25,Year 07,Mehwish Adnan,History,B102,22
+Mon,S1,07:25,Year 07,Bassam Ghunaim,Sport,,22
+Fri,S1,07:25,Year 07,Hussen Dohal,Social Science,B116,22
+Tue,S4,10:30,Year 07,Hussen Dohal,Social Science,B115,22
+Thu,S3,09:35,Year 07,Elizabeth Orotayo,Swimming,,22
+Tue,S4,10:30,Year 07,Mahnoor Nasir Awan,Computing,B103,22
+Fri,S1,07:25,Year 07,Ali Jaabir,Geography,B105,22
+Thu,S3,09:35,Year 07,Ali Jaabir,History,B004,22
+Mon,S1,07:25,Year 07,Jermaine Nana Kojo Asare Aryeetey,Sport,,22
+Fri,S5,11:25,Year 07,Ahmed Alafifi,Social Science,B116,22
+Wed,S1,07:25,Year 07,Ahmed Alafifi,Social Science,B111,22
+Thu,S7,14:15,Year 07,Jermaine Nana Kojo Asare Aryeetey,Swimming,,22
+Thu,S3,09:35,Year 07,Suweiba Odowa,Computing,B103,18
+Mon,S1,07:25,Year 07,Samuel Elliott,Geography,B102,18
+Fri,S1,07:25,Year 07,Samuel Elliott,History,B104,18
+Wed,S1,07:25,Year 07,Graham Hodgson,Sport,,18
+Fri,S5,11:25,Year 07,Hussen Dohal,Social Science,B115,18
+Thu,S7,14:15,Year 07,Hussen Dohal,Social Science,B101,18
+Tue,S4,10:30,Year 07,Bassam Ghunaim,Swimming,,18
+Mon,S3,09:35,Year 07,Mujahed Nayef,Computing,B003,19
+Wed,S5,11:25,Year 07,Mehwish Adnan,Geography,B107,19
+Tue,S7,14:15,Year 07,Mehwish Adnan,History,B009,19
+Fri,S4,10:30,Year 07,Paul Graham Jones,Sport,,19
+Thu,S5,11:25,Year 07,Ahmed Alafifi,Social Science,B118,19
+Wed,S7,14:15,Year 07,Ahmed Alafifi,Social Science,B005,19
+Mon,S7,14:15,Year 07,Paul Graham Jones,Swimming,,19
+Mon,S7,14:15,Year 07,Naumana Malik,Computing,B103,20
+Wed,S7,14:15,Year 07,Mohamed Mustafa Ghanchi,Geography,B106,20
+Fri,S4,10:30,Year 07,Mohamed Mustafa Ghanchi,History,B104,20
+Wed,S5,11:25,Year 07,Bassam Ghunaim,Sport,,20
+Mon,S3,09:35,Year 07,Ahmed Alafifi,Social Science,B111,20
+Tue,S7,14:15,Year 07,Ahmed Alafifi,Social Science,B112,20
+Thu,S5,11:25,Year 07,Bassam Ghunaim,Swimming,,20
+Mon,S1,07:25,Year 07,Naumana Malik,Computing,B101,19
+Thu,S5,11:25,Year 07,Mehwish Adnan,Geography,B007,19
+Wed,S7,14:15,Year 07,Mehwish Adnan,History,B107,19
+Thu,S4,10:30,Year 07,Graham Hodgson,Sport,,19
+Fri,S2,08:20,Year 07,Ahmed Alafifi,Social Science,B115,19
+Tue,S5,11:25,Year 07,Ahmed Alafifi,Social Science,B114,19
+Wed,S6,12:20,Year 07,Bassam Ghunaim,Swimming,,19
+Wed,S7,14:15,Year 07,Mahnoor Nasir Awan,Computing,B103,22
+Mon,S3,09:35,Year 07,Samuel Elliott,Geography,B005,22
+Thu,S5,11:25,Year 07,Samuel Elliott,History,B005,22
+Tue,S7,14:15,Year 07,Bassam Ghunaim,Sport,,22
+Mon,S7,14:15,Year 07,Hussen Dohal,Social Science,B117,22
+Wed,S5,11:25,Year 07,Hussen Dohal,Social Science,B110,22
+Fri,S4,10:30,Year 07,Bassam Ghunaim,Swimming,,22
+Thu,S4,10:30,Year 07,Naumana Malik,Computing,B103,23
+Wed,S7,14:15,Year 07,Ali Jaabir,Geography,B109,23
+Tue,S5,11:25,Year 07,Ali Jaabir,History,B105,23
+Fri,S2,08:20,Year 07,Graham Hodgson,Sport,,23
+Mon,S1,07:25,Year 07,Hussen Dohal,Social Science,B107,23
+Thu,S5,11:25,Year 07,Hussen Dohal,Social Science,B116,23
+Wed,S6,12:20,Year 07,Graham Hodgson,Swimming,,23
+Fri,S6,12:20,Year 07,Rouf Ahmed Ditta,Mathematics,B108,25
+Mon,S5,11:25,Year 07,Rouf Ahmed Ditta,Mathematics,B108,25
+Thu,S1,07:25,Year 07,Rouf Ahmed Ditta,Mathematics,B108,25
+Tue,S1,07:25,Year 07,Rouf Ahmed Ditta,Mathematics,B108,25
+Wed,S2,08:20,Year 07,Rouf Ahmed Ditta,Mathematics,B108,25
+Fri,S6,12:20,Year 07,Ali Ahmed,Mathematics,B107,19
+Mon,S5,11:25,Year 07,Ali Ahmed,Mathematics,B107,19
+Thu,S1,07:25,Year 07,Ali Ahmed,Mathematics,B107,19
+Tue,S1,07:25,Year 07,Ali Ahmed,Mathematics,B107,19
+Wed,S2,08:20,Year 07,Ali Ahmed,Mathematics,B107,19
+Fri,S6,12:20,Year 07,Mahamed Arshe,Mathematics,B109,18
+Mon,S5,11:25,Year 07,Mahamed Arshe,Mathematics,B109,18
+Thu,S1,07:25,Year 07,Mahamed Arshe,Mathematics,B109,18
+Tue,S1,07:25,Year 07,Mahamed Arshe,Mathematics,B109,18
+Wed,S2,08:20,Year 07,Mahamed Arshe,Mathematics,B109,18
+Fri,S1,07:25,Year 07,Elyaas Abdulaahi,Mathematics,B107,21
+Mon,S2,08:20,Year 07,Elyaas Abdulaahi,Mathematics,B107,21
+Thu,S6,12:20,Year 07,Elyaas Abdulaahi,Mathematics,B107,21
+Tue,S4,10:30,Year 07,Elyaas Abdulaahi,Mathematics,B107,21
+Wed,S1,07:25,Year 07,Elyaas Abdulaahi,Mathematics,B107,21
+Fri,S1,07:25,Year 07,Batoul Al Sarraj,Mathematics,B109,21
+Mon,S2,08:20,Year 07,Batoul Al Sarraj,Mathematics,B109,21
+Thu,S6,12:20,Year 07,Batoul Al Sarraj,Mathematics,B109,21
+Tue,S4,10:30,Year 07,Batoul Al Sarraj,Mathematics,B109,21
+Wed,S1,07:25,Year 07,Batoul Al Sarraj,Mathematics,B109,21
+Fri,S6,12:20,Year 07,Haleema Zahoor Jan,Mathematics,B105,22
+Mon,S6,12:20,Year 07,Haleema Zahoor Jan,Mathematics,B105,22
+Thu,S7,14:15,Year 07,Haleema Zahoor Jan,Mathematics,B105,22
+Tue,S3,09:35,Year 07,Haleema Zahoor Jan,Mathematics,B105,22
+Wed,S2,08:20,Year 07,Haleema Zahoor Jan,Mathematics,B105,22
+Fri,S1,07:25,Year 07,Anha Begum,Mathematics,B106,19
+Mon,S2,08:20,Year 07,Anha Begum,Mathematics,B106,19
+Thu,S6,12:20,Year 07,Anha Begum,Mathematics,B106,19
+Tue,S4,10:30,Year 07,Anha Begum,Mathematics,B106,19
+Wed,S1,07:25,Year 07,Anha Begum,Mathematics,B106,19
+Fri,S6,12:20,Year 07,Sehrish Hussain,Mathematics,B106,20
+Mon,S6,12:20,Year 07,Sehrish Hussain,Mathematics,B106,20
+Thu,S7,14:15,Year 07,Sehrish Hussain,Mathematics,B106,20
+Tue,S3,09:35,Year 07,Sehrish Hussain,Mathematics,B106,20
+Wed,S2,08:20,Year 07,Sehrish Hussain,Mathematics,B106,20
+Mon,S7,14:15,Year 07,Sara Nazer Adl,Science,B118,19
+Thu,S6,12:20,Year 07,Sara Nazer Adl,Science,B118,19
+Tue,S6,12:20,Year 07,Sara Nazer Adl,Science,B118,19
+Wed,S5,11:25,Year 07,Sara Nazer Adl,Science,B118,19
+Mon,S7,14:15,Year 07,Mohamed Abdi Hassan,Science,B115,24
+Thu,S6,12:20,Year 07,Mohamed Abdi Hassan,Science,B101,24
+Tue,S6,12:20,Year 07,Mohamed Abdi Hassan,Science,B115,24
+Wed,S5,11:25,Year 07,Mohamed Abdi Hassan,Science,B115,24
+Mon,S7,14:15,Year 07,Candice Leigh Pillay,Science,B116,19
+Thu,S6,12:20,Year 07,Candice Leigh Pillay,Science,B116,19
+Tue,S6,12:20,Year 07,Candice Leigh Pillay,Science,B116,19
+Wed,S5,11:25,Year 07,Candice Leigh Pillay,Science,B116,19
+Fri,S3,09:35,Year 07,Edna Bempah,Science,B005,23
+Thu,S4,10:30,Year 07,Edna Bempah,Science,B005,23
+Tue,S3,09:35,Year 07,Edna Bempah,Science,B118,23
+Wed,S3,09:35,Year 07,Edna Bempah,Science,B118,23
+Fri,S3,09:35,Year 07,Shannan OBrien,Science,B117,20
+Thu,S4,10:30,Year 07,Shannan OBrien,Science,B117,20
+Tue,S3,09:35,Year 07,Shannan OBrien,Science,B117,20
+Wed,S3,09:35,Year 07,Shannan OBrien,Science,B117,20
+Mon,S3,09:35,Year 07,Hasnain Altaf,Science,B117,21
+Thu,S6,12:20,Year 07,Hasnain Altaf,Science,B117,21
+Tue,S1,07:25,Year 07,Hasnain Altaf,Science,B117,21
+Wed,S1,07:25,Year 07,Hasnain Altaf,Science,B117,21
+Fri,S3,09:35,Year 07,Zeinab Hassan,Science,B114,18
+Thu,S4,10:30,Year 07,Zeinab Hassan,Science,B114,18
+Tue,S3,09:35,Year 07,Zeinab Hassan,Science,B114,18
+Wed,S3,09:35,Year 07,Zeinab Hassan,Science,B114,18
+Mon,S3,09:35,Year 07,Edna Bempah,Science,B114,21
+Thu,S6,12:20,Year 07,Edna Bempah,Science,B114,21
+Tue,S1,07:25,Year 07,Edna Bempah,Science,B114,21
+Wed,S1,07:25,Year 07,Edna Bempah,Science,B114,21
+Fri,S2,08:20,Year 07,Eldessouki Ramadan,Arabic,SP1B,13
+Mon,S6,12:20,Year 07,Eldessouki Ramadan,Arabic,SPIG,13
+Thu,S1,07:25,Year 07,Eldessouki Ramadan,Arabic,SP1B,13
+Tue,S2,08:20,Year 07,Eldessouki Ramadan,Arabic,SP1B,13
+Wed,S6,12:20,Year 07,Eldessouki Ramadan,Arabic,SP1B,13
+Mon,S5,11:25,Year 07,Omar Banat,Islamic studies,SP1B,13
+Thu,S7,14:15,Year 07,Omar Banat,Islamic studies,B009,13
+Tue,S5,11:25,Year 07,Omar Banat,Islamic studies,B103,13
+Wed,S2,08:20,Year 07,Omar Banat,Islamic studies,B103,13
+Fri,S6,12:20,Year 07,Hadeel Alzebdeh,Social Studies,S_LI,13
+Tue,S1,07:25,Year 07,Hadeel Alzebdeh,Social Studies,SP1B,13
+Fri,S2,08:20,Year 08,Ammar Zaatreh,Arabic,B008,20
+Mon,S3,09:35,Year 08,Ammar Zaatreh,Arabic,B008,20
+Thu,S3,09:35,Year 08,Ammar Zaatreh,Arabic,B008,20
+Tue,S1,07:25,Year 08,Ammar Zaatreh,Arabic,B008,20
+Wed,S5,11:25,Year 08,Ammar Zaatreh,Arabic,B008,20
+Fri,S6,12:20,Year 08,Bara Jarah,Islamic studies,B113,20
+Thu,S5,11:25,Year 08,Bara Jarah,Islamic studies,B113,20
+Tue,S4,10:30,Year 08,Bara Jarah,Islamic studies,B113,20
+Wed,S4,10:30,Year 08,Bara Jarah,Islamic studies,B113,20
+Mon,S1,07:25,Year 08,Mohamed Bayyoumi,Moral Education,B004,20
+Thu,S6,12:20,Year 08,Ahmed Moustafa,Social Studies,B006,20
+Fri,S1,07:25,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B009,21
+Mon,S2,08:20,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B009,21
+Thu,S5,11:25,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B009,21
+Tue,S6,12:20,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B009,21
+Wed,S3,09:35,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B111,21
+Mon,S6,12:20,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,21
+Thu,S2,08:20,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,21
+Tue,S5,11:25,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,21
+Wed,S7,14:15,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,21
+Fri,S3,09:35,Year 08,Mohamed Bayyoumi,Moral Education,B103,21
+Wed,S2,08:20,Year 08,Ahmed Moustafa,Social Studies,B104,21
+Fri,S5,11:25,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B008,23
+Mon,S1,07:25,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B008,23
+Thu,S6,12:20,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B008,23
+Tue,S4,10:30,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B008,23
+Wed,S1,07:25,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B008,23
+Mon,S5,11:25,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B113,23
+Thu,S3,09:35,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B005,23
+Tue,S2,08:20,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,23
+Wed,S6,12:20,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,23
+Thu,S4,10:30,Year 08,Omar Banat,Moral Education,B112,23
+Fri,S3,09:35,Year 08,Ahmed Moustafa,Social Studies,B105,23
+Fri,S5,11:25,Year 08,Ammar Zaatreh,Arabic,B006,24
+Mon,S5,11:25,Year 08,Ammar Zaatreh,Arabic,B006,24
+Thu,S4,10:30,Year 08,Ammar Zaatreh,Arabic,B006,24
+Tue,S2,08:20,Year 08,Ammar Zaatreh,Arabic,B006,24
+Wed,S1,07:25,Year 08,Ammar Zaatreh,Arabic,B006,24
+Fri,S3,09:35,Year 08,Mahmoud Dababseh,Islamic studies,B112,24
+Mon,S1,07:25,Year 08,Mahmoud Dababseh,Islamic studies,B110,24
+Thu,S3,09:35,Year 08,Mahmoud Dababseh,Islamic studies,B112,24
+Tue,S4,10:30,Year 08,Mahmoud Dababseh,Islamic studies,B111,24
+Thu,S6,12:20,Year 08,Taher Suboh,Moral Education,B110,24
+Wed,S6,12:20,Year 08,Ahmed Moustafa,Social Studies,B003,24
+Fri,S1,07:25,Year 08,Ammar Zaatreh,Arabic,B008,25
+Mon,S6,12:20,Year 08,Ammar Zaatreh,Arabic,B008,25
+Thu,S2,08:20,Year 08,Ammar Zaatreh,Arabic,B008,25
+Tue,S5,11:25,Year 08,Ammar Zaatreh,Arabic,B008,25
+Wed,S2,08:20,Year 08,Ammar Zaatreh,Arabic,B008,25
+Fri,S3,09:35,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,25
+Mon,S2,08:20,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,25
+Thu,S5,11:25,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,25
+Tue,S6,12:20,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,25
+Wed,S3,09:35,Year 08,Ahmed Elgazzar,Moral Education,B006,25
+Wed,S7,14:15,Year 08,Ahmed Moustafa,Social Studies,B105,25
+Fri,S3,09:35,Year 08,Ammar Zaatreh,Arabic,B006,19
+Mon,S1,07:25,Year 08,Ammar Zaatreh,Arabic,B007,19
+Thu,S6,12:20,Year 08,Ammar Zaatreh,Arabic,B007,19
+Tue,S4,10:30,Year 08,Ammar Zaatreh,Arabic,B007,19
+Wed,S6,12:20,Year 08,Ammar Zaatreh,Arabic,B007,19
+Fri,S5,11:25,Year 08,Bara Jarah,Islamic studies,B110,19
+Mon,S5,11:25,Year 08,Bara Jarah,Islamic studies,B111,19
+Thu,S3,09:35,Year 08,Bara Jarah,Islamic studies,B111,19
+Tue,S2,08:20,Year 08,Bara Jarah,Islamic studies,B102,19
+Thu,S4,10:30,Year 08,Islam Eltantawi,Moral Education,B105,19
+Wed,S1,07:25,Year 08,Ahmed Moustafa,Social Studies,B104,19
+Fri,S2,08:20,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B108,22
+Mon,S3,09:35,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B108,22
+Thu,S3,09:35,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B108,22
+Tue,S1,07:25,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B101,22
+Wed,S4,10:30,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B108,22
+Fri,S6,12:20,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,22
+Mon,S1,07:25,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,22
+Thu,S6,12:20,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,22
+Wed,S5,11:25,Year 08,Mohammad Zeyad Alqraini,Islamic studies,B111,22
+Thu,S5,11:25,Year 08,Islam Eltantawi,Moral Education,SPIG,22
+Tue,S4,10:30,Year 08,Ahmed Moustafa,Social Studies,B105,22
+Fri,S3,09:35,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B108,22
+Mon,S6,12:20,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B006,22
+Thu,S2,08:20,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B006,22
+Tue,S5,11:25,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B108,22
+Wed,S2,08:20,Year 08,Salahaldeen Tawfiq Alghawanmeh,Arabic,B006,22
+Fri,S1,07:25,Year 08,Bara Jarah,Islamic studies,B110,22
+Mon,S2,08:20,Year 08,Bara Jarah,Islamic studies,B110,22
+Tue,S6,12:20,Year 08,Bara Jarah,Islamic studies,B110,22
+Wed,S7,14:15,Year 08,Bara Jarah,Islamic studies,B110,22
+Thu,S5,11:25,Year 08,Mohamed Bayyoumi,Moral Education,B104,22
+Wed,S3,09:35,Year 08,Ahmed Moustafa,Social Studies,B007,22
+Mon,S7,14:15,Year 08,Rowmicka Coutain,Food technology,G013,22
+Wed,S7,14:15,Year 08,Rowmicka Coutain,Food technology,G013,22
+Fri,S4,10:30,Year 08,Shahreen Ahmed,Food technology,B011,21
+Tue,S3,09:35,Year 08,Shahreen Ahmed,Food technology,B011,21
+Mon,S7,14:15,Year 08,Shahreen Ahmed,Food technology,,23
+Tue,S5,11:25,Year 08,Shahreen Ahmed,Food technology,B011,23
+Mon,S7,14:15,Year 08,Gavin John Earnshaw,Product design,B010,24
+Tue,S5,11:25,Year 08,Gavin John Earnshaw,Product design,B010,24
+Fri,S4,10:30,Year 08,Sara Burns,Art,G011,25
+Tue,S3,09:35,Year 08,Sara Burns,Art,G011,25
+Mon,S7,14:15,Year 08,Sara Burns,Art,G011,19
+Tue,S5,11:25,Year 08,Sara Burns,Art,G011,19
+Mon,S7,14:15,Year 08,Sumerah Saeed,Product design,B011,25
+Wed,S7,14:15,Year 08,Sumerah Saeed,Product design,B011,25
+Fri,S4,10:30,Year 08,Sumerah Saeed,Product design,B010,22
+Tue,S3,09:35,Year 08,Sumerah Saeed,Product design,B010,22
+Mon,S4,10:30,Year 08,Anna-Maria Anyinsah-Bondzie,Product design,,0
+Thu,S1,07:25,Year 08,Anna-Maria Anyinsah-Bondzie,Product design,,0
+Fri,S1,07:25,Year 08,Samantha Devoil,English,B001,25
+Mon,S5,11:25,Year 08,Samantha Devoil,English,B003,25
+Thu,S4,10:30,Year 08,Samantha Devoil,English,B108,25
+Tue,S7,14:15,Year 08,Samantha Devoil,English,B102,25
+Wed,S1,07:25,Year 08,Samantha Devoil,English,B001,25
+Fri,S2,08:20,Year 08,Farahnaaz Rajub,English,B004,20
+Mon,S7,14:15,Year 08,Farahnaaz Rajub,English,B004,20
+Thu,S1,07:25,Year 08,Farahnaaz Rajub,English,B004,20
+Tue,S7,14:15,Year 08,Farahnaaz Rajub,English,B004,20
+Wed,S5,11:25,Year 08,Farahnaaz Rajub,English,B002,20
+Fri,S6,12:20,Year 08,Louie George Holmes,English,B004,22
+Mon,S3,09:35,Year 08,Louie George Holmes,English,B004,22
+Thu,S5,11:25,Year 08,Louie George Holmes,English,B004,22
+Tue,S1,07:25,Year 08,Louie George Holmes,English,B004,22
+Wed,S5,11:25,Year 08,Louie George Holmes,English,B004,22
+Fri,S6,12:20,Year 08,Elizabeth Orotayo,English,B001,22
+Mon,S3,09:35,Year 08,Elizabeth Orotayo,English,B001,22
+Thu,S5,11:25,Year 08,Elizabeth Orotayo,English,B001,22
+Tue,S1,07:25,Year 08,Elizabeth Orotayo,English,B001,22
+Wed,S5,11:25,Year 08,Elizabeth Orotayo,English,B001,22
+Fri,S2,08:20,Year 08,Zara Ifsa Hamid,English,B106,24
+Mon,S7,14:15,Year 08,Zara Ifsa Hamid,English,B002,24
+Thu,S1,07:25,Year 08,Zara Ifsa Hamid,English,B002,24
+Tue,S7,14:15,Year 08,Zara Ifsa Hamid,English,B005,24
+Wed,S5,11:25,Year 08,Zara Ifsa Hamid,English,B103,24
+Fri,S6,12:20,Year 08,Mariam Yousaf,English,B002,22
+Mon,S3,09:35,Year 08,Mariam Yousaf,English,B002,22
+Thu,S5,11:25,Year 08,Mariam Yousaf,English,B002,22
+Tue,S1,07:25,Year 08,Mariam Yousaf,English,B002,22
+Wed,S5,11:25,Year 08,Mariam Yousaf,English,B005,22
+Fri,S1,07:25,Year 08,Emilia Rocio Ghirardi,English,B003,22
+Mon,S5,11:25,Year 08,Emilia Rocio Ghirardi,English,B001,22
+Thu,S4,10:30,Year 08,Emilia Rocio Ghirardi,English,B003,22
+Tue,S7,14:15,Year 08,Emilia Rocio Ghirardi,English,B105,22
+Wed,S1,07:25,Year 08,Emilia Rocio Ghirardi,English,B003,22
+Fri,S2,08:20,Year 08,Anna-Maria Anyinsah-Bondzie,English,B003,24
+Mon,S7,14:15,Year 08,Anna-Maria Anyinsah-Bondzie,English,B003,24
+Thu,S1,07:25,Year 08,Anna-Maria Anyinsah-Bondzie,English,B003,24
+Tue,S7,14:15,Year 08,Anna-Maria Anyinsah-Bondzie,English,B003,24
+Wed,S5,11:25,Year 08,Anna-Maria Anyinsah-Bondzie,English,B003,24
+Wed,S6,12:20,Year 08,Mahnoor Nasir Awan,Computing,B103,22
+Thu,S7,14:15,Year 08,Harry Jones,Geography,B005,22
+Mon,S6,12:20,Year 08,Harry Jones,History,B004,22
+Tue,S2,08:20,Year 08,Bassam Ghunaim,Sport,,22
+Tue,S6,12:20,Year 08,Ahmed Alafifi,Social Science,B114,22
+Wed,S2,08:20,Year 08,Ahmed Alafifi,Social Science,B003,22
+Fri,S5,11:25,Year 08,Bassam Ghunaim,Swimming,,22
+Wed,S4,10:30,Year 08,Naumana Malik,Computing,B116,21
+Mon,S1,07:25,Year 08,Ali Jaabir,Geography,B005,21
+Thu,S7,14:15,Year 08,Ali Jaabir,History,B001,21
+Thu,S6,12:20,Year 08,Paul Graham Jones,Sport,,21
+Fri,S6,12:20,Year 08,Ahmed Alafifi,Social Science,B114,21
+Mon,S5,11:25,Year 08,Ahmed Alafifi,Social Science,B115,21
+Tue,S4,10:30,Year 08,Paul Graham Jones,Swimming,,21
+Tue,S3,09:35,Year 08,Naumana Malik,Computing,B001,23
+Thu,S1,07:25,Year 08,Mehwish Adnan,Geography,B103,23
+Fri,S1,07:25,Year 08,Mehwish Adnan,History,B113,23
+Wed,S7,14:15,Year 08,Graham Hodgson,Sport,,23
+Mon,S2,08:20,Year 08,Ahmed Alafifi,Social Science,B102,23
+Wed,S4,10:30,Year 08,Ahmed Alafifi,Social Science,B118,23
+Mon,S6,12:20,Year 08,Graham Hodgson,Swimming,,23
+Wed,S7,14:15,Year 08,Sareena Babu,Computing,B004,24
+Tue,S3,09:35,Year 08,Ali Jaabir,Geography,B002,24
+Wed,S4,10:30,Year 08,Ali Jaabir,History,B004,24
+Mon,S2,08:20,Year 08,Paul Graham Jones,Sport,,24
+Fri,S1,07:25,Year 08,Ahmed Alafifi,Social Science,B118,24
+Thu,S1,07:25,Year 08,Ahmed Alafifi,Social Science,B007,24
+Mon,S6,12:20,Year 08,Paul Graham Jones,Swimming,,24
+Thu,S6,12:20,Year 08,Naumana Malik,Computing,B103,25
+Wed,S4,10:30,Year 08,Mehwish Adnan,Geography,B115,25
+Tue,S4,10:30,Year 08,Mehwish Adnan,History,B003,25
+Mon,S5,11:25,Year 08,Jermaine Nana Kojo Asare Aryeetey,Sport,,25
+Mon,S1,07:25,Year 08,Ahmed Alafifi,Social Science,B109,25
+Thu,S7,14:15,Year 08,Ahmed Alafifi,Social Science,B109,25
+Fri,S6,12:20,Year 08,Jermaine Nana Kojo Asare Aryeetey,Swimming,,25
+Fri,S1,07:25,Year 08,Mahnoor Nasir Awan,Computing,B103,19
+Wed,S4,10:30,Year 08,Harry Jones,Geography,B005,19
+Wed,S7,14:15,Year 08,Harry Jones,History,B101,19
+Mon,S2,08:20,Year 08,Graham Hodgson,Sport,,19
+Mon,S6,12:20,Year 08,Ahmed Alafifi,Social Science,B118,19
+Tue,S3,09:35,Year 08,Ahmed Alafifi,Social Science,B115,19
+Thu,S1,07:25,Year 08,Graham Hodgson,Swimming,,19
+Mon,S6,12:20,Year 08,Mahnoor Nasir Awan,Computing,B103,25
+Fri,S5,11:25,Year 08,Mohamed Mustafa Ghanchi,Geography,B102,25
+Thu,S7,14:15,Year 08,Mohamed Mustafa Ghanchi,History,B108,25
+Tue,S6,12:20,Year 08,Paul Graham Jones,Sport,,25
+Tue,S2,08:20,Year 08,Ahmed Alafifi,Social Science,B114,25
+Wed,S6,12:20,Year 08,Ahmed Alafifi,Social Science,B114,25
+Wed,S2,08:20,Year 08,Paul Graham Jones,Swimming,,25
+Mon,S1,07:25,Year 08,Mahnoor Nasir Awan,Computing,B103,22
+Mon,S5,11:25,Year 08,Mehwish Adnan,Geography,B101,22
+Fri,S6,12:20,Year 08,Mehwish Adnan,History,B104,22
+Wed,S4,10:30,Year 08,Bassam Ghunaim,Sport,,22
+Thu,S6,12:20,Year 08,Ahmed Alafifi,Social Science,B115,22
+Tue,S4,10:30,Year 08,Ahmed Alafifi,Social Science,B119,22
+Thu,S7,14:15,Year 08,Bassam Ghunaim,Swimming,,22
+Fri,S4,10:30,Year 08,Mahamed Arshe,Mathematics,B107,24
+Mon,S4,10:30,Year 08,Mahamed Arshe,Mathematics,B109,24
+Thu,S2,08:20,Year 08,Mahamed Arshe,Mathematics,B107,24
+Tue,S3,09:35,Year 08,Mahamed Arshe,Mathematics,B107,24
+Wed,S3,09:35,Year 08,Mahamed Arshe,Mathematics,B103,24
+Fri,S5,11:25,Year 08,Elyaas Abdulaahi,Mathematics,B109,24
+Mon,S4,10:30,Year 08,Elyaas Abdulaahi,Mathematics,B108,24
+Thu,S3,09:35,Year 08,Elyaas Abdulaahi,Mathematics,B109,24
+Tue,S2,08:20,Year 08,Elyaas Abdulaahi,Mathematics,B109,24
+Wed,S6,12:20,Year 08,Elyaas Abdulaahi,Mathematics,B109,24
+Fri,S2,08:20,Year 08,Ali Ahmed,Mathematics,B107,24
+Mon,S4,10:30,Year 08,Ali Ahmed,Mathematics,B107,24
+Thu,S2,08:20,Year 08,Ali Ahmed,Mathematics,B106,24
+Tue,S6,12:20,Year 08,Ali Ahmed,Mathematics,B107,24
+Wed,S3,09:35,Year 08,Ali Ahmed,Mathematics,B107,24
+Fri,S2,08:20,Year 08,Rouf Ahmed Ditta,Mathematics,B109,23
+Mon,S4,10:30,Year 08,Rouf Ahmed Ditta,Mathematics,B007,23
+Thu,S2,08:20,Year 08,Rouf Ahmed Ditta,Mathematics,B108,23
+Tue,S6,12:20,Year 08,Rouf Ahmed Ditta,Mathematics,B109,23
+Wed,S3,09:35,Year 08,Rouf Ahmed Ditta,Mathematics,B109,23
+Fri,S5,11:25,Year 08,Jacob Morgan Lee,Mathematics,B101,23
+Mon,S4,10:30,Year 08,Jacob Morgan Lee,Mathematics,B104,23
+Thu,S3,09:35,Year 08,Jacob Morgan Lee,Mathematics,B101,23
+Tue,S2,08:20,Year 08,Jacob Morgan Lee,Mathematics,B101,23
+Wed,S6,12:20,Year 08,Jacob Morgan Lee,Mathematics,B101,23
+Fri,S2,08:20,Year 08,Anha Begum,Mathematics,B105,19
+Mon,S4,10:30,Year 08,Anha Begum,Mathematics,B103,19
+Thu,S2,08:20,Year 08,Anha Begum,Mathematics,B103,19
+Tue,S6,12:20,Year 08,Anha Begum,Mathematics,B105,19
+Wed,S3,09:35,Year 08,Anha Begum,Mathematics,B105,19
+Fri,S4,10:30,Year 08,Anisha Masood,Mathematics,B109,23
+Mon,S4,10:30,Year 08,Anisha Masood,Mathematics,B106,23
+Thu,S2,08:20,Year 08,Anisha Masood,Mathematics,B109,23
+Tue,S3,09:35,Year 08,Anisha Masood,Mathematics,B109,23
+Wed,S3,09:35,Year 08,Anisha Masood,Mathematics,B003,23
+Fri,S5,11:25,Year 08,Haleema Zahoor Jan,Mathematics,B105,21
+Mon,S4,10:30,Year 08,Haleema Zahoor Jan,Mathematics,B105,21
+Thu,S3,09:35,Year 08,Haleema Zahoor Jan,Mathematics,B105,21
+Tue,S2,08:20,Year 08,Haleema Zahoor Jan,Mathematics,B107,21
+Wed,S6,12:20,Year 08,Haleema Zahoor Jan,Mathematics,B105,21
+Fri,S3,09:35,Year 08,Anita Owusu,Science,B115,24
+Mon,S2,08:20,Year 08,Anita Owusu,Science,B115,24
+Thu,S1,07:25,Year 08,Anita Owusu,Science,B115,24
+Tue,S5,11:25,Year 08,Anita Owusu,Science,B115,24
+Mon,S3,09:35,Year 08,Mohamed Abdi Hassan,Science,B116,23
+Thu,S4,10:30,Year 08,Mohamed Abdi Hassan,Science,B116,23
+Tue,S1,07:25,Year 08,Mohamed Abdi Hassan,Science,B116,23
+Wed,S1,07:25,Year 08,Mohamed Abdi Hassan,Science,B116,23
+Fri,S4,10:30,Year 08,Mohamed Abdi Hassan,Science,B005,21
+Thu,S7,14:15,Year 08,Mohamed Abdi Hassan,Science,B118,21
+Tue,S7,14:15,Year 08,Mohamed Abdi Hassan,Science,B118,21
+Wed,S2,08:20,Year 08,Mohamed Abdi Hassan,Science,B118,21
+Fri,S4,10:30,Year 08,Hasnain Altaf,Science,B117,25
+Thu,S7,14:15,Year 08,Hasnain Altaf,Science,B117,25
+Tue,S7,14:15,Year 08,Hasnain Altaf,Science,B117,25
+Wed,S2,08:20,Year 08,Hasnain Altaf,Science,B117,25
+Mon,S3,09:35,Year 08,Sara Nazer Adl,Science,B118,25
+Thu,S4,10:30,Year 08,Sara Nazer Adl,Science,B118,25
+Tue,S1,07:25,Year 08,Sara Nazer Adl,Science,B118,25
+Wed,S1,07:25,Year 08,Sara Nazer Adl,Science,B118,25
+Fri,S4,10:30,Year 08,Edna Bempah,Science,B114,20
+Thu,S7,14:15,Year 08,Edna Bempah,Science,B115,20
+Tue,S7,14:15,Year 08,Edna Bempah,Science,B119,20
+Wed,S2,08:20,Year 08,Edna Bempah,Science,B112,20
+Fri,S3,09:35,Year 08,Faizan Cheema,Science,B118,23
+Mon,S2,08:20,Year 08,Faizan Cheema,Science,B118,23
+Thu,S1,07:25,Year 08,Faizan Cheema,Science,B118,23
+Tue,S5,11:25,Year 08,Faizan Cheema,Science,B118,23
+Mon,S3,09:35,Year 08,Faizan Cheema,Science,B115,20
+Thu,S4,10:30,Year 08,Faizan Cheema,Science,B115,20
+Tue,S1,07:25,Year 08,Faizan Cheema,Science,B115,20
+Wed,S1,07:25,Year 08,Faizan Cheema,Science,B115,20
+Fri,S6,12:20,Year 08,Eldessouki Ramadan,Arabic,SP1B,5
+Mon,S3,09:35,Year 08,Eldessouki Ramadan,Arabic,SP1B,5
+Thu,S3,09:35,Year 08,Eldessouki Ramadan,Arabic,S_LI,5
+Tue,S4,10:30,Year 08,Eldessouki Ramadan,Arabic,B005,5
+Wed,S5,11:25,Year 08,Eldessouki Ramadan,Arabic,SP1B,5
+Fri,S2,08:20,Year 08,Omar Banat,Islamic studies,SPIG,5
+Thu,S5,11:25,Year 08,Omar Banat,Islamic studies,,5
+Tue,S1,07:25,Year 08,Omar Banat,Islamic studies,SPIG,5
+Wed,S4,10:30,Year 08,Omar Banat,Islamic studies,SPIG,5
+Mon,S1,07:25,Year 08,Hadeel Alzebdeh,Moral Education,S_LI,5
+Thu,S6,12:20,Year 08,Hadeel Alzebdeh,Social Studies,B001,5
+Fri,S5,11:25,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,24
+Mon,S3,09:35,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,24
+Thu,S3,09:35,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,24
+Tue,S6,12:20,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,24
+Wed,S1,07:25,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,24
+Fri,S2,08:20,Year 09,Malek Salameh,Islamic studies,B112,24
+Thu,S7,14:15,Year 09,Malek Salameh,Islamic studies,B112,24
+Tue,S3,09:35,Year 09,Malek Salameh,Islamic studies,B112,24
+Wed,S5,11:25,Year 09,Malek Salameh,Islamic studies,B112,24
+Mon,S7,14:15,Year 09,Islam Eltantawi,Moral Education,B104,24
+Tue,S1,07:25,Year 09,Islam Eltantawi,Social Studies,B104,24
+Fri,S3,09:35,Year 09,Hani Abu-Ateyih,Arabic,SPIG,22
+Mon,S5,11:25,Year 09,Hani Abu-Ateyih,Arabic,B008,22
+Thu,S7,14:15,Year 09,Hani Abu-Ateyih,Arabic,B008,22
+Tue,S3,09:35,Year 09,Hani Abu-Ateyih,Arabic,B008,22
+Wed,S4,10:30,Year 09,Hani Abu-Ateyih,Arabic,B008,22
+Fri,S2,08:20,Year 09,Bara Jarah,Islamic studies,B113,22
+Thu,S4,10:30,Year 09,Bara Jarah,Islamic studies,B113,22
+Tue,S1,07:25,Year 09,Bara Jarah,Islamic studies,B113,22
+Wed,S2,08:20,Year 09,Bara Jarah,Islamic studies,B113,22
+Mon,S1,07:25,Year 09,Omar Banat,Moral Education,B012,22
+Tue,S7,14:15,Year 09,Islam Eltantawi,Social Studies,B104,22
+Fri,S2,08:20,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,22
+Mon,S7,14:15,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,22
+Thu,S7,14:15,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,22
+Tue,S1,07:25,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,22
+Wed,S5,11:25,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,22
+Fri,S5,11:25,Year 09,Malek Salameh,Islamic studies,B112,22
+Mon,S3,09:35,Year 09,Malek Salameh,Islamic studies,B112,22
+Tue,S6,12:20,Year 09,Malek Salameh,Islamic studies,B112,22
+Wed,S1,07:25,Year 09,Malek Salameh,Islamic studies,B112,22
+Tue,S3,09:35,Year 09,Islam Eltantawi,Moral Education,B104,22
+Thu,S3,09:35,Year 09,Islam Eltantawi,Social Studies,B104,22
+Fri,S6,12:20,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,16
+Mon,S6,12:20,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,16
+Thu,S2,08:20,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,16
+Tue,S5,11:25,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,16
+Wed,S7,14:15,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,16
+Mon,S1,07:25,Year 09,Malek Salameh,Islamic studies,B112,16
+Thu,S1,07:25,Year 09,Malek Salameh,Islamic studies,B112,16
+Tue,S4,10:30,Year 09,Malek Salameh,Islamic studies,B112,16
+Wed,S6,12:20,Year 09,Malek Salameh,Islamic studies,B112,16
+Wed,S3,09:35,Year 09,Islam Eltantawi,Moral Education,B104,16
+Fri,S3,09:35,Year 09,Islam Eltantawi,Social Studies,B104,16
+Fri,S3,09:35,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,23
+Mon,S5,11:25,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,23
+Thu,S4,10:30,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,23
+Tue,S7,14:15,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,23
+Wed,S4,10:30,Year 09,Ahmad Abdulrahman Alshareef,Arabic,B007,23
+Fri,S2,08:20,Year 09,Mohammad Zeyad Alqraini,Islamic studies,B111,23
+Thu,S7,14:15,Year 09,Mohammad Zeyad Alqraini,Islamic studies,B111,23
+Tue,S1,07:25,Year 09,Mohammad Zeyad Alqraini,Islamic studies,B111,23
+Wed,S2,08:20,Year 09,Mohammad Zeyad Alqraini,Islamic studies,B111,23
+Tue,S3,09:35,Year 09,Omar Banat,Moral Education,B006,23
+Mon,S1,07:25,Year 09,Islam Eltantawi,Social Studies,B104,23
+Fri,S2,08:20,Year 09,Hani Abu-Ateyih,Arabic,B009,24
+Mon,S1,07:25,Year 09,Hani Abu-Ateyih,Arabic,B006,24
+Thu,S4,10:30,Year 09,Hani Abu-Ateyih,Arabic,B008,24
+Tue,S7,14:15,Year 09,Hani Abu-Ateyih,Arabic,B006,24
+Wed,S2,08:20,Year 09,Hani Abu-Ateyih,Arabic,B007,24
+Fri,S3,09:35,Year 09,Malek Salameh,Islamic studies,B003,24
+Mon,S5,11:25,Year 09,Malek Salameh,Islamic studies,B112,24
+Tue,S1,07:25,Year 09,Malek Salameh,Islamic studies,B112,24
+Wed,S4,10:30,Year 09,Malek Salameh,Islamic studies,B112,24
+Tue,S3,09:35,Year 09,Ahmed Elgazzar,Moral Education,B007,24
+Thu,S7,14:15,Year 09,Islam Eltantawi,Social Studies,B104,24
+Fri,S5,11:25,Year 09,Hani Abu-Ateyih,Arabic,B009,24
+Mon,S3,09:35,Year 09,Hani Abu-Ateyih,Arabic,B006,24
+Thu,S3,09:35,Year 09,Hani Abu-Ateyih,Arabic,SP1B,24
+Tue,S1,07:25,Year 09,Hani Abu-Ateyih,Arabic,B009,24
+Wed,S1,07:25,Year 09,Hani Abu-Ateyih,Arabic,B009,24
+Mon,S7,14:15,Year 09,Bara Jarah,Islamic studies,B113,24
+Thu,S7,14:15,Year 09,Bara Jarah,Islamic studies,B113,24
+Tue,S3,09:35,Year 09,Bara Jarah,Islamic studies,B113,24
+Wed,S5,11:25,Year 09,Bara Jarah,Islamic studies,B113,24
+Fri,S2,08:20,Year 09,Islam Eltantawi,Moral Education,B104,24
+Tue,S6,12:20,Year 09,Islam Eltantawi,Social Studies,B104,24
+Fri,S3,09:35,Year 09,Ibrahim Mohamed Abla,Arabic,B001,20
+Mon,S1,07:25,Year 09,Ibrahim Mohamed Abla,Arabic,B009,20
+Thu,S1,07:25,Year 09,Ibrahim Mohamed Abla,Arabic,B009,20
+Tue,S4,10:30,Year 09,Ibrahim Mohamed Abla,Arabic,B009,20
+Wed,S7,14:15,Year 09,Ibrahim Mohamed Abla,Arabic,B009,20
+Fri,S6,12:20,Year 09,Malek Salameh,Islamic studies,B112,20
+Mon,S6,12:20,Year 09,Malek Salameh,Islamic studies,B112,20
+Thu,S2,08:20,Year 09,Malek Salameh,Islamic studies,B112,20
+Wed,S3,09:35,Year 09,Malek Salameh,Islamic studies,B112,20
+Tue,S5,11:25,Year 09,Islam Eltantawi,Moral Education,B104,20
+Wed,S6,12:20,Year 09,Islam Eltantawi,Social Studies,B104,20
+Fri,S6,12:20,Year 09,Hani Abu-Ateyih,Arabic,B009,19
+Mon,S6,12:20,Year 09,Hani Abu-Ateyih,Arabic,B005,19
+Thu,S2,08:20,Year 09,Hani Abu-Ateyih,Arabic,B009,19
+Tue,S5,11:25,Year 09,Hani Abu-Ateyih,Arabic,B009,19
+Wed,S6,12:20,Year 09,Hani Abu-Ateyih,Arabic,B009,19
+Fri,S3,09:35,Year 09,Bara Jarah,Islamic studies,B113,19
+Mon,S1,07:25,Year 09,Bara Jarah,Islamic studies,B113,19
+Thu,S1,07:25,Year 09,Bara Jarah,Islamic studies,B113,19
+Wed,S3,09:35,Year 09,Bara Jarah,Islamic studies,B113,19
+Tue,S4,10:30,Year 09,Islam Eltantawi,Moral Education,B104,19
+Wed,S7,14:15,Year 09,Islam Eltantawi,Social Studies,B104,19
+Fri,S6,12:20,Year 09,Tahiba Akhtar,Product design,B010,24
+Wed,S3,09:35,Year 09,Tahiba Akhtar,Product design,B010,24
+Mon,S3,09:35,Year 09,Rowmicka Coutain,Food technology,G013,22
+Wed,S1,07:25,Year 09,Rowmicka Coutain,Food technology,G013,22
+Fri,S6,12:20,Year 09,Sara Burns,Art,G011,22
+Wed,S3,09:35,Year 09,Sara Burns,Art,G011,22
+Thu,S6,12:20,Year 09,Sara Burns,Art,G011,19
+Tue,S6,12:20,Year 09,Sara Burns,Art,G011,19
+Mon,S3,09:35,Year 09,Tahiba Akhtar,Product design,B012,23
+Wed,S1,07:25,Year 09,Tahiba Akhtar,Product design,G011,23
+Mon,S3,09:35,Year 09,Sophie Groves,Art,G012,24
+Wed,S1,07:25,Year 09,Sophie Groves,Art,G012,24
+Fri,S6,12:20,Year 09,Sophie Groves,Art,G012,24
+Wed,S3,09:35,Year 09,Sophie Groves,Art,G012,24
+Thu,S6,12:20,Year 09,Sumerah Saeed,Product design,B010,24
+Tue,S6,12:20,Year 09,Sumerah Saeed,Product design,B010,24
+Thu,S6,12:20,Year 09,Sophie Groves,Art,G012,25
+Tue,S6,12:20,Year 09,Sophie Groves,Art,G012,25
+Fri,S1,07:25,Year 09,Louie George Holmes,English,B004,21
+Mon,S2,08:20,Year 09,Louie George Holmes,English,B004,21
+Thu,S4,10:30,Year 09,Louie George Holmes,English,B004,21
+Tue,S4,10:30,Year 09,Louie George Holmes,English,B004,21
+Wed,S2,08:20,Year 09,Louie George Holmes,English,B004,21
+Fri,S4,10:30,Year 09,Louie George Holmes,English,B004,22
+Mon,S4,10:30,Year 09,Louie George Holmes,English,B004,22
+Thu,S6,12:20,Year 09,Louie George Holmes,English,B004,22
+Tue,S5,11:25,Year 09,Louie George Holmes,English,B004,22
+Wed,S7,14:15,Year 09,Louie George Holmes,English,B001,22
+Fri,S1,07:25,Year 09,Nooriyah Abdoel,English,B002,25
+Mon,S2,08:20,Year 09,Nooriyah Abdoel,English,B003,25
+Thu,S4,10:30,Year 09,Nooriyah Abdoel,English,B001,25
+Tue,S4,10:30,Year 09,Nooriyah Abdoel,English,B001,25
+Wed,S2,08:20,Year 09,Nooriyah Abdoel,English,B001,25
+Fri,S5,11:25,Year 09,Farahnaaz Rajub,English,B005,22
+Mon,S2,08:20,Year 09,Farahnaaz Rajub,English,B005,22
+Thu,S7,14:15,Year 09,Farahnaaz Rajub,English,B002,22
+Tue,S2,08:20,Year 09,Farahnaaz Rajub,English,B001,22
+Wed,S1,07:25,Year 09,Farahnaaz Rajub,English,B002,22
+Fri,S4,10:30,Year 09,Samantha Devoil,English,B003,24
+Mon,S4,10:30,Year 09,Samantha Devoil,English,B003,24
+Thu,S6,12:20,Year 09,Samantha Devoil,English,B003,24
+Tue,S5,11:25,Year 09,Samantha Devoil,English,B003,24
+Wed,S7,14:15,Year 09,Samantha Devoil,English,B003,24
+Fri,S4,10:30,Year 09,Zara Ifsa Hamid,English,B002,23
+Mon,S4,10:30,Year 09,Zara Ifsa Hamid,English,B005,23
+Thu,S6,12:20,Year 09,Zara Ifsa Hamid,English,B002,23
+Tue,S5,11:25,Year 09,Zara Ifsa Hamid,English,B002,23
+Wed,S7,14:15,Year 09,Zara Ifsa Hamid,English,B002,23
+Fri,S1,07:25,Year 09,Zara Ifsa Hamid,English,B108,24
+Mon,S2,08:20,Year 09,Zara Ifsa Hamid,English,B108,24
+Thu,S4,10:30,Year 09,Zara Ifsa Hamid,English,B002,24
+Tue,S4,10:30,Year 09,Zara Ifsa Hamid,English,B002,24
+Wed,S2,08:20,Year 09,Zara Ifsa Hamid,English,B002,24
+Fri,S5,11:25,Year 09,Huda Abdullahi Mohamed,English,B004,23
+Mon,S2,08:20,Year 09,Huda Abdullahi Mohamed,English,B001,23
+Thu,S7,14:15,Year 09,Huda Abdullahi Mohamed,English,B004,23
+Tue,S2,08:20,Year 09,Huda Abdullahi Mohamed,English,B004,23
+Wed,S1,07:25,Year 09,Huda Abdullahi Mohamed,English,B004,23
+Fri,S5,11:25,Year 09,Mariam Yousaf,English,SPIG,23
+Mon,S2,08:20,Year 09,Mariam Yousaf,English,B002,23
+Thu,S7,14:15,Year 09,Mariam Yousaf,English,SPIG,23
+Tue,S2,08:20,Year 09,Mariam Yousaf,English,B002,23
+Wed,S1,07:25,Year 09,Mariam Yousaf,English,B105,23
+Mon,S5,11:25,Year 09,Mahnoor Nasir Awan,Enterprise,B105,24
+Thu,S1,07:25,Year 09,Mahnoor Nasir Awan,Enterprise,B105,24
+Mon,S4,10:30,Year 09,Sumerah Saeed,Geography,B006,24
+Wed,S6,12:20,Year 09,Sumerah Saeed,History,B102,24
+Tue,S5,11:25,Year 09,Graham Hodgson,Sport,,24
+Thu,S6,12:20,Year 09,Graham Hodgson,Swimming,,24
+Fri,S1,07:25,Year 09,Naumana Malik,Enterprise,B102,22
+Thu,S3,09:35,Year 09,Naumana Malik,Enterprise,B102,22
+Tue,S6,12:20,Year 09,Samuel Elliott,Geography,B004,22
+Mon,S6,12:20,Year 09,Samuel Elliott,History,B001,22
+Wed,S3,09:35,Year 09,Jermaine Nana Kojo Asare Aryeetey,Sport,,22
+Thu,S2,08:20,Year 09,Jermaine Nana Kojo Asare Aryeetey,Swimming,,22
+Mon,S5,11:25,Year 09,Mohamed Mustafa Ghanchi,Enterprise,B102,22
+Thu,S1,07:25,Year 09,Mohamed Mustafa Ghanchi,Enterprise,B101,22
+Mon,S4,10:30,Year 09,Mehwish Adnan,Geography,B102,22
+Thu,S6,12:20,Year 09,Mehwish Adnan,History,B108,22
+Wed,S6,12:20,Year 09,Jermaine Nana Kojo Asare Aryeetey,Sport,,22
+Tue,S5,11:25,Year 09,Jermaine Nana Kojo Asare Aryeetey,Swimming,,22
+Fri,S2,08:20,Year 09,Nathan Hall,Enterprise,B101,19
+Tue,S3,09:35,Year 09,Nathan Hall,Enterprise,B004,19
+Mon,S7,14:15,Year 09,Jafrina Jahan,Geography,B102,19
+Thu,S4,10:30,Year 09,Jafrina Jahan,History,B104,19
+Mon,S5,11:25,Year 09,Graham Hodgson,Sport,,19
+Wed,S5,11:25,Year 09,Graham Hodgson,Swimming,,19
+Mon,S6,12:20,Year 09,Suweiba Odowa,Enterprise,B108,23
+Thu,S2,08:20,Year 09,Suweiba Odowa,Enterprise,B104,23
+Thu,S3,09:35,Year 09,Mehwish Adnan,Geography,B107,23
+Wed,S3,09:35,Year 09,Mehwish Adnan,History,B008,23
+Tue,S6,12:20,Year 09,Jermaine Nana Kojo Asare Aryeetey,Sport,,23
+Fri,S1,07:25,Year 09,Bassam Ghunaim,Swimming,,23
+Mon,S6,12:20,Year 09,Naumana Malik,Enterprise,B002,24
+Thu,S2,08:20,Year 09,Naumana Malik,Enterprise,B003,24
+Thu,S3,09:35,Year 09,Jafrina Jahan,Geography,B106,24
+Wed,S3,09:35,Year 09,Jafrina Jahan,History,B102,24
+Fri,S1,07:25,Year 09,Graham Hodgson,Sport,,24
+Tue,S6,12:20,Year 09,Graham Hodgson,Swimming,,24
+Thu,S1,07:25,Year 09,Naumana Malik,Enterprise,B102,24
+Wed,S6,12:20,Year 09,Naumana Malik,Enterprise,B004,24
+Thu,S6,12:20,Year 09,Ali Jaabir,Geography,B102,24
+Mon,S5,11:25,Year 09,Ali Jaabir,History,B104,24
+Mon,S4,10:30,Year 09,Bassam Ghunaim,Sport,,24
+Tue,S5,11:25,Year 09,Bassam Ghunaim,Swimming,,24
+Mon,S7,14:15,Year 09,Mujahed Nayef,Enterprise,B109,24
+Wed,S5,11:25,Year 09,Mujahed Nayef,Enterprise,B109,24
+Fri,S2,08:20,Year 09,Samuel Elliott,Geography,B103,24
+Mon,S5,11:25,Year 09,Samuel Elliott,History,B106,24
+Tue,S3,09:35,Year 09,Jermaine Nana Kojo Asare Aryeetey,Sport,,24
+Thu,S4,10:30,Year 09,Jermaine Nana Kojo Asare Aryeetey,Swimming,,24
+Mon,S7,14:15,Year 09,Suweiba Odowa,Enterprise,B101,25
+Wed,S5,11:25,Year 09,Suweiba Odowa,Enterprise,B101,25
+Fri,S2,08:20,Year 09,Harry Jones,Geography,B118,25
+Tue,S3,09:35,Year 09,Harry Jones,History,B003,25
+Thu,S4,10:30,Year 09,Paul Graham Jones,Sport,,25
+Mon,S5,11:25,Year 09,Paul Graham Jones,Swimming,,25
+Fri,S3,09:35,Year 09,Batoul Al Sarraj,Mathematics,B109,25
+Mon,S6,12:20,Year 09,Batoul Al Sarraj,Mathematics,B109,25
+Thu,S5,11:25,Year 09,Batoul Al Sarraj,Mathematics,B109,25
+Tue,S7,14:15,Year 09,Batoul Al Sarraj,Mathematics,B109,25
+Wed,S4,10:30,Year 09,Batoul Al Sarraj,Mathematics,B109,25
+Fri,S5,11:25,Year 09,Reda Attia,Mathematics,B106,23
+Mon,S7,14:15,Year 09,Reda Attia,Mathematics,B106,23
+Thu,S5,11:25,Year 09,Reda Attia,Mathematics,B003,23
+Tue,S2,08:20,Year 09,Reda Attia,Mathematics,B106,23
+Wed,S5,11:25,Year 09,Reda Attia,Mathematics,B106,23
+Fri,S3,09:35,Year 09,Ali Ahmed,Mathematics,B107,19
+Mon,S6,12:20,Year 09,Ali Ahmed,Mathematics,B107,19
+Thu,S5,11:25,Year 09,Ali Ahmed,Mathematics,B107,19
+Tue,S7,14:15,Year 09,Ali Ahmed,Mathematics,B107,19
+Wed,S4,10:30,Year 09,Ali Ahmed,Mathematics,B107,19
+Fri,S4,10:30,Year 09,Anha Begum,Mathematics,B102,24
+Mon,S3,09:35,Year 09,Anha Begum,Mathematics,B102,24
+Thu,S5,11:25,Year 09,Anha Begum,Mathematics,B102,24
+Tue,S1,07:25,Year 09,Anha Begum,Mathematics,B102,24
+Wed,S4,10:30,Year 09,Anha Begum,Mathematics,B102,24
+Fri,S5,11:25,Year 09,Rouf Ahmed Ditta,Mathematics,B107,21
+Mon,S7,14:15,Year 09,Rouf Ahmed Ditta,Mathematics,B105,21
+Thu,S5,11:25,Year 09,Rouf Ahmed Ditta,Mathematics,B105,21
+Tue,S2,08:20,Year 09,Rouf Ahmed Ditta,Mathematics,B105,21
+Wed,S5,11:25,Year 09,Rouf Ahmed Ditta,Mathematics,B105,21
+Fri,S5,11:25,Year 09,Nabeel Hussain,Mathematics,B108,25
+Mon,S7,14:15,Year 09,Nabeel Hussain,Mathematics,B108,25
+Thu,S5,11:25,Year 09,Nabeel Hussain,Mathematics,B110,25
+Tue,S2,08:20,Year 09,Nabeel Hussain,Mathematics,B108,25
+Wed,S5,11:25,Year 09,Nabeel Hussain,Mathematics,B108,25
+Fri,S3,09:35,Year 09,Mahamed Arshe,Mathematics,B106,26
+Mon,S6,12:20,Year 09,Mahamed Arshe,Mathematics,B101,26
+Thu,S5,11:25,Year 09,Mahamed Arshe,Mathematics,B101,26
+Tue,S7,14:15,Year 09,Mahamed Arshe,Mathematics,B101,26
+Wed,S4,10:30,Year 09,Mahamed Arshe,Mathematics,B101,26
+Fri,S4,10:30,Year 09,Sehrish Hussain,Mathematics,B106,23
+Mon,S3,09:35,Year 09,Sehrish Hussain,Mathematics,B106,23
+Thu,S5,11:25,Year 09,Sehrish Hussain,Mathematics,B106,23
+Tue,S1,07:25,Year 09,Sehrish Hussain,Mathematics,B106,23
+Wed,S4,10:30,Year 09,Sehrish Hussain,Mathematics,B106,23
+Fri,S4,10:30,Year 09,Haleema Zahoor Jan,Mathematics,B105,21
+Mon,S3,09:35,Year 09,Haleema Zahoor Jan,Mathematics,B105,21
+Thu,S5,11:25,Year 09,Haleema Zahoor Jan,Mathematics,B108,21
+Tue,S1,07:25,Year 09,Haleema Zahoor Jan,Mathematics,B105,21
+Wed,S4,10:30,Year 09,Haleema Zahoor Jan,Mathematics,B105,21
+Fri,S3,09:35,Year 09,Eldessouki Ramadan,Arabic,SP1B,13
+Mon,S1,07:25,Year 09,Eldessouki Ramadan,Arabic,SP1B,13
+Thu,S2,08:20,Year 09,Eldessouki Ramadan,Arabic,SP1B,13
+Tue,S4,10:30,Year 09,Eldessouki Ramadan,Arabic,SP1B,13
+Wed,S7,14:15,Year 09,Eldessouki Ramadan,Arabic,SP1B,13
+Fri,S6,12:20,Year 09,Omar Banat,Islamic studies,B101,13
+Mon,S6,12:20,Year 09,Omar Banat,Islamic studies,SP1B,13
+Thu,S1,07:25,Year 09,Omar Banat,Islamic studies,TR1,13
+Wed,S3,09:35,Year 09,Omar Banat,Islamic studies,SP1B,13
+Tue,S5,11:25,Year 09,Hadeel Alzebdeh,Social Studies,B001,13
+Wed,S6,12:20,Year 09,Hadeel Alzebdeh,Social Studies,B002,13
+Fri,S4,10:30,Year 09,Mahidul Islam,Science,B116,24
+Mon,S1,07:25,Year 09,Mahidul Islam,Science,B116,24
+Thu,S2,08:20,Year 09,Mahidul Islam,Science,B117,24
+Tue,S2,08:20,Year 09,Mahidul Islam,Science,B117,24
+Wed,S7,14:15,Year 09,Mahidul Islam,Science,B117,24
+Fri,S6,12:20,Year 09,Hasnain Altaf,Science,B115,22
+Mon,S2,08:20,Year 09,Hasnain Altaf,Science,B114,22
+Thu,S1,07:25,Year 09,Hasnain Altaf,Science,B114,22
+Tue,S4,10:30,Year 09,Hasnain Altaf,Science,B114,22
+Wed,S6,12:20,Year 09,Hasnain Altaf,Science,B115,22
+Fri,S4,10:30,Year 09,Amy Tetteh,Science,B115,23
+Mon,S1,07:25,Year 09,Amy Tetteh,Science,B115,23
+Thu,S2,08:20,Year 09,Amy Tetteh,Science,B115,23
+Tue,S2,08:20,Year 09,Amy Tetteh,Science,B115,23
+Wed,S7,14:15,Year 09,Amy Tetteh,Science,B115,23
+Fri,S1,07:25,Year 09,Zeinab Hassan,Science,B117,24
+Mon,S4,10:30,Year 09,Zeinab Hassan,Science,B117,24
+Thu,S3,09:35,Year 09,Zeinab Hassan,Science,B117,24
+Tue,S7,14:15,Year 09,Zeinab Hassan,Science,B116,24
+Wed,S2,08:20,Year 09,Zeinab Hassan,Science,B116,24
+Fri,S6,12:20,Year 09,Edna Bempah,Science,B117,23
+Mon,S2,08:20,Year 09,Edna Bempah,Science,B117,23
+Thu,S1,07:25,Year 09,Edna Bempah,Science,B117,23
+Tue,S4,10:30,Year 09,Edna Bempah,Science,B117,23
+Wed,S6,12:20,Year 09,Edna Bempah,Science,B117,23
+Fri,S6,12:20,Year 09,Edel Quigley,Science,B118,24
+Mon,S2,08:20,Year 09,Edel Quigley,Science,B116,24
+Thu,S1,07:25,Year 09,Edel Quigley,Science,B116,24
+Tue,S4,10:30,Year 09,Edel Quigley,Science,B118,24
+Wed,S6,12:20,Year 09,Edel Quigley,Science,B118,24
+Fri,S4,10:30,Year 09,Sara Nazer Adl,Science,B118,23
+Mon,S1,07:25,Year 09,Sara Nazer Adl,Science,B118,23
+Thu,S2,08:20,Year 09,Sara Nazer Adl,Science,B118,23
+Tue,S2,08:20,Year 09,Sara Nazer Adl,Science,B118,23
+Wed,S7,14:15,Year 09,Sara Nazer Adl,Science,B118,23
+Fri,S1,07:25,Year 09,Faizan Cheema,Science,B114,26
+Mon,S4,10:30,Year 09,Faizan Cheema,Science,B114,26
+Thu,S3,09:35,Year 09,Faizan Cheema,Science,B114,26
+Tue,S7,14:15,Year 09,Faizan Cheema,Science,B114,26
+Wed,S2,08:20,Year 09,Faizan Cheema,Science,B114,26
+Fri,S1,07:25,Year 09,Candice Leigh Pillay,Science,B115,18
+Mon,S4,10:30,Year 09,Candice Leigh Pillay,Science,B115,18
+Thu,S3,09:35,Year 09,Candice Leigh Pillay,Science,B115,18
+Tue,S7,14:15,Year 09,Candice Leigh Pillay,Science,B115,18
+Wed,S2,08:20,Year 09,Candice Leigh Pillay,Science,B115,18
+Fri,S5,11:25,Year 10,Ahmed Elgazzar,Arabic,B104,32
+Mon,S3,09:35,Year 10,Ahmed Elgazzar,Arabic,B009,32
+Thu,S3,09:35,Year 10,Ahmed Elgazzar,Arabic,B009,32
+Wed,S4,10:30,Year 10,Ahmed Elgazzar,Arabic,B009,32
+Fri,S1,07:25,Year 10,Malek Salameh,Islamic studies,B112,32
+Mon,S4,10:30,Year 10,Malek Salameh,Islamic studies,B112,32
+Thu,S6,12:20,Year 10,Malek Salameh,Islamic studies,B112,32
+Tue,S2,08:20,Year 10,Malek Salameh,Islamic studies,B112,32
+Fri,S1,07:25,Year 10,Malek AlRshaidat,Islamic studies,B007,0
+Mon,S4,10:30,Year 10,Malek AlRshaidat,Islamic studies,,0
+Thu,S6,12:20,Year 10,Malek AlRshaidat,Islamic studies,B005,0
+Tue,S2,08:20,Year 10,Malek AlRshaidat,Islamic studies,B007,0
+Fri,S1,07:25,Year 10,Hanein Alsarayreh,Arabic,G117,0
+Fri,S2,08:20,Year 10,Hanein Alsarayreh,Arabic,TR1,0
+Tue,S4,10:30,Year 10,Hanein Alsarayreh,Arabic,G104,0
+Wed,S6,12:20,Year 10,Hanein Alsarayreh,Arabic,G104,0
+Mon,S1,07:25,Year 10,Sara Jarrah,Islamic studies,G011,0
+Thu,S1,07:25,Year 10,Sara Jarrah,Islamic studies,S_LI,0
+Tue,S2,08:20,Year 10,Sara Jarrah,Islamic studies,G008,0
+Wed,S7,14:15,Year 10,Sara Jarrah,Islamic studies,G103,0
+Mon,S5,11:25,Year 10,Anita Owusu,Biology,B117,24
+Thu,S7,14:15,Year 10,Anita Owusu,Biology,B003,24
+Wed,S5,11:25,Year 10,Anita Owusu,Biology,B117,24
+Mon,S2,08:20,Year 10,Mahidul Islam,Biology,B119,12
+Thu,S4,10:30,Year 10,Mahidul Islam,Biology,B107,12
+Wed,S2,08:20,Year 10,Mahidul Islam,Biology,B101,12
+Fri,S3,09:35,Year 10,Mahnoor Nasir Awan,Business Studies,B101,19
+Thu,S2,08:20,Year 10,Mahnoor Nasir Awan,Business Studies,B101,19
+Tue,S3,09:35,Year 10,Mahnoor Nasir Awan,Business Studies,B101,19
+Mon,S6,12:20,Year 10,Carla Victoria Howe,Chemistry,B115,21
+Tue,S5,11:25,Year 10,Carla Victoria Howe,Chemistry,B116,21
+Wed,S6,12:20,Year 10,Carla Victoria Howe,Chemistry,B116,21
+Fri,S3,09:35,Year 10,Edel Quigley,Chemistry,B116,14
+Thu,S2,08:20,Year 10,Edel Quigley,Chemistry,B116,14
+Tue,S3,09:35,Year 10,Edel Quigley,Chemistry,B116,14
+Thu,S5,11:25,Year 10,Suweiba Odowa,Core science,B103,18
+Tue,S4,10:30,Year 10,Suweiba Odowa,Core science,B102,18
+Wed,S7,14:15,Year 10,Suweiba Odowa,Core science,B102,18
+Fri,S6,12:20,Year 10,Nooriyah Abdoel,English,B005,21
+Mon,S7,14:15,Year 10,Nooriyah Abdoel,English,B001,21
+Thu,S1,07:25,Year 10,Nooriyah Abdoel,English,B001,21
+Tue,S1,07:25,Year 10,Nooriyah Abdoel,English,B005,21
+Wed,S1,07:25,Year 10,Nooriyah Abdoel,English,B005,21
+Fri,S6,12:20,Year 10,Halima Hasan Jogi,English,B103,21
+Mon,S7,14:15,Year 10,Halima Hasan Jogi,English,B107,21
+Thu,S1,07:25,Year 10,Halima Hasan Jogi,English,B106,21
+Tue,S1,07:25,Year 10,Halima Hasan Jogi,English,B103,21
+Wed,S1,07:25,Year 10,Halima Hasan Jogi,English,B103,21
+Thu,S5,11:25,Year 10,Nathan Hall,Economics,SP1B,11
+Tue,S4,10:30,Year 10,Nathan Hall,Economics,B108,11
+Wed,S7,14:15,Year 10,Nathan Hall,Economics,B108,11
+Fri,S3,09:35,Year 10,Rowmicka Coutain,Food technology,G013,5
+Thu,S2,08:20,Year 10,Rowmicka Coutain,Food technology,G013,5
+Tue,S3,09:35,Year 10,Rowmicka Coutain,Food technology,G013,5
+Mon,S2,08:20,Year 10,Harry Jones,Geography,B104,10
+Thu,S4,10:30,Year 10,Harry Jones,Geography,B106,10
+Wed,S2,08:20,Year 10,Harry Jones,Geography,SP1B,10
+Mon,S6,12:20,Year 10,Jafrina Jahan,History,B012,6
+Tue,S5,11:25,Year 10,Jafrina Jahan,History,B102,6
+Wed,S6,12:20,Year 10,Jafrina Jahan,History,B113,6
+Thu,S5,11:25,Year 10,Mujahed Nayef,ICT,TR1,13
+Tue,S4,10:30,Year 10,Mujahed Nayef,ICT,B101,13
+Wed,S7,14:15,Year 10,Mujahed Nayef,ICT,B113,13
+Fri,S4,10:30,Year 10,Jacob Morgan Lee,Mathematics,B108,23
+Mon,S1,07:25,Year 10,Jacob Morgan Lee,Mathematics,B108,23
+Tue,S6,12:20,Year 10,Jacob Morgan Lee,Mathematics,B108,23
+Wed,S3,09:35,Year 10,Jacob Morgan Lee,Mathematics,B108,23
+Fri,S4,10:30,Year 10,Reda Attia,Mathematics,B101,19
+Mon,S1,07:25,Year 10,Reda Attia,Mathematics,B106,19
+Tue,S6,12:20,Year 10,Reda Attia,Mathematics,B106,19
+Wed,S3,09:35,Year 10,Reda Attia,Mathematics,B106,19
+Fri,S2,08:20,Year 10,Jermaine Nana Kojo Asare Aryeetey,Sport,,21
+Tue,S7,14:15,Year 10,Jermaine Nana Kojo Asare Aryeetey,Sport,,21
+Fri,S2,08:20,Year 10,Graham Hodgson,Sport,,21
+Tue,S7,14:15,Year 10,Graham Hodgson,Sport,,21
+Mon,S5,11:25,Year 10,Amy Tetteh,Psychology,B118,5
+Thu,S7,14:15,Year 10,Amy Tetteh,Psychology,B114,5
+Wed,S5,11:25,Year 10,Amy Tetteh,Psychology,B104,5
+Mon,S5,11:25,Year 10,Tahiba Akhtar,Product design,B011,13
+Thu,S7,14:15,Year 10,Tahiba Akhtar,Product design,B012,13
+Wed,S5,11:25,Year 10,Tahiba Akhtar,Product design,B012,13
+Fri,S3,09:35,Year 10,Paul Graham Jones,Sport,,4
+Thu,S2,08:20,Year 10,Paul Graham Jones,Sport,B113,4
+Tue,S3,09:35,Year 10,Paul Graham Jones,Sport,B103,4
+Mon,S6,12:20,Year 10,Shannan OBrien,Physics,B117,15
+Tue,S5,11:25,Year 10,Shannan OBrien,Physics,B117,15
+Wed,S6,12:20,Year 10,Shannan OBrien,Physics,B119,15
+Mon,S2,08:20,Year 10,Ali Al-Kheffaji,Physics,B103,20
+Thu,S4,10:30,Year 10,Ali Al-Kheffaji,Physics,B119,20
+Wed,S2,08:20,Year 10,Ali Al-Kheffaji,Physics,B119,20
+Tue,S2,08:20,Year 10,Omar Banat,Islamic studies,B009,0
+Fri,S1,07:25,Year 10,Hani Abu-Ateyih,Arabic,,10
+Mon,S4,10:30,Year 10,Hani Abu-Ateyih,Arabic,,10
+Thu,S6,12:20,Year 10,Hani Abu-Ateyih,Arabic,,10
+Wed,S4,10:30,Year 10,Hani Abu-Ateyih,Arabic,,10
+Fri,S5,11:25,Year 10,Abdelmonem Aljabari,Islamic studies,,10
+Mon,S3,09:35,Year 10,Abdelmonem Aljabari,Islamic studies,,10
+Thu,S3,09:35,Year 10,Abdelmonem Aljabari,Islamic studies,,10
+Tue,S2,08:20,Year 10,Abdelmonem Aljabari,Islamic studies,,10
+Fri,S1,07:25,Year 11,Ahmed Elgazzar,Arabic,B101,13
+Mon,S4,10:30,Year 11,Ahmed Elgazzar,Arabic,B009,13
+Thu,S6,12:20,Year 11,Ahmed Elgazzar,Arabic,B009,13
+Tue,S6,12:20,Year 11,Ahmed Elgazzar,Arabic,B101,13
+Fri,S5,11:25,Year 11,Abdelmonem Aljabari,Islamic studies,B103,13
+Mon,S3,09:35,Year 11,Abdelmonem Aljabari,Islamic studies,B113,13
+Thu,S3,09:35,Year 11,Abdelmonem Aljabari,Islamic studies,B113,13
+Wed,S4,10:30,Year 11,Abdelmonem Aljabari,Islamic studies,,13
+Fri,S3,09:35,Year 11,Mahidul Islam,Biology,B119,11
+Tue,S3,09:35,Year 11,Mahidul Islam,Biology,B119,11
+Wed,S1,07:25,Year 11,Mahidul Islam,Biology,B119,11
+Fri,S4,10:30,Year 11,Shakeela Salim Patel,Business Studies,B103,7
+Thu,S4,10:30,Year 11,Shakeela Salim Patel,Business Studies,B101,7
+Tue,S5,11:25,Year 11,Shakeela Salim Patel,Business Studies,B101,7
+Thu,S5,11:25,Year 11,Faizan Cheema,Chemistry,B114,14
+Tue,S4,10:30,Year 11,Faizan Cheema,Chemistry,B116,14
+Wed,S7,14:15,Year 11,Faizan Cheema,Chemistry,B114,14
+Mon,S2,08:20,Year 11,Naumana Malik,Computing,TR1,6
+Thu,S7,14:15,Year 11,Naumana Malik,Computing,B107,6
+Wed,S6,12:20,Year 11,Naumana Malik,Computing,B107,6
+Fri,S2,08:20,Year 11,Jasmine Rachael Clarke,English,S_LI,16
+Mon,S7,14:15,Year 11,Jasmine Rachael Clarke,English,B005,16
+Thu,S1,07:25,Year 11,Jasmine Rachael Clarke,English,B005,16
+Tue,S1,07:25,Year 11,Jasmine Rachael Clarke,English,TR2,16
+Wed,S3,09:35,Year 11,Jasmine Rachael Clarke,English,B005,16
+Mon,S2,08:20,Year 11,Nathan Hall,Economics,B105,10
+Thu,S7,14:15,Year 11,Nathan Hall,Economics,B103,10
+Wed,S6,12:20,Year 11,Nathan Hall,Economics,TR1,10
+Fri,S4,10:30,Year 11,Rowmicka Coutain,Food technology,G013,9
+Thu,S4,10:30,Year 11,Rowmicka Coutain,Food technology,G013,9
+Tue,S5,11:25,Year 11,Rowmicka Coutain,Food technology,G013,9
+Thu,S5,11:25,Year 11,Amy Tetteh,History,,2
+Tue,S4,10:30,Year 11,Amy Tetteh,History,,2
+Wed,S7,14:15,Year 11,Amy Tetteh,History,,2
+Fri,S6,12:20,Year 11,Naomi Watt,Mathematics,B102,16
+Mon,S1,07:25,Year 11,Naomi Watt,Mathematics,B105,16
+Thu,S2,08:20,Year 11,Naomi Watt,Mathematics,B105,16
+Tue,S2,08:20,Year 11,Naomi Watt,Mathematics,TR2,16
+Mon,S6,12:20,Year 11,Jermaine Nana Kojo Asare Aryeetey,Sport,,16
+Wed,S5,11:25,Year 11,Jermaine Nana Kojo Asare Aryeetey,Sport,,16
+Fri,S3,09:35,Year 11,Amy Tetteh,Psychology,B010,5
+Tue,S3,09:35,Year 11,Amy Tetteh,Psychology,SP1B,5
+Wed,S1,07:25,Year 11,Amy Tetteh,Psychology,B101,5
+Mon,S5,11:25,Year 11,Shannan OBrien,Physics,B116,16
+Tue,S7,14:15,Year 11,Shannan OBrien,Physics,B108,16
+Wed,S2,08:20,Year 11,Shannan OBrien,Physics,TR1,16
+Fri,S5,11:25,Year 11,Eldessouki Ramadan,Arabic,SP1B,3
+Mon,S4,10:30,Year 11,Eldessouki Ramadan,Arabic,SP1B,3
+Thu,S6,12:20,Year 11,Eldessouki Ramadan,Arabic,SP1B,3
+Wed,S4,10:30,Year 11,Eldessouki Ramadan,Arabic,SP1B,3
+Fri,S1,07:25,Year 11,Omar Banat,Islamic studies,SP1B,3
+Mon,S3,09:35,Year 11,Omar Banat,Islamic studies,SPIG,3
+Thu,S3,09:35,Year 11,Omar Banat,Islamic studies,SPIG,3
+Tue,S6,12:20,Year 11,Omar Banat,Islamic studies,SPIG,3
+Fri,S3,09:35,Year 12,Ahmed Elgazzar,Arabic,B102,9
+Mon,S5,11:25,Year 12,Ahmed Elgazzar,Arabic,B103,9
+Thu,S4,10:30,Year 12,Ahmed Elgazzar,Arabic,B102,9
+Wed,S2,08:20,Year 12,Ahmed Elgazzar,Arabic,B102,9
+Fri,S4,10:30,Year 12,Abdelmonem Aljabari,Islamic studies,B113,9
+Mon,S2,08:20,Year 12,Abdelmonem Aljabari,Islamic studies,B113,9
+Tue,S7,14:15,Year 12,Abdelmonem Aljabari,Islamic studies,B113,9
+Wed,S1,07:25,Year 12,Abdelmonem Aljabari,Islamic studies,B113,9
+Thu,S1,07:25,Year 12,Paul Graham Jones,Sport,,13
+Wed,S6,12:20,Year 12,Paul Graham Jones,Sport,,13
+Fri,S1,07:25,Year 12,Hasnain Altaf,BETC-Science,B119,0
+Mon,S3,09:35,Year 12,Hasnain Altaf,BETC-Science,B104,0
+Mon,S7,14:15,Year 12,Hasnain Altaf,BETC-Science,B110,0
+Thu,S6,12:20,Year 12,Hasnain Altaf,BETC-Science,B104,0
+Tue,S5,11:25,Year 12,Hasnain Altaf,BETC-Science,B106,0
+Wed,S3,09:35,Year 12,Hasnain Altaf,BETC-Science,B001,0
+Fri,S2,08:20,Year 12,Gavin John Earnshaw,Product design,B011,2
+Mon,S1,07:25,Year 12,Gavin John Earnshaw,Product design,B011,2
+Thu,S5,11:25,Year 12,Gavin John Earnshaw,Product design,B011,2
+Tue,S1,07:25,Year 12,Gavin John Earnshaw,Product design,B011,2
+Tue,S6,12:20,Year 12,Gavin John Earnshaw,Product design,B012,2
+Wed,S4,10:30,Year 12,Gavin John Earnshaw,Product design,B011,2
+Fri,S4,10:30,Year 12,Eldessouki Ramadan,Arabic,SP1B,4
+Mon,S5,11:25,Year 12,Eldessouki Ramadan,Arabic,TR2,4
+Thu,S4,10:30,Year 12,Eldessouki Ramadan,Arabic,SP1B,4
+Wed,S2,08:20,Year 12,Eldessouki Ramadan,Arabic,TR2,4
+Fri,S3,09:35,Year 12,Omar Banat,Islamic studies,TR2,4
+Mon,S2,08:20,Year 12,Omar Banat,Islamic studies,SP1B,4
+Tue,S7,14:15,Year 12,Omar Banat,Islamic studies,SP1B,4
+Wed,S1,07:25,Year 12,Omar Banat,Islamic studies,SP1B,4
+Fri,S3,09:35,Year 13,Shakeela Salim Patel,Business Studies,B012,2
+Mon,S7,14:15,Year 13,Shakeela Salim Patel,Business Studies,B008,2
+Thu,S5,11:25,Year 13,Shakeela Salim Patel,Business Studies,B012,2
+Tue,S7,14:15,Year 13,Shakeela Salim Patel,Business Studies,B103,2
+Wed,S3,09:35,Year 13,Shakeela Salim Patel,Business Studies,B101,2
+Fri,S2,08:20,Year 13,Mohamed Abdi Hassan,Chemistry,B114,2
+Mon,S3,09:35,Year 13,Mohamed Abdi Hassan,Chemistry,B103,2
+Thu,S1,07:25,Year 13,Mohamed Abdi Hassan,Chemistry,G117,2
+Tue,S3,09:35,Year 13,Mohamed Abdi Hassan,Chemistry,B005,2
+Wed,S5,11:25,Year 13,Mohamed Abdi Hassan,Chemistry,B114,2
+Thu,S1,07:25,Year 13,Harry Jones,Geography,TR2,0
+Fri,S2,08:20,Year 13,Jafrina Jahan,History,G011,0
+Fri,S3,09:35,Year 13,Harry Jones,Geography,G012,0
+Tue,S2,08:20,Year 13,Jafrina Jahan,History,G001,0
