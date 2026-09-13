@@ -19,36 +19,25 @@
   --font-body: 'Inter', 'Segoe UI', Arial, sans-serif;
   --font-mono: 'JetBrains Mono', 'Consolas', monospace;
   --shadow: 0 1px 2px rgba(16,24,40,0.04), 0 1px 3px rgba(16,24,40,0.06);
-  --shadow-md: 0 4px 10px rgba(16,24,40,0.06), 0 2px 4px rgba(16,24,40,0.05);
+  --shadow-md: 0 8px 24px rgba(16,24,40,0.12);
 }
 *{box-sizing:border-box;}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);min-height:100vh;-webkit-font-smoothing:antialiased;}
 .wrap{max-width:1320px;margin:0 auto;padding:32px 24px 60px;}
+button{font-family:var(--font-body);}
 
 /* ---------- Login gate ---------- */
-#loginGate{
-  position:fixed; inset:0; background:linear-gradient(160deg,#0f1c3f 0%, #1b2c5e 55%, #2f4bd6 100%);
-  display:flex; align-items:center; justify-content:center; z-index:1000; padding:20px;
-}
-.login-card{
-  background:#fff; border-radius:16px; padding:40px 36px; width:100%; max-width:380px;
-  box-shadow:0 20px 60px rgba(10,20,60,0.35);
-}
+#loginGate{position:fixed; inset:0; background:linear-gradient(160deg,#0f1c3f 0%, #1b2c5e 55%, #2f4bd6 100%); display:flex; align-items:center; justify-content:center; z-index:1000; padding:20px;}
+.login-card{background:#fff; border-radius:16px; padding:40px 36px; width:100%; max-width:380px; box-shadow:0 20px 60px rgba(10,20,60,0.35);}
 .login-brand{display:flex; align-items:center; gap:10px; margin-bottom:6px;}
 .login-mark{width:34px;height:34px;border-radius:9px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:15px;flex-shrink:0;}
 .login-card h2{margin:0 0 2px;font-size:20px;font-weight:700;color:var(--ink);}
 .login-sub{color:var(--muted);font-size:13px;margin-bottom:26px;}
 .login-field{margin-bottom:16px;}
 .login-field label{display:block;font-size:12.5px;font-weight:600;color:var(--ink);margin-bottom:6px;}
-.login-field input{
-  width:100%; padding:11px 13px; border:1.5px solid var(--card-line-strong); border-radius:9px;
-  font-size:14px; font-family:var(--font-body); color:var(--ink); background:#fff;
-}
+.login-field input{width:100%; padding:11px 13px; border:1.5px solid var(--card-line-strong); border-radius:9px; font-size:14px; font-family:var(--font-body); color:var(--ink); background:#fff;}
 .login-field input:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft);}
-.login-btn{
-  width:100%; padding:12px; border:none; border-radius:9px; background:var(--accent); color:#fff;
-  font-size:14.5px; font-weight:700; cursor:pointer; margin-top:6px; transition:background .15s;
-}
+.login-btn{width:100%; padding:12px; border:none; border-radius:9px; background:var(--accent); color:#fff; font-size:14.5px; font-weight:700; cursor:pointer; margin-top:6px;}
 .login-btn:hover{background:var(--accent-dark);}
 .login-error{color:var(--bad); font-size:12.5px; margin-top:12px; text-align:center; min-height:16px;}
 .login-foot{margin-top:22px; text-align:center; font-size:11.5px; color:var(--muted-soft);}
@@ -60,37 +49,63 @@ header{display:flex;justify-content:space-between;align-items:center;padding-bot
 .brand-mark{width:40px;height:40px;border-radius:11px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:17px;flex-shrink:0;}
 h1{font-size:21px;margin:0;font-weight:700;color:var(--ink);letter-spacing:-0.2px;}
 .subtitle{color:var(--muted);font-size:12.5px;margin-top:2px;}
-.header-right{display:flex;align-items:center;gap:22px;}
+.header-right{display:flex;align-items:center;gap:16px;}
 .stats{display:flex;gap:22px;}
 .stats .stat-item{text-align:right;}
 .stats b{color:var(--accent);font-size:19px;display:block;font-weight:700;}
 .stats .stat-lbl{font-size:11px;color:var(--muted-soft);text-transform:uppercase;letter-spacing:0.4px;}
-.logout-btn{background:var(--surface);border:1px solid var(--card-line-strong);color:var(--muted);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:12.5px;font-weight:600;font-family:var(--font-body);}
+.role-badge{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.4px;background:var(--accent-soft);color:var(--accent);padding:4px 10px;border-radius:20px;}
+.icon-btn{background:var(--surface);border:1px solid var(--card-line-strong);color:var(--muted);width:38px;height:38px;border-radius:9px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;position:relative;}
+.icon-btn:hover{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);}
+.logout-btn{background:var(--surface);border:1px solid var(--card-line-strong);color:var(--muted);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:12.5px;font-weight:600;}
 .logout-btn:hover{background:var(--bad-soft);border-color:var(--bad);color:var(--bad);}
 
-.upload-panel{background:var(--card);border:1px solid var(--card-line);border-radius:12px;padding:18px 20px;margin-bottom:20px;box-shadow:var(--shadow);}
-.upload-row{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;}
-.upload-row .filter-group{display:flex;flex-direction:column;gap:6px;}
-.upload-row label{font-size:11.5px;font-weight:600;color:var(--muted);}
-select, input[type=text]{
-  background:#fff;border:1.5px solid var(--card-line-strong);color:var(--ink);padding:8px 11px;border-radius:8px;
-  font-size:13.5px;font-family:var(--font-body);min-width:160px;
+/* Data menu dropdown */
+.menu-wrap{position:relative;}
+.data-menu{
+  display:none; position:absolute; right:0; top:46px; background:#fff; border:1px solid var(--card-line);
+  border-radius:12px; box-shadow:var(--shadow-md); width:260px; z-index:200; padding:8px; overflow:hidden;
 }
-select:focus, input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft);}
-#fileInput{display:none;}
-.upload-btn{background:var(--accent);color:#fff;border:none;padding:9px 18px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;font-family:var(--font-body);}
-.upload-btn:hover{background:var(--accent-dark);}
-.ghost-btn{background:#fff;border:1.5px solid var(--card-line-strong);color:var(--muted);padding:9px 15px;border-radius:8px;cursor:pointer;font-size:12.5px;font-weight:600;font-family:var(--font-body);}
-.ghost-btn:hover{border-color:var(--bad);color:var(--bad);}
-.status-line{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:12.5px;color:var(--muted);flex-wrap:wrap;}
-.status-dot{width:7px;height:7px;border-radius:50%;display:inline-block;}
-.status-dot.ok{background:var(--good);}
-.status-dot.err{background:var(--bad);}
-.status-dot.upl{background:var(--amber);}
-.status-line b{color:var(--ink);}
+.data-menu.open{display:block;}
+.data-menu button{
+  width:100%; text-align:left; background:none; border:none; padding:11px 14px; border-radius:8px; cursor:pointer;
+  font-size:13.5px; color:var(--ink); display:flex; align-items:center; gap:10px; font-weight:500;
+}
+.data-menu button:hover{background:var(--surface);}
+.data-menu .menu-icon{width:18px;text-align:center;color:var(--muted);}
+.data-menu hr{border:none;border-top:1px solid var(--card-line);margin:6px 4px;}
+.sync-flag{font-size:11px;color:var(--amber);background:var(--amber-soft);padding:6px 10px;border-radius:8px;margin:4px 4px 8px;text-align:center;font-weight:600;}
+
+/* Modal */
+.modal-overlay{position:fixed;inset:0;background:rgba(16,24,40,0.5);display:none;align-items:center;justify-content:center;z-index:500;padding:20px;}
+.modal-overlay.open{display:flex;}
+.modal-box{background:#fff;border-radius:14px;max-width:560px;width:100%;max-height:88vh;overflow-y:auto;box-shadow:var(--shadow-md);}
+.modal-head{padding:20px 24px;border-bottom:1px solid var(--card-line);display:flex;justify-content:space-between;align-items:center;}
+.modal-head h3{margin:0;font-size:16px;font-weight:700;}
+.modal-close{background:none;border:none;font-size:20px;color:var(--muted);cursor:pointer;line-height:1;}
+.modal-body{padding:20px 24px;}
+.modal-foot{padding:16px 24px;border-top:1px solid var(--card-line);display:flex;justify-content:flex-end;gap:10px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.form-field label{display:block;font-size:11.5px;font-weight:600;color:var(--muted);margin-bottom:5px;}
+.form-field input,.form-field select{width:100%;padding:9px 11px;border:1.5px solid var(--card-line-strong);border-radius:8px;font-size:13.5px;font-family:var(--font-body);}
+.form-field input:focus,.form-field select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft);}
+.hint{font-size:12px;color:var(--muted-soft);margin-bottom:14px;line-height:1.5;}
+.primary-btn{background:var(--accent);color:#fff;border:none;padding:10px 18px;border-radius:8px;cursor:pointer;font-size:13.5px;font-weight:600;}
+.primary-btn:hover{background:var(--accent-dark);}
+.primary-btn:disabled{background:var(--card-line-strong);color:var(--muted-soft);cursor:not-allowed;}
+.secondary-btn{background:#fff;border:1.5px solid var(--card-line-strong);color:var(--muted);padding:10px 16px;border-radius:8px;cursor:pointer;font-size:13.5px;font-weight:600;}
+.secondary-btn:hover{border-color:var(--muted);}
+.danger-btn{background:var(--bad-soft);border:1.5px solid var(--bad);color:var(--bad);padding:10px 16px;border-radius:8px;cursor:pointer;font-size:13.5px;font-weight:600;}
+.file-drop{border:2px dashed var(--card-line-strong);border-radius:10px;padding:26px;text-align:center;color:var(--muted);cursor:pointer;font-size:13px;}
+.file-drop:hover{border-color:var(--accent);background:var(--accent-soft);}
+.push-status{margin-top:14px;font-size:12.5px;padding:10px 12px;border-radius:8px;display:none;}
+.push-status.show{display:block;}
+.push-status.ok{background:var(--good-soft);color:var(--good);}
+.push-status.err{background:var(--bad-soft);color:var(--bad);}
+.push-status.pending{background:var(--surface);color:var(--muted);}
 
 .tabs{display:flex;gap:4px;margin-bottom:20px;flex-wrap:wrap;border-bottom:1px solid var(--card-line);}
-.tab-btn{background:transparent;border:none;color:var(--muted);padding:11px 18px;cursor:pointer;font-size:13.5px;font-weight:600;font-family:var(--font-body);border-bottom:2.5px solid transparent;margin-bottom:-1px;transition:color .15s;}
+.tab-btn{background:transparent;border:none;color:var(--muted);padding:11px 18px;cursor:pointer;font-size:13.5px;font-weight:600;border-bottom:2.5px solid transparent;margin-bottom:-1px;}
 .tab-btn:hover{color:var(--ink);}
 .tab-btn.active{color:var(--accent);border-bottom-color:var(--accent);}
 .tab-panel{display:none;}
@@ -100,10 +115,12 @@ select:focus, input:focus{outline:none;border-color:var(--accent);box-shadow:0 0
 .filter-group{display:flex;flex-direction:column;gap:6px;}
 .filter-group label{font-size:11.5px;font-weight:600;color:var(--muted);}
 .chip-row{display:flex;gap:6px;flex-wrap:wrap;}
-.chip{border:1.5px solid var(--card-line-strong);background:#fff;color:var(--muted);padding:6px 14px;border-radius:20px;font-size:12.5px;font-weight:600;cursor:pointer;user-select:none;transition:all .12s;}
+.chip{border:1.5px solid var(--card-line-strong);background:#fff;color:var(--muted);padding:6px 14px;border-radius:20px;font-size:12.5px;font-weight:600;cursor:pointer;user-select:none;}
 .chip.on{background:var(--accent);color:#fff;border-color:var(--accent);}
-.reset-btn{align-self:flex-end;background:#fff;border:1.5px solid var(--card-line-strong);color:var(--muted);padding:8px 15px;border-radius:8px;cursor:pointer;font-size:12.5px;font-weight:600;font-family:var(--font-body);}
+.reset-btn{align-self:flex-end;background:#fff;border:1.5px solid var(--card-line-strong);color:var(--muted);padding:8px 15px;border-radius:8px;cursor:pointer;font-size:12.5px;font-weight:600;}
 .reset-btn:hover{border-color:var(--bad);color:var(--bad);}
+select,input[type=text]{background:#fff;border:1.5px solid var(--card-line-strong);color:var(--ink);padding:8px 11px;border-radius:8px;font-size:13.5px;font-family:var(--font-body);min-width:160px;}
+select:focus,input[type=text]:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft);}
 
 .result-count{color:var(--muted);font-size:12.5px;margin-bottom:10px;font-weight:500;}
 table{width:100%;border-collapse:collapse;font-size:13.5px;}
@@ -113,6 +130,8 @@ tbody td{padding:10px 14px;border-bottom:1px solid var(--card-line);color:var(--
 tbody tr:hover{background:var(--accent-soft);}
 .mono{font-family:var(--font-mono);color:var(--ink);font-size:12.5px;}
 .table-scroll{max-height:560px;overflow:auto;border:1px solid var(--card-line);border-radius:12px;background:var(--card);box-shadow:var(--shadow);}
+.row-edit-btn{background:none;border:1px solid var(--card-line-strong);color:var(--muted);width:26px;height:26px;border-radius:6px;cursor:pointer;font-size:12px;}
+.row-edit-btn:hover{border-color:var(--accent);color:var(--accent);}
 
 .teacher-picker{margin-bottom:18px;}
 .grid-wrap{overflow-x:auto;}
@@ -144,6 +163,7 @@ tbody tr:hover{background:var(--accent-soft);}
 .chart-card h3{margin:0 0 4px;font-size:14.5px;color:var(--ink);font-weight:700;}
 .chart-card .chart-note{font-size:11.5px;color:var(--muted-soft);margin-bottom:14px;}
 .chart-card canvas{max-height:320px;}
+.chart-error{padding:30px 10px;text-align:center;color:var(--bad);font-size:12.5px;background:var(--bad-soft);border-radius:8px;}
 .heatmap{overflow-x:auto;}
 .heat-grid{display:grid;grid-template-columns:60px repeat(5,1fr);gap:5px;min-width:640px;}
 .heat-cell{border-radius:6px;padding:9px 4px;text-align:center;font-size:11px;color:var(--accent-dark);font-weight:700;}
@@ -162,14 +182,8 @@ footer{margin-top:34px;color:var(--muted-soft);font-size:11.5px;text-align:cente
     <h2>Sign in</h2>
     <div class="login-sub">Staff access only. Enter your credentials to continue.</div>
     <form id="loginForm" autocomplete="off">
-      <div class="login-field">
-        <label>Username</label>
-        <input type="text" id="loginUser" autocomplete="username">
-      </div>
-      <div class="login-field">
-        <label>Password</label>
-        <input type="password" id="loginPass" autocomplete="current-password">
-      </div>
+      <div class="login-field"><label>Username</label><input type="text" id="loginUser" autocomplete="username"></div>
+      <div class="login-field"><label>Password</label><input type="password" id="loginPass" autocomplete="current-password"></div>
       <button type="submit" class="login-btn">Sign in</button>
       <div class="login-error" id="loginError"></div>
     </form>
@@ -184,7 +198,7 @@ footer{margin-top:34px;color:var(--muted-soft);font-size:11.5px;text-align:cente
       <div class="brand-mark">D</div>
       <div>
         <h1>DSIB Timetable Explorer</h1>
-        <div class="subtitle">Reads data.csv &amp; reg-groups.csv &mdash; or upload your own, it stays until you upload again</div>
+        <div class="subtitle" id="headerSubtitle">Loading timetable data...</div>
       </div>
     </div>
     <div class="header-right">
@@ -193,30 +207,21 @@ footer{margin-top:34px;color:var(--muted-soft);font-size:11.5px;text-align:cente
         <div class="stat-item"><b id="statTeachers">-</b><span class="stat-lbl">Teachers</span></div>
         <div class="stat-item"><b id="statRooms">-</b><span class="stat-lbl">Rooms</span></div>
       </div>
+      <span class="role-badge" id="roleBadge">Viewer</span>
+      <div class="menu-wrap" id="dataMenuWrap" style="display:none;">
+        <button class="icon-btn" id="dataMenuBtn" title="Data options">&#9881;</button>
+        <div class="data-menu" id="dataMenu">
+          <div class="sync-flag" id="syncFlag" style="display:none;"></div>
+          <button id="menuBulkUpload"><span class="menu-icon">&#8593;</span> Bulk upload CSV</button>
+          <button id="menuAddLesson"><span class="menu-icon">+</span> Add a lesson</button>
+          <hr>
+          <button id="menuPush"><span class="menu-icon">&#8635;</span> Push changes to GitHub</button>
+          <button id="menuDiscard"><span class="menu-icon">&#8634;</span> Discard local changes</button>
+        </div>
+      </div>
       <button class="logout-btn" id="logoutBtn">Log out</button>
     </div>
   </header>
-
-  <div class="upload-panel">
-    <div class="upload-row">
-      <div class="filter-group">
-        <label>What are you uploading?</label>
-        <select id="uploadType">
-          <option value="timetable">Lesson timetable data</option>
-          <option value="reggroups">Year group totals (reg groups)</option>
-          <option value="teachers">Teachers list (codes)</option>
-        </select>
-      </div>
-      <button class="upload-btn" onclick="document.getElementById('fileInput').click()">Choose CSV file</button>
-      <input type="file" id="fileInput" accept=".csv">
-      <button class="ghost-btn" id="resetTimetableBtn">Reset timetable to default</button>
-      <button class="ghost-btn" id="resetRegBtn">Reset year totals to default</button>
-      <button class="ghost-btn" id="resetTeachersBtn">Reset teachers list to default</button>
-    </div>
-    <div class="status-line" id="timetableStatus"><span class="status-dot ok"></span>Loading timetable data...</div>
-    <div class="status-line" id="regStatus"><span class="status-dot ok"></span>Loading year group totals...</div>
-    <div class="status-line" id="teachersStatus"><span class="status-dot ok"></span>Loading teachers list...</div>
-  </div>
 
   <div class="tabs">
     <button class="tab-btn active" data-tab="browse">Browse</button>
@@ -242,7 +247,7 @@ footer{margin-top:34px;color:var(--muted-soft);font-size:11.5px;text-align:cente
         <thead><tr>
           <th data-key="day">Day</th><th data-key="session">Session</th><th data-key="time">Time</th>
           <th data-key="year">Year</th><th data-key="teacher_code">Code</th><th data-key="teacher">Teacher</th><th data-key="subject">Subject</th>
-          <th data-key="room">Room</th><th data-key="students">Students</th>
+          <th data-key="room">Room</th><th data-key="students">Students</th><th id="editColHead" style="display:none;"></th>
         </tr></thead>
         <tbody id="tableBody"></tbody>
       </table>
@@ -265,36 +270,12 @@ footer{margin-top:34px;color:var(--muted-soft);font-size:11.5px;text-align:cente
   <div class="tab-panel" id="panel-analysis">
     <div class="subtitle" style="margin-bottom:14px;">Workload and utilisation across the whole week, computed live from the loaded data.</div>
     <div class="chart-grid">
-      <div class="chart-card">
-        <h3>Lessons per year group</h3>
-        <div class="chart-note">Total scheduled lessons (all sessions, all days) per year</div>
-        <canvas id="chartYearLessons"></canvas>
-      </div>
-      <div class="chart-card">
-        <h3>Students per year group</h3>
-        <div class="chart-note">Registered students, split by gender (from reg-groups.csv)</div>
-        <canvas id="chartYearStudents"></canvas>
-      </div>
-      <div class="chart-card">
-        <h3>Busiest teachers</h3>
-        <div class="chart-note">Top 12 teachers by number of lessons taught this week</div>
-        <canvas id="chartTeachers"></canvas>
-      </div>
-      <div class="chart-card">
-        <h3>Busiest rooms</h3>
-        <div class="chart-note">Top 12 rooms by number of lessons held this week</div>
-        <canvas id="chartRooms"></canvas>
-      </div>
-      <div class="chart-card">
-        <h3>Lessons by subject</h3>
-        <div class="chart-note">Top 12 subjects by lesson count</div>
-        <canvas id="chartSubjects"></canvas>
-      </div>
-      <div class="chart-card">
-        <h3>Day &times; session load</h3>
-        <div class="chart-note">Number of lessons running in each slot &mdash; darker = busier</div>
-        <div class="heatmap" id="heatmapWrap"></div>
-      </div>
+      <div class="chart-card"><h3>Lessons per year group</h3><div class="chart-note">Total scheduled lessons per year</div><div id="wrapYL"><canvas id="chartYearLessons"></canvas></div></div>
+      <div class="chart-card"><h3>Students per year group</h3><div class="chart-note">Registered students, split by gender</div><div id="wrapYS"><canvas id="chartYearStudents"></canvas></div></div>
+      <div class="chart-card"><h3>Busiest teachers</h3><div class="chart-note">Top 12 by lesson count</div><div id="wrapTeach"><canvas id="chartTeachers"></canvas></div></div>
+      <div class="chart-card"><h3>Busiest rooms</h3><div class="chart-note">Top 12 by usage</div><div id="wrapRooms"><canvas id="chartRooms"></canvas></div></div>
+      <div class="chart-card"><h3>Lessons by subject</h3><div class="chart-note">Top 12 subjects</div><div id="wrapSubj"><canvas id="chartSubjects"></canvas></div></div>
+      <div class="chart-card"><h3>Day &times; session load</h3><div class="chart-note">Darker = busier</div><div class="heatmap" id="heatmapWrap"></div></div>
     </div>
   </div>
 
@@ -303,33 +284,112 @@ footer{margin-top:34px;color:var(--muted-soft);font-size:11.5px;text-align:cente
     <div id="clashResults"></div>
   </div>
 
-  <footer>Upload replaces the data shown here until you upload again, or click "Reset to default" to go back to data.csv / reg-groups.csv</footer>
+  <footer id="siteFooter">DSIB Timetable Explorer</footer>
 </div>
+</div>
+
+<!-- Bulk upload modal -->
+<div class="modal-overlay" id="uploadModal">
+  <div class="modal-box">
+    <div class="modal-head"><h3>Bulk upload CSV</h3><button class="modal-close" data-close="uploadModal">&times;</button></div>
+    <div class="modal-body">
+      <div class="hint">Columns expected: <span class="mono">id,day,session,time,year,teacher_code,teacher,subject,room,students</span>. Rows with a blank field keep the existing value for that field. Rows whose <span class="mono">id</span> matches an existing lesson are <b>updated</b> (only the fields you filled in change); rows with a new id are <b>added</b>. Blank rows are skipped.</div>
+      <div class="file-drop" id="fileDrop">Click to choose a CSV file</div>
+      <input type="file" id="bulkFileInput" accept=".csv" style="display:none;">
+      <div class="push-status" id="uploadStatus"></div>
+    </div>
+    <div class="modal-foot"><button class="secondary-btn" data-close="uploadModal">Close</button></div>
+  </div>
+</div>
+
+<!-- Add/Edit lesson modal -->
+<div class="modal-overlay" id="lessonModal">
+  <div class="modal-box">
+    <div class="modal-head"><h3 id="lessonModalTitle">Edit lesson</h3><button class="modal-close" data-close="lessonModal">&times;</button></div>
+    <div class="modal-body">
+      <input type="hidden" id="editId">
+      <div class="form-row">
+        <div class="form-field"><label>Day</label><select id="editDay"><option>Mon</option><option>Tue</option><option>Wed</option><option>Thu</option><option>Fri</option></select></div>
+        <div class="form-field"><label>Session</label><select id="editSession"><option>S1</option><option>S2</option><option>S3</option><option>S4</option><option>S5</option><option>S6</option><option>S7</option><option>S8</option></select></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label>Time</label><input type="text" id="editTime" placeholder="e.g. 09:20"></div>
+        <div class="form-field"><label>Year</label><input type="text" id="editYear" placeholder="e.g. Year 07"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label>Teacher code</label><input type="text" id="editTeacherCode" placeholder="e.g. T012"></div>
+        <div class="form-field"><label>Teacher name</label><input type="text" id="editTeacher"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label>Subject</label><input type="text" id="editSubject"></div>
+        <div class="form-field"><label>Room</label><input type="text" id="editRoom"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label>Students</label><input type="text" id="editStudents"></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="danger-btn" id="deleteLessonBtn" style="margin-right:auto;">Delete</button>
+      <button class="secondary-btn" data-close="lessonModal">Cancel</button>
+      <button class="primary-btn" id="saveLessonBtn">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- Push to GitHub modal -->
+<div class="modal-overlay" id="pushModal">
+  <div class="modal-box">
+    <div class="modal-head"><h3>Push changes to GitHub</h3><button class="modal-close" data-close="pushModal">&times;</button></div>
+    <div class="modal-body">
+      <div class="hint">This writes <span class="mono">data.csv</span> straight into your repo so everyone sees the update &mdash; not just this browser. Your token is used only for this action and is <b>never saved</b> &mdash; you'll need to re-enter it next time.</div>
+      <div class="form-row">
+        <div class="form-field" style="grid-column:1/3;"><label>Repository (owner/name)</label><input type="text" id="pushRepo" placeholder="mahammadsarfraz575/DISB---TT"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label>Branch</label><input type="text" id="pushBranch" value="main"></div>
+        <div class="form-field"><label>File path</label><input type="text" id="pushPath" value="data.csv"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field" style="grid-column:1/3;"><label>GitHub personal access token</label><input type="password" id="pushToken" placeholder="ghp_..." autocomplete="off"></div>
+      </div>
+      <div class="hint">Needs a <a href="https://github.com/settings/tokens?type=beta" target="_blank" rel="noopener">fine-grained token</a> with read/write access to <span class="mono">Contents</span> for this one repo.</div>
+      <div class="push-status" id="pushStatus"></div>
+    </div>
+    <div class="modal-foot">
+      <button class="secondary-btn" data-close="pushModal">Cancel</button>
+      <button class="primary-btn" id="confirmPushBtn">Push now</button>
+    </div>
+  </div>
 </div>
 
 <script>
-/* ---------- Login gate ---------- */
-const LS_AUTH = 'dsib_authed_v1';
-const VALID_USER = 'Admin';
-const VALID_PASS = 'Admin123@';
+/* ============ AUTH ============ */
+const LS_AUTH_ROLE = 'dsib_auth_role_v1';
+const USERS = { 'Admin': {pass:'Admin123@', role:'uploader'}, 'Viewer': {pass:'Viewer123@', role:'viewer'} };
 
-function showApp(){
-  document.getElementById('loginGate').style.display = 'none';
-  document.getElementById('app').style.display = 'block';
-}
-function showLogin(){
-  document.getElementById('loginGate').style.display = 'flex';
-  document.getElementById('app').style.display = 'none';
-}
+function showApp(){ document.getElementById('loginGate').style.display='none'; document.getElementById('app').style.display='block'; applyRoleUI(); }
+function showLogin(){ document.getElementById('loginGate').style.display='flex'; document.getElementById('app').style.display='none'; }
 
-if(localStorage.getItem(LS_AUTH) === '1'){ showApp(); } else { showLogin(); }
+function applyRoleUI(){
+  const role = localStorage.getItem(LS_AUTH_ROLE) || 'viewer';
+  document.getElementById('roleBadge').textContent = role === 'uploader' ? 'Uploader' : 'Viewer';
+  document.getElementById('dataMenuWrap').style.display = role === 'uploader' ? 'block' : 'none';
+  document.getElementById('editColHead').style.display = role === 'uploader' ? 'table-cell' : 'none';
+  renderTable();
+}
+function isUploader(){ return (localStorage.getItem(LS_AUTH_ROLE)||'viewer') === 'uploader'; }
+
+const savedRole = localStorage.getItem(LS_AUTH_ROLE);
+if(savedRole){ showApp(); } else { showLogin(); }
 
 document.getElementById('loginForm').addEventListener('submit', function(e){
   e.preventDefault();
   const u = document.getElementById('loginUser').value.trim();
   const p = document.getElementById('loginPass').value;
-  if(u === VALID_USER && p === VALID_PASS){
-    localStorage.setItem(LS_AUTH, '1');
+  const match = USERS[u];
+  if(match && match.pass === p){
+    localStorage.setItem(LS_AUTH_ROLE, match.role);
     document.getElementById('loginError').textContent = '';
     showApp();
   } else {
@@ -337,51 +397,59 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
   }
 });
 document.getElementById('logoutBtn').addEventListener('click', function(){
-  localStorage.removeItem(LS_AUTH);
-  document.getElementById('loginUser').value='';
-  document.getElementById('loginPass').value='';
+  localStorage.removeItem(LS_AUTH_ROLE);
+  document.getElementById('loginUser').value=''; document.getElementById('loginPass').value='';
   showLogin();
 });
 
-/* ---------- Dashboard logic ---------- */
-let DATA = [];
+/* ============ Modal helpers ============ */
+function openModal(id){ document.getElementById(id).classList.add('open'); }
+function closeModal(id){ document.getElementById(id).classList.remove('open'); }
+document.querySelectorAll('[data-close]').forEach(el=>{
+  el.addEventListener('click', ()=>closeModal(el.dataset.close));
+});
+document.querySelectorAll('.modal-overlay').forEach(ov=>{
+  ov.addEventListener('click', e=>{ if(e.target===ov) ov.classList.remove('open'); });
+});
+
+const dataMenuBtn = document.getElementById('dataMenuBtn');
+const dataMenu = document.getElementById('dataMenu');
+dataMenuBtn.addEventListener('click', e=>{ e.stopPropagation(); dataMenu.classList.toggle('open'); });
+document.addEventListener('click', ()=> dataMenu.classList.remove('open'));
+
+/* ============ Data state ============ */
+let DATA = [];       // working copy, source of truth for the UI
 let REG = [];
-let TEACHERS = [];
-let TEACHER_BY_CODE = {};
-let charts = {};
+let LOCAL_DIRTY = false; // true once local edits/uploads haven't been pushed to GitHub
+const LS_LOCAL_DATA = 'dsib_local_data_v2';
 const DAYS = ['Mon','Tue','Wed','Thu','Fri'];
 const DAY_NAMES = {Mon:'Monday',Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday'};
-const LS_TIMETABLE = 'dsib_timetable_csv_v1';
-const LS_TIMETABLE_META = 'dsib_timetable_meta_v1';
-const LS_REG = 'dsib_reggroups_csv_v1';
-const LS_REG_META = 'dsib_reggroups_meta_v1';
-const LS_TEACHERS = 'dsib_teachers_csv_v1';
-const LS_TEACHERS_META = 'dsib_teachers_meta_v1';
-
 const CHART_COLORS = ['#2f4bd6','#0891b2','#7c3aed','#15803d','#c62828','#b8790a','#475569','#0d9488'];
+let charts = {};
 
 function uniq(arr){ return [...new Set(arr)].filter(Boolean).sort(); }
+function b64EncodeUnicode(str){ return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (m,p1)=>String.fromCharCode('0x'+p1))); }
+function toCSV(rows){
+  const cols = ['id','day','session','time','year','teacher_code','teacher','subject','room','students'];
+  const esc = v => { v = (v===undefined||v===null)?'':String(v); return /[",\n]/.test(v) ? '"'+v.replace(/"/g,'""')+'"' : v; };
+  const lines = [cols.join(',')];
+  rows.forEach(r=> lines.push(cols.map(c=>esc(r[c])).join(',')));
+  return lines.join('\n');
+}
 
-function setStatus(elId, ok, msg, uploaded){
-  const el = document.getElementById(elId);
-  const dotClass = uploaded ? 'upl' : (ok ? 'ok' : 'err');
-  el.innerHTML = `<span class="status-dot ${dotClass}"></span>${msg}`;
+function setSyncFlag(){
+  const el = document.getElementById('syncFlag');
+  if(LOCAL_DIRTY){ el.style.display='block'; el.textContent = 'You have unsynced local changes'; }
+  else { el.style.display='none'; }
 }
 
 function parseTimetableCSV(text){
   const parsed = Papa.parse(text, {header:true, skipEmptyLines:true});
   return parsed.data.map(r=>({
-    day:(r.day||'').trim(), session:(r.session||'').trim(), time:(r.time||'').trim(),
-    year:(r.year||'').trim(), teacher_code:(r.teacher_code||'').trim(),
-    teacher:(r.teacher||'').trim(), subject:(r.subject||'').trim(),
-    room:(r.room||'').trim(), students:(r.students||'').trim()
+    id:(r.id||'').trim(), day:(r.day||'').trim(), session:(r.session||'').trim(), time:(r.time||'').trim(),
+    year:(r.year||'').trim(), teacher_code:(r.teacher_code||'').trim(), teacher:(r.teacher||'').trim(),
+    subject:(r.subject||'').trim(), room:(r.room||'').trim(), students:(r.students||'').trim()
   })).filter(r=>r.day && r.teacher);
-}
-function parseTeachersCSV(text){
-  const parsed = Papa.parse(text, {header:true, skipEmptyLines:true});
-  return parsed.data.map(r=>({
-    teacher_code:(r.teacher_code||'').trim(), teacher_name:(r.teacher_name||'').trim()
-  })).filter(r=>r.teacher_code);
 }
 function parseRegCSV(text){
   const parsed = Papa.parse(text, {header:true, skipEmptyLines:true});
@@ -391,101 +459,191 @@ function parseRegCSV(text){
   })).filter(r=>r.year);
 }
 
-function loadTimetable(text, source, isUpload){
-  DATA = parseTimetableCSV(text);
-  const when = isUpload ? ' &mdash; uploaded ' + new Date().toLocaleString() : '';
-  setStatus('timetableStatus', true, `<b>${DATA.length} lessons</b> loaded from ${source}${when}`, isUpload);
+function loadTimetable(rows, note){
+  DATA = rows;
+  document.getElementById('headerSubtitle').textContent = `${DATA.length} lessons loaded${note?(' — '+note):''}`;
+  setSyncFlag();
   initTimetableUI();
 }
-function loadReg(text, source, isUpload){
+function loadReg(text){
   REG = parseRegCSV(text);
-  const when = isUpload ? ' &mdash; uploaded ' + new Date().toLocaleString() : '';
-  setStatus('regStatus', true, `<b>${REG.length} year groups</b> loaded from ${source}${when}`, isUpload);
-  renderYearTotals();
-  renderAnalysis();
-}
-function loadTeachers(text, source, isUpload){
-  TEACHERS = parseTeachersCSV(text);
-  TEACHER_BY_CODE = {};
-  TEACHERS.forEach(t=>{ TEACHER_BY_CODE[t.teacher_code] = t.teacher_name; });
-  const when = isUpload ? ' &mdash; uploaded ' + new Date().toLocaleString() : '';
-  setStatus('teachersStatus', true, `<b>${TEACHERS.length} teachers</b> loaded from ${source}${when}`, isUpload);
-  if(DATA.length) initTimetableUI();
+  renderYearTotals(); renderAnalysis();
 }
 
-document.getElementById('fileInput').addEventListener('change', function(e){
-  const file = e.target.files[0];
-  if(!file) return;
-  const type = document.getElementById('uploadType').value;
-  const reader = new FileReader();
-  reader.onload = ev => {
-    const text = ev.target.result;
-    if(type==='timetable'){
-      localStorage.setItem(LS_TIMETABLE, text);
-      localStorage.setItem(LS_TIMETABLE_META, new Date().toISOString());
-      loadTimetable(text, file.name, true);
-    } else if(type==='reggroups') {
-      localStorage.setItem(LS_REG, text);
-      localStorage.setItem(LS_REG_META, new Date().toISOString());
-      loadReg(text, file.name, true);
+/* Load sequence: local unsynced copy takes priority over the repo's data.csv */
+const localSaved = localStorage.getItem(LS_LOCAL_DATA);
+if(localSaved){
+  try{
+    const rows = JSON.parse(localSaved);
+    LOCAL_DIRTY = true;
+    loadTimetable(rows, 'includes local changes not yet pushed to GitHub');
+  } catch(e){ fetchDefaultTimetable(); }
+} else {
+  fetchDefaultTimetable();
+}
+function fetchDefaultTimetable(){
+  fetch('data.csv').then(r=>{ if(!r.ok) throw 0; return r.text(); })
+    .then(text=>{ LOCAL_DIRTY=false; loadTimetable(parseTimetableCSV(text), 'from data.csv'); })
+    .catch(()=>{ document.getElementById('headerSubtitle').textContent = 'Could not load data.csv'; });
+}
+fetch('reg-groups.csv').then(r=>{ if(!r.ok) throw 0; return r.text(); }).then(loadReg).catch(()=>{});
+
+function persistLocal(){
+  localStorage.setItem(LS_LOCAL_DATA, JSON.stringify(DATA));
+  LOCAL_DIRTY = true;
+  setSyncFlag();
+}
+
+/* ============ Upsert logic ============ */
+function upsertRows(incomingRows){
+  const byId = new Map(DATA.map(r=>[r.id, r]));
+  let updated = 0, added = 0, skipped = 0;
+  incomingRows.forEach(row=>{
+    const hasAnyValue = Object.values(row).some(v=>v && String(v).trim()!=='');
+    if(!hasAnyValue){ skipped++; return; }
+    let id = row.id;
+    if(!id){ id = `${row.day}-${row.session}-${row.teacher_code||row.teacher}`.toLowerCase().replace(/\s+/g,'_'); }
+    if(byId.has(id)){
+      const existing = byId.get(id);
+      Object.keys(row).forEach(k=>{ if(row[k] !== '' && row[k] !== undefined) existing[k] = row[k]; });
+      updated++;
     } else {
-      localStorage.setItem(LS_TEACHERS, text);
-      localStorage.setItem(LS_TEACHERS_META, new Date().toISOString());
-      loadTeachers(text, file.name, true);
+      row.id = id;
+      DATA.push(row);
+      byId.set(id, row);
+      added++;
     }
+  });
+  persistLocal();
+  loadTimetable(DATA, `${added} added, ${updated} updated, ${skipped} blank rows skipped`);
+  return {added, updated, skipped};
+}
+
+/* ============ Bulk upload modal ============ */
+document.getElementById('menuBulkUpload').onclick = ()=>{ dataMenu.classList.remove('open'); openModal('uploadModal'); };
+document.getElementById('fileDrop').onclick = ()=> document.getElementById('bulkFileInput').click();
+document.getElementById('bulkFileInput').addEventListener('change', function(e){
+  const file = e.target.files[0]; if(!file) return;
+  const reader = new FileReader();
+  reader.onload = ev=>{
+    const rows = parseTimetableCSV(ev.target.result);
+    const result = upsertRows(rows);
+    const st = document.getElementById('uploadStatus');
+    st.className = 'push-status show ok';
+    st.textContent = `Done — ${result.added} added, ${result.updated} updated, ${result.skipped} blank rows skipped. Remember to "Push changes to GitHub" so everyone sees this.`;
   };
   reader.readAsText(file);
   e.target.value = '';
 });
 
-document.getElementById('resetTimetableBtn').onclick = ()=>{
-  localStorage.removeItem(LS_TIMETABLE);
-  localStorage.removeItem(LS_TIMETABLE_META);
+/* ============ Add / Edit / Delete single lesson ============ */
+document.getElementById('menuAddLesson').onclick = ()=>{
+  dataMenu.classList.remove('open');
+  document.getElementById('lessonModalTitle').textContent = 'Add a lesson';
+  ['editId','editTime','editYear','editTeacherCode','editTeacher','editSubject','editRoom','editStudents'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('deleteLessonBtn').style.display = 'none';
+  openModal('lessonModal');
+};
+function openEditLesson(id){
+  const row = DATA.find(r=>r.id===id);
+  if(!row) return;
+  document.getElementById('lessonModalTitle').textContent = 'Edit lesson';
+  document.getElementById('editId').value = row.id;
+  document.getElementById('editDay').value = row.day;
+  document.getElementById('editSession').value = row.session;
+  document.getElementById('editTime').value = row.time;
+  document.getElementById('editYear').value = row.year;
+  document.getElementById('editTeacherCode').value = row.teacher_code;
+  document.getElementById('editTeacher').value = row.teacher;
+  document.getElementById('editSubject').value = row.subject;
+  document.getElementById('editRoom').value = row.room;
+  document.getElementById('editStudents').value = row.students;
+  document.getElementById('deleteLessonBtn').style.display = 'inline-block';
+  openModal('lessonModal');
+}
+document.getElementById('saveLessonBtn').onclick = ()=>{
+  const id = document.getElementById('editId').value;
+  const row = {
+    day: document.getElementById('editDay').value,
+    session: document.getElementById('editSession').value,
+    time: document.getElementById('editTime').value.trim(),
+    year: document.getElementById('editYear').value.trim(),
+    teacher_code: document.getElementById('editTeacherCode').value.trim(),
+    teacher: document.getElementById('editTeacher').value.trim(),
+    subject: document.getElementById('editSubject').value.trim(),
+    room: document.getElementById('editRoom').value.trim(),
+    students: document.getElementById('editStudents').value.trim()
+  };
+  if(!row.day || !row.teacher){ alert('Day and Teacher name are required.'); return; }
+  if(id){
+    const existing = DATA.find(r=>r.id===id);
+    Object.assign(existing, row);
+  } else {
+    row.id = `${row.day}-${row.session}-${row.teacher_code||row.teacher}`.toLowerCase().replace(/\s+/g,'_');
+    DATA.push(row);
+  }
+  persistLocal();
+  loadTimetable(DATA, 'edited locally — push to GitHub to publish');
+  closeModal('lessonModal');
+};
+document.getElementById('deleteLessonBtn').onclick = ()=>{
+  const id = document.getElementById('editId').value;
+  if(!id) return;
+  if(!confirm('Delete this lesson? This only affects your local unsynced copy until you push.')) return;
+  DATA = DATA.filter(r=>r.id!==id);
+  persistLocal();
+  loadTimetable(DATA, 'edited locally — push to GitHub to publish');
+  closeModal('lessonModal');
+};
+
+/* ============ Discard local changes ============ */
+document.getElementById('menuDiscard').onclick = ()=>{
+  dataMenu.classList.remove('open');
+  if(!confirm('Discard all local changes and reload data.csv from GitHub?')) return;
+  localStorage.removeItem(LS_LOCAL_DATA);
+  LOCAL_DIRTY = false;
   fetchDefaultTimetable();
 };
-document.getElementById('resetRegBtn').onclick = ()=>{
-  localStorage.removeItem(LS_REG);
-  localStorage.removeItem(LS_REG_META);
-  fetchDefaultReg();
+
+/* ============ Push to GitHub ============ */
+document.getElementById('menuPush').onclick = ()=>{ dataMenu.classList.remove('open'); openModal('pushModal'); };
+document.getElementById('confirmPushBtn').onclick = async ()=>{
+  const repo = document.getElementById('pushRepo').value.trim();
+  const branch = document.getElementById('pushBranch').value.trim() || 'main';
+  const path = document.getElementById('pushPath').value.trim() || 'data.csv';
+  const token = document.getElementById('pushToken').value.trim();
+  const st = document.getElementById('pushStatus');
+  st.className = 'push-status show pending'; st.textContent = 'Pushing...';
+  if(!repo || !token){ st.className='push-status show err'; st.textContent='Repository and token are required.'; return; }
+  try{
+    const apiBase = `https://api.github.com/repos/${repo}/contents/${path}`;
+    const getResp = await fetch(`${apiBase}?ref=${branch}`, { headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json' } });
+    let sha = undefined;
+    if(getResp.ok){ const j = await getResp.json(); sha = j.sha; }
+    else if(getResp.status !== 404){ throw new Error(`Could not read current file (${getResp.status})`); }
+    const csvText = toCSV(DATA);
+    const putResp = await fetch(apiBase, {
+      method:'PUT',
+      headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json', 'Content-Type':'application/json' },
+      body: JSON.stringify({ message:'Update timetable data via dashboard', content:b64EncodeUnicode(csvText), sha, branch })
+    });
+    if(!putResp.ok){
+      const errBody = await putResp.json().catch(()=>({}));
+      throw new Error(errBody.message || `GitHub rejected the push (${putResp.status})`);
+    }
+    st.className = 'push-status show ok';
+    st.textContent = 'Pushed successfully — everyone will see this update within a minute.';
+    document.getElementById('pushToken').value = '';
+    localStorage.removeItem(LS_LOCAL_DATA);
+    LOCAL_DIRTY = false;
+    setSyncFlag();
+  } catch(err){
+    st.className = 'push-status show err';
+    st.textContent = 'Push failed: ' + err.message;
+  }
 };
-document.getElementById('resetTeachersBtn').onclick = ()=>{
-  localStorage.removeItem(LS_TEACHERS);
-  localStorage.removeItem(LS_TEACHERS_META);
-  fetchDefaultTeachers();
-};
 
-function fetchDefaultTimetable(){
-  fetch('data.csv').then(r=>{ if(!r.ok) throw 0; return r.text(); })
-    .then(text=>loadTimetable(text, 'data.csv', false))
-    .catch(()=>setStatus('timetableStatus', false, 'Could not load data.csv (use Choose CSV file below, or serve this via a local/web server)'));
-}
-function fetchDefaultReg(){
-  fetch('reg-groups.csv').then(r=>{ if(!r.ok) throw 0; return r.text(); })
-    .then(text=>loadReg(text, 'reg-groups.csv', false))
-    .catch(()=>setStatus('regStatus', false, 'Could not load reg-groups.csv (use Choose CSV file below, or serve this via a local/web server)'));
-}
-function fetchDefaultTeachers(){
-  fetch('teachers.csv').then(r=>{ if(!r.ok) throw 0; return r.text(); })
-    .then(text=>loadTeachers(text, 'teachers.csv', false))
-    .catch(()=>setStatus('teachersStatus', false, 'Could not load teachers.csv (use Choose CSV file below, or serve this via a local/web server)'));
-}
-
-const savedTimetable = localStorage.getItem(LS_TIMETABLE);
-if(savedTimetable){
-  const meta = localStorage.getItem(LS_TIMETABLE_META);
-  loadTimetable(savedTimetable, 'your last upload' + (meta ? ' ('+new Date(meta).toLocaleString()+')' : ''), false);
-} else { fetchDefaultTimetable(); }
-const savedReg = localStorage.getItem(LS_REG);
-if(savedReg){
-  const meta = localStorage.getItem(LS_REG_META);
-  loadReg(savedReg, 'your last upload' + (meta ? ' ('+new Date(meta).toLocaleString()+')' : ''), false);
-} else { fetchDefaultReg(); }
-const savedTeachers = localStorage.getItem(LS_TEACHERS);
-if(savedTeachers){
-  const meta = localStorage.getItem(LS_TEACHERS_META);
-  loadTeachers(savedTeachers, 'your last upload' + (meta ? ' ('+new Date(meta).toLocaleString()+')' : ''), false);
-} else { fetchDefaultTeachers(); }
-
+/* ============ UI: filters, table, teacher schedule, year totals, analysis, clash ============ */
 let teachers=[], years=[], subjects=[], sessions=[], rooms=[];
 const state = { session:'', year:'', teacher:'', room:'', subject:'', sortKey:'day', sortDir:1 };
 let activeDays = new Set(DAYS);
@@ -501,28 +659,25 @@ function initTimetableUI(){
   document.getElementById('statTeachers').textContent = teachers.length;
   document.getElementById('statRooms').textContent = rooms.length;
 
-  ['sessionSel','yearSel','subjectSel','teacherSel'].forEach(id=>{
+  ['sessionSel','yearSel','subjectSel'].forEach(id=>{
     const sel = document.getElementById(id);
-    sel.innerHTML = id==='teacherSel' ? '<option value="">Choose a teacher...</option>' : '<option value="">All</option>';
+    const cur = sel.value;
+    sel.innerHTML = '<option value="">All</option>';
+    fillSelect(sel, id==='sessionSel'?sessions:id==='yearSel'?years:subjects);
+    sel.value = cur;
   });
-  fillSelect(document.getElementById('sessionSel'), sessions);
-  fillSelect(document.getElementById('yearSel'), years);
-  fillSelect(document.getElementById('subjectSel'), subjects);
 
   const teacherSel = document.getElementById('teacherSel');
   teacherSel.innerHTML = '<option value="">Choose a teacher...</option>';
-  const codesInData = uniq(DATA.map(d=>d.teacher_code));
-  if(codesInData.length){
-    codesInData.forEach(code=>{
-      const nm = TEACHER_BY_CODE[code] || (DATA.find(d=>d.teacher_code===code)||{}).teacher || code;
-      const o = document.createElement('option'); o.value=code; o.textContent=`${code} — ${nm}`;
+  const codeMap = new Map();
+  DATA.forEach(d=>{ if(d.teacher_code) codeMap.set(d.teacher_code, d.teacher); });
+  if(codeMap.size){
+    [...codeMap.entries()].sort((a,b)=>a[1].localeCompare(b[1])).forEach(([code,name])=>{
+      const o = document.createElement('option'); o.value=code; o.textContent = `${code} — ${name}`;
       teacherSel.appendChild(o);
     });
   } else {
-    teachers.forEach(nm=>{
-      const o = document.createElement('option'); o.value=nm; o.textContent=nm;
-      teacherSel.appendChild(o);
-    });
+    teachers.forEach(nm=>{ const o=document.createElement('option'); o.value=nm; o.textContent=nm; teacherSel.appendChild(o); });
   }
 
   const dayChipsEl = document.getElementById('dayChips');
@@ -534,45 +689,34 @@ function initTimetableUI(){
     c.onclick=()=>{
       if(activeDays.has(d)){ activeDays.delete(d); c.classList.remove('on'); }
       else { activeDays.add(d); c.classList.add('on'); }
-      render();
+      renderTable();
     };
     dayChipsEl.appendChild(c);
   });
-  render();
+  renderTable();
   renderAnalysis();
 }
 
-function fillSelect(sel, list){
-  list.forEach(v=>{ const o=document.createElement('option'); o.value=v; o.textContent=v; sel.appendChild(o); });
-}
+function fillSelect(sel, list){ list.forEach(v=>{ const o=document.createElement('option'); o.value=v; o.textContent=v; sel.appendChild(o); }); }
 
-document.getElementById('sessionSel').onchange = e=>{state.session=e.target.value; render();};
-document.getElementById('yearSel').onchange = e=>{state.year=e.target.value; render();};
-document.getElementById('subjectSel').onchange = e=>{state.subject=e.target.value; render();};
-document.getElementById('teacherInput').oninput = e=>{state.teacher=e.target.value.toLowerCase(); render();};
-document.getElementById('roomInput').oninput = e=>{state.room=e.target.value.toLowerCase(); render();};
+document.getElementById('sessionSel').onchange = e=>{state.session=e.target.value; renderTable();};
+document.getElementById('yearSel').onchange = e=>{state.year=e.target.value; renderTable();};
+document.getElementById('subjectSel').onchange = e=>{state.subject=e.target.value; renderTable();};
+document.getElementById('teacherInput').oninput = e=>{state.teacher=e.target.value.toLowerCase(); renderTable();};
+document.getElementById('roomInput').oninput = e=>{state.room=e.target.value.toLowerCase(); renderTable();};
 document.getElementById('resetBtn').onclick = ()=>{
   state.session=''; state.year=''; state.teacher=''; state.room=''; state.subject='';
-  document.getElementById('sessionSel').value='';
-  document.getElementById('yearSel').value='';
-  document.getElementById('subjectSel').value='';
-  document.getElementById('teacherInput').value='';
-  document.getElementById('roomInput').value='';
+  document.getElementById('sessionSel').value=''; document.getElementById('yearSel').value='';
+  document.getElementById('subjectSel').value=''; document.getElementById('teacherInput').value=''; document.getElementById('roomInput').value='';
   activeDays = new Set(DAYS);
   [...document.getElementById('dayChips').children].forEach(c=>c.classList.add('on'));
-  render();
+  renderTable();
 };
-
-document.querySelectorAll('thead th').forEach(th=>{
-  th.onclick=()=>{
-    const key = th.dataset.key;
-    if(state.sortKey===key) state.sortDir*=-1; else {state.sortKey=key; state.sortDir=1;}
-    render();
-  };
+document.querySelectorAll('thead th[data-key]').forEach(th=>{
+  th.onclick=()=>{ const key=th.dataset.key; if(state.sortKey===key) state.sortDir*=-1; else {state.sortKey=key; state.sortDir=1;} renderTable(); };
 });
 
 const dayOrder = {Mon:0,Tue:1,Wed:2,Thu:3,Fri:4};
-
 function filtered(){
   return DATA.filter(d=>{
     if(!activeDays.has(d.day)) return false;
@@ -585,34 +729,34 @@ function filtered(){
   });
 }
 
-function render(){
+function renderTable(){
+  if(!DATA.length) return;
   let rows = filtered();
   rows.sort((a,b)=>{
     let av=a[state.sortKey], bv=b[state.sortKey];
     if(state.sortKey==='day'){ av=dayOrder[a.day]; bv=dayOrder[b.day]; }
     if(state.sortKey==='session'){ av=parseInt((a.session||'S0').replace(/\D/g,'')); bv=parseInt((b.session||'S0').replace(/\D/g,'')); }
-    if(av<bv) return -1*state.sortDir;
-    if(av>bv) return 1*state.sortDir;
-    return 0;
+    if(av<bv) return -1*state.sortDir; if(av>bv) return 1*state.sortDir; return 0;
   });
   document.getElementById('resultCount').textContent = rows.length + ' of ' + DATA.length + ' lessons';
   const tbody = document.getElementById('tableBody');
-  if(rows.length===0){
-    tbody.innerHTML = '<tr><td colspan="9"><div class="empty-state">No lessons match these filters</div></td></tr>';
-    return;
-  }
+  const uploader = isUploader();
+  if(rows.length===0){ tbody.innerHTML = `<tr><td colspan="10"><div class="empty-state">No lessons match these filters</div></td></tr>`; return; }
   const frag = document.createDocumentFragment();
   const maxRows = 500;
   rows.slice(0,maxRows).forEach(d=>{
     const tr = document.createElement('tr');
     tr.innerHTML = `<td>${DAY_NAMES[d.day]||d.day}</td><td class="mono">${d.session}</td><td class="mono">${d.time||''}</td>
-      <td>${d.year}</td><td class="mono">${d.teacher_code||'-'}</td><td>${d.teacher}</td><td>${d.subject}</td><td class="mono">${d.room||'-'}</td><td>${d.students||''}</td>`;
+      <td>${d.year}</td><td class="mono">${d.teacher_code||'-'}</td><td>${d.teacher}</td><td>${d.subject}</td>
+      <td class="mono">${d.room||'-'}</td><td>${d.students||''}</td>
+      <td>${uploader ? `<button class="row-edit-btn" data-id="${d.id}">&#9998;</button>` : ''}</td>`;
     frag.appendChild(tr);
   });
   tbody.innerHTML=''; tbody.appendChild(frag);
+  tbody.querySelectorAll('.row-edit-btn').forEach(btn=> btn.onclick = ()=>openEditLesson(btn.dataset.id));
   if(rows.length>maxRows){
     const tr=document.createElement('tr');
-    tr.innerHTML = `<td colspan="9" style="text-align:center;color:var(--muted-soft);">showing first ${maxRows} of ${rows.length} — narrow your filters to see more</td>`;
+    tr.innerHTML = `<td colspan="10" style="text-align:center;color:var(--muted-soft);">showing first ${maxRows} of ${rows.length} — narrow your filters to see more</td>`;
     tbody.appendChild(tr);
   }
 }
@@ -621,14 +765,9 @@ document.getElementById('teacherSel').onchange = e=>{ renderTeacherGrid(e.target
 function renderTeacherGrid(key){
   const wrap = document.getElementById('teacherGridWrap');
   if(!key){ wrap.innerHTML=''; return; }
-  // key is a teacher_code when codes are available, otherwise a raw teacher name (fallback)
   const mine = DATA.filter(d=> (d.teacher_code && d.teacher_code===key) || (!d.teacher_code && d.teacher===key));
-  if(mine.length===0){
-    wrap.innerHTML = '<div class="empty-state">No lessons found for this teacher. If you just uploaded new data, make sure the teacher_code column matches between data.csv and teachers.csv.</div>';
-    return;
-  }
-  const displayName = TEACHER_BY_CODE[key] || mine[0].teacher;
-  let html = `<div class="subtitle" style="margin-bottom:12px;">${displayName}${mine[0].teacher_code ? ' &middot; <span class="mono">'+mine[0].teacher_code+'</span>' : ''} &mdash; ${mine.length} lessons this week</div>`;
+  if(mine.length===0){ wrap.innerHTML = '<div class="empty-state">No lessons found for this teacher.</div>'; return; }
+  let html = `<div class="subtitle" style="margin-bottom:12px;">${mine[0].teacher}${mine[0].teacher_code?(' &middot; <span class="mono">'+mine[0].teacher_code+'</span>'):''} &mdash; ${mine.length} lessons this week</div>`;
   html += '<div class="grid-wrap"><div class="tgrid"><div class="head"></div>';
   DAYS.forEach(d=> html += `<div class="head">${DAY_NAMES[d]}</div>`);
   sessions.forEach(s=>{
@@ -636,9 +775,7 @@ function renderTeacherGrid(key){
     DAYS.forEach(d=>{
       const lesson = mine.find(x=>x.day===d && x.session===s);
       if(lesson){
-        html += `<div class="cell filled"><div class="subj">${lesson.subject}</div>
-          <div class="meta">${lesson.year} &middot; ${lesson.room||'no room'}</div>
-          <div class="meta mono">${lesson.time||''}</div></div>`;
+        html += `<div class="cell filled"><div class="subj">${lesson.subject}</div><div class="meta">${lesson.year} &middot; ${lesson.room||'no room'}</div><div class="meta mono">${lesson.time||''}</div></div>`;
       } else { html += `<div class="cell empty">&mdash;</div>`; }
     });
   });
@@ -650,114 +787,110 @@ function renderYearTotals(){
   const grid = document.getElementById('yearGrid');
   if(!REG.length){ grid.innerHTML = '<div class="empty-state">No year group totals loaded yet</div>'; return; }
   grid.innerHTML = REG.map(r=>`
-    <div class="yearcard">
-      <div class="yname">${r.year}</div>
-      <div class="big">${r.total_students||'-'}</div>
-      <div class="lbl">Total students</div>
-      <div class="sub">${r.reg_groups||'-'} reg groups ${r.males?('&middot; '+r.males+'M / '+r.females+'F'):''}</div>
-    </div>`).join('');
+    <div class="yearcard"><div class="yname">${r.year}</div><div class="big">${r.total_students||'-'}</div>
+    <div class="lbl">Total students</div><div class="sub">${r.reg_groups||'-'} reg groups ${r.males?('&middot; '+r.males+'M / '+r.females+'F'):''}</div></div>`).join('');
   const total = REG.reduce((s,r)=>s+(parseInt(r.total_students)||0),0);
   document.getElementById('yearTotalLine').innerHTML = `<b>${total}</b> total students across Year 07 &ndash; Year 13`;
 }
 
 function destroyChart(id){ if(charts[id]){ charts[id].destroy(); delete charts[id]; } }
+function chartFail(wrapId, canvasId){
+  document.getElementById(wrapId).innerHTML = `<div class="chart-error">Couldn't load the chart library (Chart.js). This is usually a blocked CDN on this network — check the browser console, or try a different network.</div>`;
+}
 
 function renderAnalysis(){
   if(!DATA.length && !REG.length) return;
-  Chart.defaults.color = '#5b6472';
-  Chart.defaults.borderColor = '#e4e8f0';
-  Chart.defaults.font.family = "'Inter', 'Segoe UI', Arial, sans-serif";
-
-  if(DATA.length){
-    const yearOrder = ['Year 07','Year 08','Year 09','Year 10','Year 11','Year 12','Year 13'];
-    const yCounts = yearOrder.map(y=>DATA.filter(d=>d.year===y).length);
-    destroyChart('yl');
-    charts.yl = new Chart(document.getElementById('chartYearLessons'), {
-      type:'bar',
-      data:{labels:yearOrder, datasets:[{label:'Lessons', data:yCounts, backgroundColor:'#2f4bd6', borderRadius:6}]},
-      options:{plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true, grid:{color:'#eef0f4'}}, x:{grid:{display:false}}}}
-    });
+  if(typeof Chart === 'undefined'){
+    ['wrapYL','wrapYS','wrapTeach','wrapRooms','wrapSubj'].forEach(w=>chartFail(w));
+    document.getElementById('heatmapWrap').innerHTML = '<div class="chart-error">Chart library unavailable, but the heatmap below does not need it — showing anyway.</div>';
   }
+  try{
+    Chart.defaults.color = '#5b6472'; Chart.defaults.borderColor = '#e4e8f0'; Chart.defaults.font.family = "'Inter','Segoe UI',Arial,sans-serif";
+    if(DATA.length){
+      const yearOrder = ['Year 07','Year 08','Year 09','Year 10','Year 11','Year 12','Year 13'];
+      const yCounts = yearOrder.map(y=>DATA.filter(d=>d.year===y).length);
+      destroyChart('yl');
+      charts.yl = new Chart(document.getElementById('chartYearLessons'), { type:'bar',
+        data:{labels:yearOrder, datasets:[{label:'Lessons', data:yCounts, backgroundColor:'#2f4bd6', borderRadius:6}]},
+        options:{plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true,grid:{color:'#eef0f4'}},x:{grid:{display:false}}}} });
+    }
+  } catch(e){ chartFail('wrapYL'); console.error(e); }
 
-  if(REG.length){
-    destroyChart('ys');
-    const hasGender = REG.some(r=>r.males);
-    charts.ys = new Chart(document.getElementById('chartYearStudents'), {
-      type:'bar',
-      data:{
-        labels:REG.map(r=>r.year),
-        datasets: hasGender ? [
-          {label:'Males', data:REG.map(r=>parseInt(r.males)||0), backgroundColor:'#2f4bd6', stack:'s', borderRadius:4},
-          {label:'Females', data:REG.map(r=>parseInt(r.females)||0), backgroundColor:'#7c3aed', stack:'s', borderRadius:4}
-        ] : [
-          {label:'Total students', data:REG.map(r=>parseInt(r.total_students)||0), backgroundColor:'#2f4bd6'}
-        ]
-      },
-      options:{plugins:{legend:{display:hasGender, labels:{boxWidth:12}}}, scales:{x:{stacked:hasGender, grid:{display:false}}, y:{stacked:hasGender, beginAtZero:true, grid:{color:'#eef0f4'}}}}
-    });
-  }
+  try{
+    if(REG.length){
+      destroyChart('ys');
+      const hasGender = REG.some(r=>r.males);
+      charts.ys = new Chart(document.getElementById('chartYearStudents'), { type:'bar',
+        data:{ labels:REG.map(r=>r.year),
+          datasets: hasGender ? [
+            {label:'Males', data:REG.map(r=>parseInt(r.males)||0), backgroundColor:'#2f4bd6', stack:'s', borderRadius:4},
+            {label:'Females', data:REG.map(r=>parseInt(r.females)||0), backgroundColor:'#7c3aed', stack:'s', borderRadius:4}
+          ] : [{label:'Total students', data:REG.map(r=>parseInt(r.total_students)||0), backgroundColor:'#2f4bd6'}]
+        },
+        options:{plugins:{legend:{display:hasGender,labels:{boxWidth:12}}}, scales:{x:{stacked:hasGender,grid:{display:false}}, y:{stacked:hasGender,beginAtZero:true,grid:{color:'#eef0f4'}}}} });
+    }
+  } catch(e){ chartFail('wrapYS'); console.error(e); }
 
-  if(DATA.length){
-    const teacherCounts = {};
-    DATA.forEach(d=>{ teacherCounts[d.teacher] = (teacherCounts[d.teacher]||0)+1; });
-    const topTeachers = Object.entries(teacherCounts).sort((a,b)=>b[1]-a[1]).slice(0,12);
-    destroyChart('teach');
-    charts.teach = new Chart(document.getElementById('chartTeachers'), {
-      type:'bar',
-      data:{labels:topTeachers.map(t=>t[0]), datasets:[{label:'Lessons', data:topTeachers.map(t=>t[1]), backgroundColor:'#0891b2', borderRadius:5}]},
-      options:{indexAxis:'y', plugins:{legend:{display:false}}, scales:{x:{beginAtZero:true, grid:{color:'#eef0f4'}}, y:{grid:{display:false}}}}
-    });
+  try{
+    if(DATA.length){
+      const teacherCounts = {};
+      DATA.forEach(d=>{ teacherCounts[d.teacher] = (teacherCounts[d.teacher]||0)+1; });
+      const topTeachers = Object.entries(teacherCounts).sort((a,b)=>b[1]-a[1]).slice(0,12);
+      destroyChart('teach');
+      charts.teach = new Chart(document.getElementById('chartTeachers'), { type:'bar',
+        data:{labels:topTeachers.map(t=>t[0]), datasets:[{label:'Lessons', data:topTeachers.map(t=>t[1]), backgroundColor:'#0891b2', borderRadius:5}]},
+        options:{indexAxis:'y', plugins:{legend:{display:false}}, scales:{x:{beginAtZero:true,grid:{color:'#eef0f4'}}, y:{grid:{display:false}}}} });
+    }
+  } catch(e){ chartFail('wrapTeach'); console.error(e); }
 
-    const roomCounts = {};
-    DATA.forEach(d=>{ if(d.room) roomCounts[d.room] = (roomCounts[d.room]||0)+1; });
-    const topRooms = Object.entries(roomCounts).sort((a,b)=>b[1]-a[1]).slice(0,12);
-    destroyChart('rooms');
-    charts.rooms = new Chart(document.getElementById('chartRooms'), {
-      type:'bar',
-      data:{labels:topRooms.map(t=>t[0]), datasets:[{label:'Lessons', data:topRooms.map(t=>t[1]), backgroundColor:'#15803d', borderRadius:5}]},
-      options:{indexAxis:'y', plugins:{legend:{display:false}}, scales:{x:{beginAtZero:true, grid:{color:'#eef0f4'}}, y:{grid:{display:false}}}}
-    });
+  try{
+    if(DATA.length){
+      const roomCounts = {};
+      DATA.forEach(d=>{ if(d.room) roomCounts[d.room] = (roomCounts[d.room]||0)+1; });
+      const topRooms = Object.entries(roomCounts).sort((a,b)=>b[1]-a[1]).slice(0,12);
+      destroyChart('rooms');
+      charts.rooms = new Chart(document.getElementById('chartRooms'), { type:'bar',
+        data:{labels:topRooms.map(t=>t[0]), datasets:[{label:'Lessons', data:topRooms.map(t=>t[1]), backgroundColor:'#15803d', borderRadius:5}]},
+        options:{indexAxis:'y', plugins:{legend:{display:false}}, scales:{x:{beginAtZero:true,grid:{color:'#eef0f4'}}, y:{grid:{display:false}}}} });
+    }
+  } catch(e){ chartFail('wrapRooms'); console.error(e); }
 
-    const subjCounts = {};
-    DATA.forEach(d=>{ if(d.subject) subjCounts[d.subject] = (subjCounts[d.subject]||0)+1; });
-    const topSubj = Object.entries(subjCounts).sort((a,b)=>b[1]-a[1]).slice(0,12);
-    destroyChart('subj');
-    charts.subj = new Chart(document.getElementById('chartSubjects'), {
-      type:'bar',
-      data:{labels:topSubj.map(t=>t[0]), datasets:[{label:'Lessons', data:topSubj.map(t=>t[1]),
-        backgroundColor: topSubj.map((_,i)=>CHART_COLORS[i%CHART_COLORS.length]), borderRadius:5}]},
-      options:{plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true, grid:{color:'#eef0f4'}}, x:{grid:{display:false}}}}
-    });
+  try{
+    if(DATA.length){
+      const subjCounts = {};
+      DATA.forEach(d=>{ if(d.subject) subjCounts[d.subject] = (subjCounts[d.subject]||0)+1; });
+      const topSubj = Object.entries(subjCounts).sort((a,b)=>b[1]-a[1]).slice(0,12);
+      destroyChart('subj');
+      charts.subj = new Chart(document.getElementById('chartSubjects'), { type:'bar',
+        data:{labels:topSubj.map(t=>t[0]), datasets:[{label:'Lessons', data:topSubj.map(t=>t[1]), backgroundColor: topSubj.map((_,i)=>CHART_COLORS[i%CHART_COLORS.length]), borderRadius:5}]},
+        options:{plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true,grid:{color:'#eef0f4'}}, x:{grid:{display:false}}}} });
+    }
+  } catch(e){ chartFail('wrapSubj'); console.error(e); }
 
-    const heatWrap = document.getElementById('heatmapWrap');
-    const counts = {};
-    let max = 0;
-    DATA.forEach(d=>{
-      const key = d.day+'|'+d.session;
-      counts[key] = (counts[key]||0)+1;
-      if(counts[key]>max) max = counts[key];
-    });
-    let html = '<div class="heat-grid"><div></div>';
-    DAYS.forEach(d=> html += `<div class="heat-head">${d}</div>`);
-    sessions.forEach(s=>{
-      html += `<div class="heat-label">${s}</div>`;
-      DAYS.forEach(d=>{
-        const v = counts[d+'|'+s] || 0;
-        const t = max ? v/max : 0;
-        const bg = `rgba(47,75,214,${0.08 + t*0.55})`;
-        html += `<div class="heat-cell" style="background:${bg}">${v||''}</div>`;
+  try{
+    if(DATA.length){
+      const heatWrap = document.getElementById('heatmapWrap');
+      const counts = {}; let max = 0;
+      DATA.forEach(d=>{ const key=d.day+'|'+d.session; counts[key]=(counts[key]||0)+1; if(counts[key]>max) max=counts[key]; });
+      let html = '<div class="heat-grid"><div></div>';
+      DAYS.forEach(d=> html += `<div class="heat-head">${d}</div>`);
+      sessions.forEach(s=>{
+        html += `<div class="heat-label">${s}</div>`;
+        DAYS.forEach(d=>{
+          const v = counts[d+'|'+s] || 0; const t = max ? v/max : 0;
+          html += `<div class="heat-cell" style="background:rgba(47,75,214,${0.08+t*0.55})">${v||''}</div>`;
+        });
       });
-    });
-    html += '</div>';
-    heatWrap.innerHTML = html;
-  }
+      html += '</div>';
+      heatWrap.innerHTML = html;
+    }
+  } catch(e){ console.error(e); }
 }
 
 function renderClashes(){
   const teacherMap = {}, roomMap = {};
   DATA.forEach(d=>{
-    const key = d.day+'|'+d.session;
-    const tk = key+'|'+d.teacher;
+    const key = d.day+'|'+d.session; const tk = key+'|'+d.teacher;
     (teacherMap[tk] = teacherMap[tk]||[]).push(d);
     if(d.room){ const rk = key+'|'+d.room; (roomMap[rk] = roomMap[rk]||[]).push(d); }
   });
@@ -769,8 +902,7 @@ function renderClashes(){
   el.innerHTML = clashes.map(c=>{
     const first = c.items[0];
     const details = c.items.map(i=>`${i.year} / ${i.subject} / ${i.teacher} / room ${i.room||'-'}`).join('<br>');
-    return `<div class="clash-item"><b>${c.type}:</b> ${c.who} &mdash; ${DAY_NAMES[first.day]||first.day} ${first.session} (${first.time||''})
-      <div class="detail">${details}</div></div>`;
+    return `<div class="clash-item"><b>${c.type}:</b> ${c.who} &mdash; ${DAY_NAMES[first.day]||first.day} ${first.session} (${first.time||''})<div class="detail">${details}</div></div>`;
   }).join('');
 }
 
