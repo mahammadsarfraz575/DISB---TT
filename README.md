@@ -29,17 +29,6 @@ The dashboard allows authorized users to browse lessons, search teacher schedule
 
 The dashboard uses timetable and registration data stored in CSV files.
 
-### `data.csv`
-
-Contains timetable lesson information, including:
-
-`id, day, session, time, year, teacher_code, teacher, subject, room, students`
-
-### `reg-groups.csv`
-
-Contains year-group registration totals, including:
-
-`year, reg_groups, males, females, total_students`
 
 ## Access
 
