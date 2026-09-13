@@ -1,59 +1,49 @@
 # DSIB Timetable Explorer
 
-A browser-based dashboard for exploring the school's weekly timetable.
+A simple browser-based dashboard for exploring and viewing a weekly timetable.
 
-The dashboard allows authorized users to browse lessons, search teacher schedules, view year-group totals, review timetable information, and identify possible timetable clashes.
+## How to View the Dashboard
 
-## Features
+1. Open the dashboard link provided to you.
+2. Enter the login details provided by the authorized administrator.
+3. Select **Viewer** access if prompted.
+4. After signing in, you can use the dashboard sections to explore the available timetable information.
 
-- **Browse** — Filter and search lessons by:
-  - Day
-  - Session
-  - Year group
-  - Teacher
-  - Teacher code
-  - Room
-  - Subject
-- **Teacher Schedule** — View a teacher's weekly timetable in a Day × Session format.
-- **Year Totals** — View registered student totals by year group, including gender breakdown where provided.
-- **Analysis** — Explore timetable summaries such as:
-  - Lessons by year
-  - Students by year
-  - Busiest teachers
-  - Busiest rooms
-  - Lessons by subject
-  - Day × session workload
-- **Clash Check** — Identify potential teacher or room clashes in the timetable.
+### Viewer Features
 
-## Data
+- **Browse** — Search and filter timetable entries by day, session, year, teacher, room, or subject.
+- **Teacher Schedule** — Select a teacher to view their weekly schedule.
+- **Year Totals** — View available year-group totals.
+- **Analysis** — View timetable summaries and charts.
+- **Clash Check** — Review possible timetable clashes.
 
-The dashboard uses timetable and registration data stored in CSV files.
+Viewers can browse the dashboard but cannot modify or publish dashboard information.
 
+## Dashboard Link
 
-## Access
+Use the dashboard link provided by the administrator to access the live application.
 
-Access to dashboard features is controlled by the school's authorized administrator.
+## Access & Support
 
-Users should only use the access details provided to them by the appropriate school administrator.
+Login details and access permissions are provided separately by the authorized administrator.
 
-**Please do not share login credentials, administrator access, or other confidential information publicly.**
+If you need:
+- Login or access details
+- Help using the dashboard
+- Information about additional features
+- Technical support
+- Changes to access permissions
+
+Please contact the person responsible for managing the dashboard.
 
 ## Deployment
 
-The dashboard is a static website and can be hosted using GitHub Pages or another static web-hosting service.
+The application is a static website and can be hosted using GitHub Pages or another suitable static web-hosting service.
 
-The required files are:
-
-- `index.html`
-- `data.csv`
-- `reg-groups.csv`
-
-The CSV files should remain in the same location as `index.html` unless the application configuration has been changed.
+For deployment, configuration, administration, or technical information, please contact the person responsible for maintaining the dashboard.
 
 ## Important
 
-This repository may contain school timetable and student-related information. Treat all data as confidential and follow the school's data-protection and information-security policies.
+Please do not share your login details with others.
 
-Do not publish confidential student, staff, timetable, authentication, or administrator information in public documentation.
-
-For technical or access-related issues, contact the designated system administrator.
+For any information not covered in this README, please contact the authorized administrator.
