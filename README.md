@@ -1,94 +1,70 @@
 # DSIB Timetable Explorer
 
-A browser-based dashboard for exploring the school's weekly timetable — browse lessons, look up a teacher's full week, check total students per year group, spot double-booked teachers/rooms, and view workload/utilisation charts.
+A browser-based dashboard for exploring the school's weekly timetable.
 
-No server, no database, no build step. It's a static site — open it in a browser and it just works.
+The dashboard allows authorized users to browse lessons, search teacher schedules, view year-group totals, review timetable information, and identify possible timetable clashes.
 
-**Live site:** `https://<your-username>.github.io/<your-repo>/`
+## Features
 
----
+- **Browse** — Filter and search lessons by:
+  - Day
+  - Session
+  - Year group
+  - Teacher
+  - Teacher code
+  - Room
+  - Subject
+- **Teacher Schedule** — View a teacher's weekly timetable in a Day × Session format.
+- **Year Totals** — View registered student totals by year group, including gender breakdown where provided.
+- **Analysis** — Explore timetable summaries such as:
+  - Lessons by year
+  - Students by year
+  - Busiest teachers
+  - Busiest rooms
+  - Lessons by subject
+  - Day × session workload
+- **Clash Check** — Identify potential teacher or room clashes in the timetable.
 
-## Files in this repo
+## Data
 
-| File | What it is | Do you edit it? |
-|---|---|---|
-| `index.html` | The whole app — login, layout, filters, charts, logic | No — leave this alone |
-| `data.csv` | Every lesson in the week (day, session, time, year, teacher, subject, room, students) | **Yes — this is your weekly update** |
-| `reg-groups.csv` | Total registered students per year group (Year 07–13), with gender split | **Yes — update when rolls change** |
+The dashboard uses timetable and registration data stored in CSV files.
 
-`index.html` reads the two CSV files automatically when the page loads. You never need to touch the HTML/JS to update the data — just replace the CSV content.
+### `data.csv`
 
----
+Contains timetable lesson information, including:
 
-## Logging in
+`id, day, session, time, year, teacher_code, teacher, subject, room, students`
 
-- **Username:** `Admin`
-- **Password:** `Admin123@`
+### `reg-groups.csv`
 
-Once signed in, the browser remembers you until you click **Log out**.
+Contains year-group registration totals, including:
 
-> **Please read — this is not real security.** This is a static page with no backend, so the login is a front-end gate only. The username and password are stored in plain text inside `index.html` — anyone who opens the browser's "View Page Source" can read them. This is enough to stop casual visitors from wandering in, but **not** enough to stop someone who deliberately wants access. Don't put anything genuinely confidential behind this login. If you need real security, that requires an actual backend (login server + database), which is a different kind of project.
+`year, reg_groups, males, females, total_students`
 
----
+## Access
 
-## Updating the timetable
+Access to dashboard features is controlled by the school's authorized administrator.
 
-1. Export your latest data (from the `Da` sheet in the Excel workbook) as a CSV with these exact columns:
+Users should only use the access details provided to them by the appropriate school administrator.
 
-   ```
-   day,session,time,year,teacher,subject,room,students
-   Mon,S1,14:00,Year 07,Naumana Malik,Registration,B105,20
-   Mon,S2,07:25,Year 07,Zara Hamid,English,B002,22
-   ...
-   ```
+**Please do not share login credentials, administrator access, or other confidential information publicly.**
 
-   - `session` uses `S1`–`S8` (Session 1 = Registration/Tut, Session 2 = first teaching period, ... Session 8 = last).
-   - `day` uses `Mon`, `Tue`, `Wed`, `Thu`, `Fri`.
+## Deployment
 
-2. In GitHub, open `data.csv` → pencil icon (Edit) → select all, paste the new content → **Commit changes**.
-3. GitHub Pages redeploys automatically within about a minute. Refresh the site to see the update.
+The dashboard is a static website and can be hosted using GitHub Pages or another static web-hosting service.
 
-### Updating year group totals
+The required files are:
 
-Same idea, but for `reg-groups.csv`:
+- `index.html`
+- `data.csv`
+- `reg-groups.csv`
 
-```
-year,reg_groups,males,females,total_students
-Year 07,15,165,149,314
-...
-```
+The CSV files should remain in the same location as `index.html` unless the application configuration has been changed.
 
-Edit this whenever roll numbers change (start of term, new admissions, etc.) — it doesn't need to change as often as the lesson data.
+## Important
 
-### Uploading without touching GitHub
+This repository may contain school timetable and student-related information. Treat all data as confidential and follow the school's data-protection and information-security policies.
 
-The page also has an **Upload CSV** option (top of the dashboard) for testing a new file before committing it, or for a quick local look. Anything uploaded this way is saved in *your browser only* — it won't update the site for other people, and it stays until you upload again or click "Reset to default."
+Do not publish confidential student, staff, timetable, authentication, or administrator information in public documentation.
 
----
-
-## Deploying / redeploying
-
-1. Push all three files (`index.html`, `data.csv`, `reg-groups.csv`) to the repo root.
-2. Repo → **Settings → Pages**.
-3. Source: **Deploy from a branch** → Branch: `main`, folder: `/ (root)` → Save.
-4. Wait ~30–60 seconds, refresh the Pages settings screen for your live URL.
-
-No other setup, no dependencies to install — it's plain HTML/CSS/JS plus two small JS libraries loaded from a CDN (PapaParse for CSV parsing, Chart.js for the graphs).
-
----
-
-## What's in the dashboard
-
-- **Browse** — filter every lesson by day, session, year, teacher, room, or subject; sort by clicking column headers.
-- **Teacher schedule** — pick a teacher, see their whole week as a Day × Session grid.
-- **Year totals** — total registered students per year group, with gender split.
-- **Analysis** — lessons per year, students per year, busiest teachers, busiest rooms, lessons by subject, and a day × session load heatmap.
-- **Clash check** — automatically flags any teacher or room booked into two places at once.
-
----
-
-## Troubleshooting
-
-- **Page loads but shows "0 lessons"** — check that `data.csv` is in the same folder as `index.html` and has the exact column headers shown above.
-- **Opening `index.html` directly from your computer doesn't load the data** — browsers block local file access for security. Either use the "Upload a CSV instead" button, or view it through the live GitHub Pages link (or any local web server).
-- **Login not working** — username and password are case-sensitive: `Admin` / `Admin123@`.
+For technical or access-related issues, contact the designated system administrator.
