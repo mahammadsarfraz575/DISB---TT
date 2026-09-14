@@ -1,5 +1,5 @@
 id,day,session,time,year,teacher_code,teacher,subject,room,students
-Mon-S6-BJA,Mon,S6,12:25,8,BJA,Mr.Bara Jarah,Islamic studies,B110,20
+Mon-S6-BJA,Mon,S6,12:25,8,BJA,Mr.Bara Jarah,Islamic studies,B110,15
 Tue-S3-BJA,Tue,S3,09:55,8,BJA,Mr.Bara Jarah,Islamic studies,B110,15
 Thu-S1-BJA,Thu,S1,07:50,8,BJA,Mr.Bara Jarah,Islamic studies,B110,15
 Fri-S1-BJA,Fri,S1,07:25,8,BJA,Mr.Bara Jarah,Islamic studies,B113,15
@@ -1826,7 +1826,7 @@ Wed-S3-ZPE,Wed,S3,09:55,8,ZPE,Ms.Zara Pazeer,Food technology,G013,17
 Tue-S3-ZPE,Tue,S3,09:55,8,ZPE,Ms.Zara Pazeer,Food technology,G011,17
 Fri-S6-TKR,Fri,S6,10:50,8,TKR,Mr.Thomas Kleywegt,Sport,0,20
 Mon-S7-TKR,Mon,S7,14:05,8,TKR,Mr.Thomas Kleywegt,Swimming,0,20
-Mon-S7-BJA,Mon,S7,14:05,8,BJA,Mr.Bara Jarah,Islamic studies,B113,15
+Mon-S7-BJA,Mon,S7,14:05,8,BJA,Mr.Bara Jarah,Islamic studies,B113,20
 Tue-S7-BJA,Tue,S7,14:05,8,BJA,Mr.Bara Jarah,Islamic studies,B113,15
 Wed-S5-BJA,Wed,S5,11:35,8,BJA,Mr.Bara Jarah,Islamic studies,B113,15
 Thu-S2-BJA,Thu,S2,08:40,8,BJA,Mr.Bara Jarah,Islamic studies,B113,15
