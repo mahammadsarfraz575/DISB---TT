@@ -6,7 +6,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
 <style>
 :root{
   --ink:#101828; --bg:#f5f7fb; --card:#ffffff; --card-line:#e4e8f0; --card-line-strong:#d3d9e6;
@@ -75,6 +74,7 @@ h1{font-size:21px;margin:0;font-weight:700;color:var(--ink);letter-spacing:-0.2p
 .data-menu .menu-icon{width:18px;text-align:center;color:var(--muted);}
 .data-menu hr{border:none;border-top:1px solid var(--card-line);margin:6px 4px;}
 .sync-flag{font-size:11px;color:var(--amber);background:var(--amber-soft);padding:6px 10px;border-radius:8px;margin:4px 4px 8px;text-align:center;font-weight:600;}
+.menu-section-label{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--muted-soft);padding:8px 14px 4px;}
 
 /* Modal */
 .modal-overlay{position:fixed;inset:0;background:rgba(16,24,40,0.5);display:none;align-items:center;justify-content:center;z-index:500;padding:20px;}
@@ -164,6 +164,23 @@ tbody tr:hover{background:var(--accent-soft);}
 .chart-card .chart-note{font-size:11.5px;color:var(--muted-soft);margin-bottom:14px;}
 .chart-card canvas{max-height:320px;}
 .chart-error{padding:30px 10px;text-align:center;color:var(--bad);font-size:12.5px;background:var(--bad-soft);border-radius:8px;}
+.bar-h-row{display:flex;align-items:center;gap:10px;margin-bottom:9px;font-size:12px;}
+.bar-h-label{width:150px;flex-shrink:0;text-align:right;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.bar-h-track{flex:1;background:var(--surface);border-radius:5px;height:20px;position:relative;}
+.bar-h-fill{height:100%;border-radius:5px;background:var(--accent);display:flex;align-items:center;}
+.bar-h-value{color:#fff;font-size:11px;font-weight:700;padding-left:8px;white-space:nowrap;}
+.bar-h-value.outside{color:var(--ink);padding-left:6px;}
+.bar-v-wrap{display:flex;align-items:flex-end;gap:10px;height:220px;padding-top:20px;}
+.bar-v-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;min-width:0;}
+.bar-v-value{font-size:11.5px;font-weight:700;color:var(--ink);margin-bottom:4px;}
+.bar-v-fill{width:70%;border-radius:5px 5px 0 0;background:var(--accent);}
+.bar-v-label{font-size:11px;color:var(--muted);margin-top:8px;text-align:center;line-height:1.3;}
+.stack-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:12px;}
+.stack-label{width:70px;flex-shrink:0;color:var(--muted);font-weight:600;}
+.stack-track{flex:1;background:var(--surface);border-radius:5px;height:22px;display:flex;overflow:hidden;}
+.stack-seg{height:100%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10.5px;font-weight:700;}
+.legend-row{display:flex;gap:16px;margin-bottom:14px;font-size:12px;color:var(--muted);}
+.legend-dot{width:10px;height:10px;border-radius:3px;display:inline-block;margin-right:6px;vertical-align:-1px;}
 .heatmap{overflow-x:auto;}
 .heat-grid{display:grid;grid-template-columns:60px repeat(5,1fr);gap:5px;min-width:640px;}
 .heat-cell{border-radius:6px;padding:9px 4px;text-align:center;font-size:11px;color:var(--accent-dark);font-weight:700;}
@@ -212,11 +229,17 @@ footer{margin-top:34px;color:var(--muted-soft);font-size:11.5px;text-align:cente
         <button class="icon-btn" id="dataMenuBtn" title="Data options">&#9881;</button>
         <div class="data-menu" id="dataMenu">
           <div class="sync-flag" id="syncFlag" style="display:none;"></div>
+          <div class="menu-section-label">Lesson data</div>
           <button id="menuBulkUpload"><span class="menu-icon">&#8593;</span> Bulk upload CSV</button>
           <button id="menuAddLesson"><span class="menu-icon">+</span> Add a lesson</button>
-          <hr>
-          <button id="menuPush"><span class="menu-icon">&#8635;</span> Push changes to GitHub</button>
+          <button id="menuPush"><span class="menu-icon">&#8635;</span> Push to GitHub</button>
           <button id="menuDiscard"><span class="menu-icon">&#8634;</span> Discard local changes</button>
+          <hr>
+          <div class="menu-section-label">Year totals</div>
+          <button id="menuRegUpload"><span class="menu-icon">&#8593;</span> Bulk upload CSV</button>
+          <button id="menuRegEdit"><span class="menu-icon">&#9998;</span> Edit year totals</button>
+          <button id="menuRegPush"><span class="menu-icon">&#8635;</span> Push to GitHub</button>
+          <button id="menuRegDiscard"><span class="menu-icon">&#8634;</span> Discard local changes</button>
         </div>
       </div>
       <button class="logout-btn" id="logoutBtn">Log out</button>
@@ -270,11 +293,11 @@ footer{margin-top:34px;color:var(--muted-soft);font-size:11.5px;text-align:cente
   <div class="tab-panel" id="panel-analysis">
     <div class="subtitle" style="margin-bottom:14px;">Workload and utilisation across the whole week, computed live from the loaded data.</div>
     <div class="chart-grid">
-      <div class="chart-card"><h3>Lessons per year group</h3><div class="chart-note">Total scheduled lessons per year</div><div id="wrapYL"><canvas id="chartYearLessons"></canvas></div></div>
-      <div class="chart-card"><h3>Students per year group</h3><div class="chart-note">Registered students, split by gender</div><div id="wrapYS"><canvas id="chartYearStudents"></canvas></div></div>
-      <div class="chart-card"><h3>Busiest teachers</h3><div class="chart-note">Top 12 by lesson count</div><div id="wrapTeach"><canvas id="chartTeachers"></canvas></div></div>
-      <div class="chart-card"><h3>Busiest rooms</h3><div class="chart-note">Top 12 by usage</div><div id="wrapRooms"><canvas id="chartRooms"></canvas></div></div>
-      <div class="chart-card"><h3>Lessons by subject</h3><div class="chart-note">Top 12 subjects</div><div id="wrapSubj"><canvas id="chartSubjects"></canvas></div></div>
+      <div class="chart-card"><h3>Lessons per year group</h3><div class="chart-note">Total scheduled lessons per year</div><div id="wrapYL"></div></div>
+      <div class="chart-card"><h3>Students per year group</h3><div class="chart-note">Registered students, split by gender</div><div id="wrapYS"></div></div>
+      <div class="chart-card"><h3>Busiest teachers</h3><div class="chart-note">Top 12 by lesson count</div><div id="wrapTeach"></div></div>
+      <div class="chart-card"><h3>Busiest rooms</h3><div class="chart-note">Top 12 by usage</div><div id="wrapRooms"></div></div>
+      <div class="chart-card"><h3>Lessons by subject</h3><div class="chart-note">Top 12 subjects</div><div id="wrapSubj"></div></div>
       <div class="chart-card"><h3>Day &times; session load</h3><div class="chart-note">Darker = busier</div><div class="heatmap" id="heatmapWrap"></div></div>
     </div>
   </div>
@@ -337,12 +360,48 @@ footer{margin-top:34px;color:var(--muted-soft);font-size:11.5px;text-align:cente
   </div>
 </div>
 
+<!-- Year totals: bulk upload modal -->
+<div class="modal-overlay" id="regUploadModal">
+  <div class="modal-box">
+    <div class="modal-head"><h3>Bulk upload year totals</h3><button class="modal-close" data-close="regUploadModal">&times;</button></div>
+    <div class="modal-body">
+      <div class="hint">Columns expected: <span class="mono">year,reg_groups,males,females,total_students</span>. A row with a blank cell keeps the existing value for that field. A row matching an existing year <b>updates</b> only the fields you filled in.</div>
+      <div class="file-drop" id="regFileDrop">Click to choose a CSV file</div>
+      <input type="file" id="regFileInput" accept=".csv" style="display:none;">
+      <div class="push-status" id="regUploadStatus"></div>
+    </div>
+    <div class="modal-foot"><button class="secondary-btn" data-close="regUploadModal">Close</button></div>
+  </div>
+</div>
+
+<!-- Year totals: edit modal -->
+<div class="modal-overlay" id="regEditModal">
+  <div class="modal-box" style="max-width:640px;">
+    <div class="modal-head"><h3>Edit year totals</h3><button class="modal-close" data-close="regEditModal">&times;</button></div>
+    <div class="modal-body">
+      <div class="hint">Update any field and click Save. Changes are staged locally until you push to GitHub.</div>
+      <table style="width:100%;font-size:13px;">
+        <thead><tr>
+          <th style="text-align:left;padding:6px;">Year</th><th style="padding:6px;">Reg groups</th>
+          <th style="padding:6px;">Males</th><th style="padding:6px;">Females</th><th style="padding:6px;">Total</th>
+        </tr></thead>
+        <tbody id="regEditBody"></tbody>
+      </table>
+    </div>
+    <div class="modal-foot">
+      <button class="secondary-btn" data-close="regEditModal">Cancel</button>
+      <button class="primary-btn" id="saveRegBtn">Save</button>
+    </div>
+  </div>
+</div>
+
 <!-- Push to GitHub modal -->
 <div class="modal-overlay" id="pushModal">
   <div class="modal-box">
     <div class="modal-head"><h3>Push changes to GitHub</h3><button class="modal-close" data-close="pushModal">&times;</button></div>
     <div class="modal-body">
-      <div class="hint">This writes <span class="mono">data.csv</span> straight into your repo so everyone sees the update &mdash; not just this browser. Your token is used only for this action and is <b>never saved</b> &mdash; you'll need to re-enter it next time.</div>
+      <div class="hint" id="pushHint">This writes <span class="mono">data.csv</span> straight into your repo so everyone sees the update &mdash; not just this browser. Your token is used only for this action and is <b>never saved</b> &mdash; you'll need to re-enter it next time.</div>
+      <input type="hidden" id="pushTarget" value="timetable">
       <div class="form-row">
         <div class="form-field" style="grid-column:1/3;"><label>Repository (owner/name)</label><input type="text" id="pushRepo" placeholder="mahammadsarfraz575/DISB---TT"></div>
       </div>
@@ -420,12 +479,13 @@ document.addEventListener('click', ()=> dataMenu.classList.remove('open'));
 /* ============ Data state ============ */
 let DATA = [];       // working copy, source of truth for the UI
 let REG = [];
-let LOCAL_DIRTY = false; // true once local edits/uploads haven't been pushed to GitHub
+let LOCAL_DIRTY = false;  // true once local timetable edits/uploads haven't been pushed to GitHub
+let REG_DIRTY = false;    // same, for year totals
 const LS_LOCAL_DATA = 'dsib_local_data_v2';
+const LS_LOCAL_REG = 'dsib_local_reg_v1';
 const DAYS = ['Mon','Tue','Wed','Thu','Fri'];
 const DAY_NAMES = {Mon:'Monday',Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday'};
 const CHART_COLORS = ['#2f4bd6','#0891b2','#7c3aed','#15803d','#c62828','#b8790a','#475569','#0d9488'];
-let charts = {};
 
 function uniq(arr){ return [...new Set(arr)].filter(Boolean).sort(); }
 function b64EncodeUnicode(str){ return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (m,p1)=>String.fromCharCode('0x'+p1))); }
@@ -439,7 +499,10 @@ function toCSV(rows){
 
 function setSyncFlag(){
   const el = document.getElementById('syncFlag');
-  if(LOCAL_DIRTY){ el.style.display='block'; el.textContent = 'You have unsynced local changes'; }
+  const bits = [];
+  if(LOCAL_DIRTY) bits.push('lesson data');
+  if(REG_DIRTY) bits.push('year totals');
+  if(bits.length){ el.style.display='block'; el.textContent = 'Unsynced local changes: ' + bits.join(', '); }
   else { el.style.display='none'; }
 }
 
@@ -465,32 +528,44 @@ function loadTimetable(rows, note){
   setSyncFlag();
   initTimetableUI();
 }
-function loadReg(text){
-  REG = parseRegCSV(text);
+function loadRegRows(rows){
+  REG = rows;
   renderYearTotals(); renderAnalysis();
 }
 
-/* Load sequence: local unsynced copy takes priority over the repo's data.csv */
+/* Load sequence: local unsynced copy takes priority over the repo's file */
 const localSaved = localStorage.getItem(LS_LOCAL_DATA);
 if(localSaved){
-  try{
-    const rows = JSON.parse(localSaved);
-    LOCAL_DIRTY = true;
-    loadTimetable(rows, 'includes local changes not yet pushed to GitHub');
-  } catch(e){ fetchDefaultTimetable(); }
-} else {
-  fetchDefaultTimetable();
-}
+  try{ LOCAL_DIRTY = true; loadTimetable(JSON.parse(localSaved), 'includes local changes not yet pushed to GitHub'); }
+  catch(e){ fetchDefaultTimetable(); }
+} else { fetchDefaultTimetable(); }
+
 function fetchDefaultTimetable(){
   fetch('data.csv').then(r=>{ if(!r.ok) throw 0; return r.text(); })
     .then(text=>{ LOCAL_DIRTY=false; loadTimetable(parseTimetableCSV(text), 'from data.csv'); })
     .catch(()=>{ document.getElementById('headerSubtitle').textContent = 'Could not load data.csv'; });
 }
-fetch('reg-groups.csv').then(r=>{ if(!r.ok) throw 0; return r.text(); }).then(loadReg).catch(()=>{});
+
+const localRegSaved = localStorage.getItem(LS_LOCAL_REG);
+if(localRegSaved){
+  try{ REG_DIRTY = true; loadRegRows(JSON.parse(localRegSaved)); setSyncFlag(); }
+  catch(e){ fetchDefaultReg(); }
+} else { fetchDefaultReg(); }
+
+function fetchDefaultReg(){
+  fetch('reg-groups.csv').then(r=>{ if(!r.ok) throw 0; return r.text(); })
+    .then(text=>{ REG_DIRTY=false; loadRegRows(parseRegCSV(text)); })
+    .catch(()=>{});
+}
 
 function persistLocal(){
   localStorage.setItem(LS_LOCAL_DATA, JSON.stringify(DATA));
   LOCAL_DIRTY = true;
+  setSyncFlag();
+}
+function persistRegLocal(){
+  localStorage.setItem(LS_LOCAL_REG, JSON.stringify(REG));
+  REG_DIRTY = true;
   setSyncFlag();
 }
 
@@ -604,13 +679,96 @@ document.getElementById('menuDiscard').onclick = ()=>{
   LOCAL_DIRTY = false;
   fetchDefaultTimetable();
 };
+document.getElementById('menuRegDiscard').onclick = ()=>{
+  dataMenu.classList.remove('open');
+  if(!confirm('Discard all local changes and reload reg-groups.csv from GitHub?')) return;
+  localStorage.removeItem(LS_LOCAL_REG);
+  REG_DIRTY = false;
+  fetchDefaultReg();
+};
+
+/* ============ Year totals: bulk upload (upsert by year) ============ */
+document.getElementById('menuRegUpload').onclick = ()=>{ dataMenu.classList.remove('open'); openModal('regUploadModal'); };
+document.getElementById('regFileDrop').onclick = ()=> document.getElementById('regFileInput').click();
+document.getElementById('regFileInput').addEventListener('change', function(e){
+  const file = e.target.files[0]; if(!file) return;
+  const reader = new FileReader();
+  reader.onload = ev=>{
+    const rows = parseRegCSV(ev.target.result);
+    const byYear = new Map(REG.map(r=>[r.year, r]));
+    let updated=0, added=0, skipped=0;
+    rows.forEach(row=>{
+      const hasAnyValue = Object.values(row).some(v=>v && String(v).trim()!=='');
+      if(!hasAnyValue){ skipped++; return; }
+      if(byYear.has(row.year)){
+        const existing = byYear.get(row.year);
+        Object.keys(row).forEach(k=>{ if(row[k]!=='' && row[k]!==undefined) existing[k]=row[k]; });
+        updated++;
+      } else { REG.push(row); byYear.set(row.year, row); added++; }
+    });
+    persistRegLocal();
+    renderYearTotals(); renderAnalysis();
+    const st = document.getElementById('regUploadStatus');
+    st.className = 'push-status show ok';
+    st.textContent = `Done — ${added} added, ${updated} updated, ${skipped} blank rows skipped. Push to GitHub to publish.`;
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+});
+
+/* ============ Year totals: inline edit ============ */
+document.getElementById('menuRegEdit').onclick = ()=>{
+  dataMenu.classList.remove('open');
+  const body = document.getElementById('regEditBody');
+  body.innerHTML = REG.map((r,idx)=>`
+    <tr>
+      <td style="padding:6px;font-weight:600;">${r.year}</td>
+      <td style="padding:6px;"><input type="text" data-idx="${idx}" data-field="reg_groups" value="${r.reg_groups||''}" style="width:70px;"></td>
+      <td style="padding:6px;"><input type="text" data-idx="${idx}" data-field="males" value="${r.males||''}" style="width:70px;"></td>
+      <td style="padding:6px;"><input type="text" data-idx="${idx}" data-field="females" value="${r.females||''}" style="width:70px;"></td>
+      <td style="padding:6px;"><input type="text" data-idx="${idx}" data-field="total_students" value="${r.total_students||''}" style="width:80px;"></td>
+    </tr>`).join('');
+  openModal('regEditModal');
+};
+document.getElementById('saveRegBtn').onclick = ()=>{
+  document.querySelectorAll('#regEditBody input').forEach(inp=>{
+    const idx = parseInt(inp.dataset.idx);
+    REG[idx][inp.dataset.field] = inp.value.trim();
+  });
+  persistRegLocal();
+  renderYearTotals(); renderAnalysis();
+  closeModal('regEditModal');
+};
 
 /* ============ Push to GitHub ============ */
-document.getElementById('menuPush').onclick = ()=>{ dataMenu.classList.remove('open'); openModal('pushModal'); };
+function toRegCSV(rows){
+  const cols = ['year','reg_groups','males','females','total_students'];
+  const esc = v => { v = (v===undefined||v===null)?'':String(v); return /[",\n]/.test(v) ? '"'+v.replace(/"/g,'""')+'"' : v; };
+  const lines = [cols.join(',')];
+  rows.forEach(r=> lines.push(cols.map(c=>esc(r[c])).join(',')));
+  return lines.join('\n');
+}
+
+document.getElementById('menuPush').onclick = ()=>{
+  dataMenu.classList.remove('open');
+  document.getElementById('pushTarget').value = 'timetable';
+  document.getElementById('pushPath').value = 'data.csv';
+  document.getElementById('pushHint').innerHTML = 'This writes <span class="mono">data.csv</span> (lesson timetable) straight into your repo so everyone sees the update — not just this browser. Your token is used only for this action and is <b>never saved</b>.';
+  openModal('pushModal');
+};
+document.getElementById('menuRegPush').onclick = ()=>{
+  dataMenu.classList.remove('open');
+  document.getElementById('pushTarget').value = 'reggroups';
+  document.getElementById('pushPath').value = 'reg-groups.csv';
+  document.getElementById('pushHint').innerHTML = 'This writes <span class="mono">reg-groups.csv</span> (year totals) straight into your repo so everyone sees the update — not just this browser. Your token is used only for this action and is <b>never saved</b>.';
+  openModal('pushModal');
+};
+
 document.getElementById('confirmPushBtn').onclick = async ()=>{
+  const target = document.getElementById('pushTarget').value;
   const repo = document.getElementById('pushRepo').value.trim();
   const branch = document.getElementById('pushBranch').value.trim() || 'main';
-  const path = document.getElementById('pushPath').value.trim() || 'data.csv';
+  const path = document.getElementById('pushPath').value.trim() || (target==='reggroups' ? 'reg-groups.csv' : 'data.csv');
   const token = document.getElementById('pushToken').value.trim();
   const st = document.getElementById('pushStatus');
   st.className = 'push-status show pending'; st.textContent = 'Pushing...';
@@ -621,11 +779,12 @@ document.getElementById('confirmPushBtn').onclick = async ()=>{
     let sha = undefined;
     if(getResp.ok){ const j = await getResp.json(); sha = j.sha; }
     else if(getResp.status !== 404){ throw new Error(`Could not read current file (${getResp.status})`); }
-    const csvText = toCSV(DATA);
+    const csvText = target==='reggroups' ? toRegCSV(REG) : toCSV(DATA);
+    const commitMsg = target==='reggroups' ? 'Update year group totals via dashboard' : 'Update timetable data via dashboard';
     const putResp = await fetch(apiBase, {
       method:'PUT',
       headers:{ Authorization:`Bearer ${token}`, Accept:'application/vnd.github+json', 'Content-Type':'application/json' },
-      body: JSON.stringify({ message:'Update timetable data via dashboard', content:b64EncodeUnicode(csvText), sha, branch })
+      body: JSON.stringify({ message:commitMsg, content:b64EncodeUnicode(csvText), sha, branch })
     });
     if(!putResp.ok){
       const errBody = await putResp.json().catch(()=>({}));
@@ -634,8 +793,13 @@ document.getElementById('confirmPushBtn').onclick = async ()=>{
     st.className = 'push-status show ok';
     st.textContent = 'Pushed successfully — everyone will see this update within a minute.';
     document.getElementById('pushToken').value = '';
-    localStorage.removeItem(LS_LOCAL_DATA);
-    LOCAL_DIRTY = false;
+    if(target==='reggroups'){
+      localStorage.removeItem(LS_LOCAL_REG);
+      REG_DIRTY = false;
+    } else {
+      localStorage.removeItem(LS_LOCAL_DATA);
+      LOCAL_DIRTY = false;
+    }
     setSyncFlag();
   } catch(err){
     st.className = 'push-status show err';
@@ -793,99 +957,111 @@ function renderYearTotals(){
   document.getElementById('yearTotalLine').innerHTML = `<b>${total}</b> total students across Year 07 &ndash; Year 13`;
 }
 
-function destroyChart(id){ if(charts[id]){ charts[id].destroy(); delete charts[id]; } }
-function chartFail(wrapId, canvasId){
-  document.getElementById(wrapId).innerHTML = `<div class="chart-error">Couldn't load the chart library (Chart.js). This is usually a blocked CDN on this network — check the browser console, or try a different network.</div>`;
+function barH(containerId, items, opts){
+  opts = opts || {};
+  const el = document.getElementById(containerId);
+  if(!items.length){ el.innerHTML = '<div class="empty-state">No data</div>'; return; }
+  const max = Math.max(...items.map(i=>i.value), 1);
+  el.innerHTML = items.map(i=>{
+    const pct = Math.max((i.value/max)*100, 4);
+    const outside = pct < 18;
+    return `<div class="bar-h-row">
+      <div class="bar-h-label" title="${i.label}">${i.label}</div>
+      <div class="bar-h-track">
+        <div class="bar-h-fill" style="width:${pct}%;background:${opts.color||'var(--accent)'}">
+          ${outside ? '' : `<span class="bar-h-value">${i.value}</span>`}
+        </div>
+        ${outside ? `<span class="bar-h-value outside" style="position:absolute;left:calc(${pct}% + 6px);top:0;line-height:20px;">${i.value}</span>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function barV(containerId, items, opts){
+  opts = opts || {};
+  const el = document.getElementById(containerId);
+  if(!items.length){ el.innerHTML = '<div class="empty-state">No data</div>'; return; }
+  const max = Math.max(...items.map(i=>i.value), 1);
+  el.innerHTML = `<div class="bar-v-wrap">` + items.map((i,idx)=>{
+    const pct = Math.max((i.value/max)*100, 3);
+    const color = opts.colors ? opts.colors[idx % opts.colors.length] : (opts.color || 'var(--accent)');
+    return `<div class="bar-v-col">
+      <div class="bar-v-value">${i.value}</div>
+      <div class="bar-v-fill" style="height:${pct}%;background:${color};"></div>
+      <div class="bar-v-label">${i.label}</div>
+    </div>`;
+  }).join('') + `</div>`;
+}
+
+function stackedH(containerId, rows, series){
+  // rows: [{label, values:[v1,v2,...]}], series: [{name,color}]
+  const el = document.getElementById(containerId);
+  if(!rows.length){ el.innerHTML = '<div class="empty-state">No data</div>'; return; }
+  const max = Math.max(...rows.map(r=>r.values.reduce((a,b)=>a+(b||0),0)), 1);
+  const legend = `<div class="legend-row">` + series.map(s=>`<span><span class="legend-dot" style="background:${s.color}"></span>${s.name}</span>`).join('') + `</div>`;
+  const bars = rows.map(r=>{
+    const total = r.values.reduce((a,b)=>a+(b||0),0);
+    const segs = r.values.map((v,i)=>{
+      const pct = total ? (v/max)*100 : 0;
+      return pct > 0 ? `<div class="stack-seg" style="width:${pct}%;background:${series[i].color}">${v}</div>` : '';
+    }).join('');
+    return `<div class="stack-row"><div class="stack-label">${r.label}</div><div class="stack-track">${segs}</div></div>`;
+  }).join('');
+  el.innerHTML = legend + bars;
 }
 
 function renderAnalysis(){
   if(!DATA.length && !REG.length) return;
-  if(typeof Chart === 'undefined'){
-    ['wrapYL','wrapYS','wrapTeach','wrapRooms','wrapSubj'].forEach(w=>chartFail(w));
-    document.getElementById('heatmapWrap').innerHTML = '<div class="chart-error">Chart library unavailable, but the heatmap below does not need it — showing anyway.</div>';
+
+  if(DATA.length){
+    const yearOrder = ['Year 07','Year 08','Year 09','Year 10','Year 11','Year 12','Year 13'];
+    const items = yearOrder.map(y=>({label:y.replace('Year ',''), value:DATA.filter(d=>d.year===y).length}));
+    barV('wrapYL', items, {color:'#2f4bd6'});
   }
-  try{
-    Chart.defaults.color = '#5b6472'; Chart.defaults.borderColor = '#e4e8f0'; Chart.defaults.font.family = "'Inter','Segoe UI',Arial,sans-serif";
-    if(DATA.length){
-      const yearOrder = ['Year 07','Year 08','Year 09','Year 10','Year 11','Year 12','Year 13'];
-      const yCounts = yearOrder.map(y=>DATA.filter(d=>d.year===y).length);
-      destroyChart('yl');
-      charts.yl = new Chart(document.getElementById('chartYearLessons'), { type:'bar',
-        data:{labels:yearOrder, datasets:[{label:'Lessons', data:yCounts, backgroundColor:'#2f4bd6', borderRadius:6}]},
-        options:{plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true,grid:{color:'#eef0f4'}},x:{grid:{display:false}}}} });
-    }
-  } catch(e){ chartFail('wrapYL'); console.error(e); }
 
-  try{
-    if(REG.length){
-      destroyChart('ys');
-      const hasGender = REG.some(r=>r.males);
-      charts.ys = new Chart(document.getElementById('chartYearStudents'), { type:'bar',
-        data:{ labels:REG.map(r=>r.year),
-          datasets: hasGender ? [
-            {label:'Males', data:REG.map(r=>parseInt(r.males)||0), backgroundColor:'#2f4bd6', stack:'s', borderRadius:4},
-            {label:'Females', data:REG.map(r=>parseInt(r.females)||0), backgroundColor:'#7c3aed', stack:'s', borderRadius:4}
-          ] : [{label:'Total students', data:REG.map(r=>parseInt(r.total_students)||0), backgroundColor:'#2f4bd6'}]
-        },
-        options:{plugins:{legend:{display:hasGender,labels:{boxWidth:12}}}, scales:{x:{stacked:hasGender,grid:{display:false}}, y:{stacked:hasGender,beginAtZero:true,grid:{color:'#eef0f4'}}}} });
+  if(REG.length){
+    const hasGender = REG.some(r=>r.males);
+    if(hasGender){
+      stackedH('wrapYS', REG.map(r=>({label:r.year.replace('Year ',''), values:[parseInt(r.males)||0, parseInt(r.females)||0]})),
+        [{name:'Males',color:'#2f4bd6'},{name:'Females',color:'#7c3aed'}]);
+    } else {
+      barH('wrapYS', REG.map(r=>({label:r.year, value:parseInt(r.total_students)||0})), {color:'#2f4bd6'});
     }
-  } catch(e){ chartFail('wrapYS'); console.error(e); }
+  }
 
-  try{
-    if(DATA.length){
-      const teacherCounts = {};
-      DATA.forEach(d=>{ teacherCounts[d.teacher] = (teacherCounts[d.teacher]||0)+1; });
-      const topTeachers = Object.entries(teacherCounts).sort((a,b)=>b[1]-a[1]).slice(0,12);
-      destroyChart('teach');
-      charts.teach = new Chart(document.getElementById('chartTeachers'), { type:'bar',
-        data:{labels:topTeachers.map(t=>t[0]), datasets:[{label:'Lessons', data:topTeachers.map(t=>t[1]), backgroundColor:'#0891b2', borderRadius:5}]},
-        options:{indexAxis:'y', plugins:{legend:{display:false}}, scales:{x:{beginAtZero:true,grid:{color:'#eef0f4'}}, y:{grid:{display:false}}}} });
-    }
-  } catch(e){ chartFail('wrapTeach'); console.error(e); }
+  if(DATA.length){
+    const teacherCounts = {};
+    DATA.forEach(d=>{ teacherCounts[d.teacher] = (teacherCounts[d.teacher]||0)+1; });
+    const topTeachers = Object.entries(teacherCounts).sort((a,b)=>b[1]-a[1]).slice(0,12).map(t=>({label:t[0],value:t[1]}));
+    barH('wrapTeach', topTeachers, {color:'#0891b2'});
 
-  try{
-    if(DATA.length){
-      const roomCounts = {};
-      DATA.forEach(d=>{ if(d.room) roomCounts[d.room] = (roomCounts[d.room]||0)+1; });
-      const topRooms = Object.entries(roomCounts).sort((a,b)=>b[1]-a[1]).slice(0,12);
-      destroyChart('rooms');
-      charts.rooms = new Chart(document.getElementById('chartRooms'), { type:'bar',
-        data:{labels:topRooms.map(t=>t[0]), datasets:[{label:'Lessons', data:topRooms.map(t=>t[1]), backgroundColor:'#15803d', borderRadius:5}]},
-        options:{indexAxis:'y', plugins:{legend:{display:false}}, scales:{x:{beginAtZero:true,grid:{color:'#eef0f4'}}, y:{grid:{display:false}}}} });
-    }
-  } catch(e){ chartFail('wrapRooms'); console.error(e); }
+    const roomCounts = {};
+    DATA.forEach(d=>{ if(d.room) roomCounts[d.room] = (roomCounts[d.room]||0)+1; });
+    const topRooms = Object.entries(roomCounts).sort((a,b)=>b[1]-a[1]).slice(0,12).map(t=>({label:t[0],value:t[1]}));
+    barH('wrapRooms', topRooms, {color:'#15803d'});
 
-  try{
-    if(DATA.length){
-      const subjCounts = {};
-      DATA.forEach(d=>{ if(d.subject) subjCounts[d.subject] = (subjCounts[d.subject]||0)+1; });
-      const topSubj = Object.entries(subjCounts).sort((a,b)=>b[1]-a[1]).slice(0,12);
-      destroyChart('subj');
-      charts.subj = new Chart(document.getElementById('chartSubjects'), { type:'bar',
-        data:{labels:topSubj.map(t=>t[0]), datasets:[{label:'Lessons', data:topSubj.map(t=>t[1]), backgroundColor: topSubj.map((_,i)=>CHART_COLORS[i%CHART_COLORS.length]), borderRadius:5}]},
-        options:{plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true,grid:{color:'#eef0f4'}}, x:{grid:{display:false}}}} });
-    }
-  } catch(e){ chartFail('wrapSubj'); console.error(e); }
+    const subjCounts = {};
+    DATA.forEach(d=>{ if(d.subject) subjCounts[d.subject] = (subjCounts[d.subject]||0)+1; });
+    const topSubj = Object.entries(subjCounts).sort((a,b)=>b[1]-a[1]).slice(0,12).map(t=>({label:t[0],value:t[1]}));
+    barV('wrapSubj', topSubj, {colors:CHART_COLORS});
 
-  try{
-    if(DATA.length){
-      const heatWrap = document.getElementById('heatmapWrap');
-      const counts = {}; let max = 0;
-      DATA.forEach(d=>{ const key=d.day+'|'+d.session; counts[key]=(counts[key]||0)+1; if(counts[key]>max) max=counts[key]; });
-      let html = '<div class="heat-grid"><div></div>';
-      DAYS.forEach(d=> html += `<div class="heat-head">${d}</div>`);
-      sessions.forEach(s=>{
-        html += `<div class="heat-label">${s}</div>`;
-        DAYS.forEach(d=>{
-          const v = counts[d+'|'+s] || 0; const t = max ? v/max : 0;
-          html += `<div class="heat-cell" style="background:rgba(47,75,214,${0.08+t*0.55})">${v||''}</div>`;
-        });
+    const heatWrap = document.getElementById('heatmapWrap');
+    const counts = {}; let max = 0;
+    DATA.forEach(d=>{ const key=d.day+'|'+d.session; counts[key]=(counts[key]||0)+1; if(counts[key]>max) max=counts[key]; });
+    let html = '<div class="heat-grid"><div></div>';
+    DAYS.forEach(d=> html += `<div class="heat-head">${d}</div>`);
+    sessions.forEach(s=>{
+      html += `<div class="heat-label">${s}</div>`;
+      DAYS.forEach(d=>{
+        const v = counts[d+'|'+s] || 0; const t = max ? v/max : 0;
+        html += `<div class="heat-cell" style="background:rgba(47,75,214,${0.08+t*0.55})">${v||''}</div>`;
       });
-      html += '</div>';
-      heatWrap.innerHTML = html;
-    }
-  } catch(e){ console.error(e); }
+    });
+    html += '</div>';
+    heatWrap.innerHTML = html;
+  }
 }
+
 
 function renderClashes(){
   const teacherMap = {}, roomMap = {};
@@ -894,9 +1070,16 @@ function renderClashes(){
     (teacherMap[tk] = teacherMap[tk]||[]).push(d);
     if(d.room){ const rk = key+'|'+d.room; (roomMap[rk] = roomMap[rk]||[]).push(d); }
   });
+  // a "clash" is only real when the conflicting rows actually differ (different room/subject/etc) —
+  // if every row in the group is an identical duplicate, it's a data-entry duplicate, not a scheduling conflict.
+  function signature(r){ return [r.subject, r.room, r.year, r.teacher, r.students].join('|'); }
+  function isGenuineClash(list){
+    const first = signature(list[0]);
+    return list.some(r => signature(r) !== first);
+  }
   const clashes = [];
-  Object.values(teacherMap).forEach(list=>{ if(list.length>1) clashes.push({type:'Teacher double-booked', who:list[0].teacher, items:list}); });
-  Object.values(roomMap).forEach(list=>{ if(list.length>1) clashes.push({type:'Room double-booked', who:list[0].room, items:list}); });
+  Object.values(teacherMap).forEach(list=>{ if(list.length>1 && isGenuineClash(list)) clashes.push({type:'Teacher double-booked', who:list[0].teacher, items:list}); });
+  Object.values(roomMap).forEach(list=>{ if(list.length>1 && isGenuineClash(list)) clashes.push({type:'Room double-booked', who:list[0].room, items:list}); });
   const el = document.getElementById('clashResults');
   if(clashes.length===0){ el.innerHTML = '<div class="no-clash">No clashes found — every teacher and room has at most one class per session.</div>'; return; }
   el.innerHTML = clashes.map(c=>{

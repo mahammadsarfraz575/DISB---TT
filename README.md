@@ -1,49 +1,31 @@
-# DSIB Timetable Explorer
+# Timetable Explorer
 
-A simple browser-based dashboard for exploring and viewing a weekly timetable.
+A browser-based dashboard for viewing a weekly timetable — browse lessons, look up a person's full week, check total student numbers per year group, and view workload/utilisation charts.
 
-## How to View the Dashboard
+No build step, no framework to install — it's a static site.
 
-1. Open the dashboard link provided to you.
-2. Enter the login details provided by the authorized administrator.
-3. Select **Viewer** access if prompted.
-4. After signing in, you can use the dashboard sections to explore the available timetable information.
+---
 
-### Viewer Features
+## Logging in
 
-- **Browse** — Search and filter timetable entries by day, session, year, teacher, room, or subject.
-- **Teacher Schedule** — Select a teacher to view their weekly schedule.
-- **Year Totals** — View available year-group totals.
-- **Analysis** — View timetable summaries and charts.
-- **Clash Check** — Review possible timetable clashes.
+Sign in with the account you've been given. Viewer access lets you browse, search, and view all the reports below. Updates to the underlying data are handled separately.
 
-Viewers can browse the dashboard but cannot modify or publish dashboard information.
+> This page has a login screen but it is not a secure system — treat it as a light gate for authorised use, not a place for anything confidential.
 
-## Dashboard Link
+---
 
-Use the dashboard link provided by the administrator to access the live application.
+## What's in the dashboard
 
-## Access & Support
+- **Browse** — filter every lesson by day, session, year, teacher, room, or subject; sort by clicking column headers.
+- **Teacher schedule** — pick a teacher, see their whole week as a Day × Session grid.
+- **Year totals** — total registered students per year group, with gender split.
+- **Analysis** — lessons per year, students per year, busiest teachers, busiest rooms, lessons by subject, and a day × session load view.
+- **Clash check** — flags any teacher or room genuinely booked into two different lessons at once.
 
-Login details and access permissions are provided separately by the authorized administrator.
+---
 
-If you need:
-- Login or access details
-- Help using the dashboard
-- Information about additional features
-- Technical support
-- Changes to access permissions
+## Something looks wrong?
 
-Please contact the person responsible for managing the dashboard.
-
-## Deployment
-
-The application is a static website and can be hosted using GitHub Pages or another suitable static web-hosting service.
-
-For deployment, configuration, administration, or technical information, please contact the person responsible for maintaining the dashboard.
-
-## Important
-
-Please do not share your login details with others.
-
-For any information not covered in this README, please contact the authorized administrator.
+- **Page loads but shows no lessons** — the data may be temporarily unavailable; try again shortly.
+- **Login not working** — check your username and password are typed exactly as given (case-sensitive).
+- **A chart or report looks off** — try refreshing the page, or a different browser/network.
