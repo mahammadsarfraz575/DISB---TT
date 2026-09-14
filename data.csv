@@ -1,5 +1,5 @@
 id,day,session,time,year,teacher_code,teacher,subject,room,students
-Mon-S6-BJA,Mon,S6,12:25,8,BJA,Mr.Bara Jarah,Islamic studies,B110,15
+Mon-S6-BJA,Mon,S6,12:25,8,BJA,Mr.Bara Jarah,Islamic studies,B110,20
 Tue-S3-BJA,Tue,S3,09:55,8,BJA,Mr.Bara Jarah,Islamic studies,B110,15
 Thu-S1-BJA,Thu,S1,07:50,8,BJA,Mr.Bara Jarah,Islamic studies,B110,15
 Fri-S1-BJA,Fri,S1,07:25,8,BJA,Mr.Bara Jarah,Islamic studies,B113,15
@@ -680,10 +680,10 @@ Fri-S6-TMW,Fri,S6,10:50,9,TMW,Mr.Taurai Mudzi,Mathematics,G109,23
 Wed-S6-RCU,Wed,S6,12:25,11,RCU,Ms.Rowmicka Coutain,Food technology,G013,3
 Thu-S7-RCU,Thu,S7,14:05,11,RCU,Ms.Rowmicka Coutain,Food technology,G013,3
 Fri-S2-RCU,Fri,S2,08:00,11,RCU,Ms.Rowmicka Coutain,Food technology,G013,3
-Mon-ut-0,Mon,ut,07:25,13,0,. ,Registration,0,7
-Tue-ut-0,Tue,ut,07:25,13,0,. ,Registration,0,7
-Wed-ut-0,Wed,ut,07:25,13,0,. ,Registration,0,7
-Thu-ut-0,Thu,ut,07:25,13,0,. ,Registration,0,7
+Mon-ut-0,Mon,ut,07:25,13,0,.,Registration,0,7
+Tue-ut-0,Tue,ut,07:25,13,0,.,Registration,0,7
+Wed-ut-0,Wed,ut,07:25,13,0,.,Registration,0,7
+Thu-ut-0,Thu,ut,07:25,13,0,.,Registration,0,7
 Mon-S4-SEL,Mon,S4,10:45,9,SEL,Mr.Samuel Elliott,History,B108,17
 Tue-S7-RSC,Tue,S7,14:05,8,RSC,Ms.Rebecca Clare Simonaitis,Swimming,0,24
 Tue-S3-SBZ,Tue,S3,09:55,8,SBZ,Mr.Simon Broom,Art,G012,20
