@@ -263,6 +263,7 @@ footer{margin-top:34px;color:var(--muted-soft);font-size:11.5px;text-align:cente
       <div class="filter-group"><label>Room</label><input type="text" id="roomInput" placeholder="Search room..."></div>
       <div class="filter-group"><label>Subject</label><select id="subjectSel"><option value="">All</option></select></div>
       <button class="reset-btn" id="resetBtn">Clear filters</button>
+      <button class="reset-btn" id="exportBtn" style="border-color:var(--accent);color:var(--accent);">&#8595; Export filtered CSV</button>
     </div>
     <div class="result-count" id="resultCount"></div>
     <div class="table-scroll">
@@ -876,6 +877,23 @@ document.getElementById('resetBtn').onclick = ()=>{
   [...document.getElementById('dayChips').children].forEach(c=>c.classList.add('on'));
   renderTable();
 };
+document.getElementById('exportBtn').onclick = ()=>{
+  const rows = filtered();
+  if(!rows.length){ alert('No rows match the current filters — nothing to export.'); return; }
+  const cols = ['day','session','time','year','teacher_code','teacher','subject','room','students'];
+  const headerLabels = ['Day','Session','Time','Year','Code','Teacher','Subject','Room','Students'];
+  const esc = v => { v = (v===undefined||v===null)?'':String(v); return /[",\n]/.test(v) ? '"'+v.replace(/"/g,'""')+'"' : v; };
+  const lines = [headerLabels.join(',')];
+  rows.forEach(d=> lines.push(cols.map(c=> esc(c==='day' ? (DAY_NAMES[d.day]||d.day) : d[c])).join(',')));
+  const csv = lines.join('\n');
+  const blob = new Blob([csv], {type:'text/csv;charset=utf-8;'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const stamp = new Date().toISOString().slice(0,10);
+  a.href = url; a.download = `timetable-export-${stamp}.csv`;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+};
 document.querySelectorAll('thead th[data-key]').forEach(th=>{
   th.onclick=()=>{ const key=th.dataset.key; if(state.sortKey===key) state.sortDir*=-1; else {state.sortKey=key; state.sortDir=1;} renderTable(); };
 });
@@ -1014,8 +1032,12 @@ function renderAnalysis(){
   if(!DATA.length && !REG.length) return;
 
   if(DATA.length){
-    const yearOrder = ['Year 07','Year 08','Year 09','Year 10','Year 11','Year 12','Year 13'];
-    const items = yearOrder.map(y=>({label:y.replace('Year ',''), value:DATA.filter(d=>d.year===y).length}));
+    const yearOrder = uniq(DATA.map(d=>d.year)).sort((a,b)=>{
+      const na = parseInt((a.match(/\d+/)||[0])[0], 10);
+      const nb = parseInt((b.match(/\d+/)||[0])[0], 10);
+      return na - nb;
+    });
+    const items = yearOrder.map(y=>({label:y.replace(/^Year\s*/i,''), value:DATA.filter(d=>d.year===y).length}));
     barV('wrapYL', items, {color:'#2f4bd6'});
   }
 
